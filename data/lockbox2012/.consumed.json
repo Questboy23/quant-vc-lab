@@ -1,0 +1,88 @@
+{
+ "consumed_at": "2026-10-03T22:52:11.517870+00:00",
+ "result": {
+  "rules_v3": {
+   "own_everything": {
+    "multiple": 0.688140878035395,
+    "multiple_excl_top_deal": 0.4552818225749977,
+    "vs_everything_pct": 0.0,
+    "vs_everything_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "outliers_held": 8,
+    "outliers_total": 8,
+    "deals": 2693
+   },
+   "R-A_drop_bottom_third": {
+    "multiple": 0.7331734157938307,
+    "multiple_excl_top_deal": 0.43721987154800523,
+    "vs_everything_pct": 6.544087002504639,
+    "vs_everything_ci_pct": [
+     -34.170753614654295,
+     27.53771782583008
+    ],
+    "outliers_held": 7,
+    "outliers_total": 8,
+    "deals": 2119
+   },
+   "R-B_plus_double_top10": {
+    "multiple": 0.7195317597033913,
+    "multiple_excl_top_deal": 0.43119262648636736,
+    "vs_everything_pct": 4.5616940760176306,
+    "vs_everything_ci_pct": [
+     -34.64660261285049,
+     25.263329931450684
+    ],
+    "outliers_held": 7,
+    "outliers_total": 8,
+    "deals": 2119
+   }
+  },
+  "rules_v2_features": {
+   "own_everything": {
+    "multiple": 0.688140878035395,
+    "multiple_excl_top_deal": 0.4552818225749977,
+    "vs_everything_pct": 0.0,
+    "vs_everything_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "outliers_held": 8,
+    "outliers_total": 8,
+    "deals": 2693
+   },
+   "R-A_drop_bottom_third": {
+    "multiple": 0.5191752408314019,
+    "multiple_excl_top_deal": 0.36758876851072075,
+    "vs_everything_pct": -24.5539311203806,
+    "vs_everything_ci_pct": [
+     -65.78424294359245,
+     22.958254895479733
+    ],
+    "outliers_held": 5,
+    "outliers_total": 8,
+    "deals": 2069
+   },
+   "R-B_plus_double_top10": {
+    "multiple": 0.5103567766211483,
+    "multiple_excl_top_deal": 0.3624843034025734,
+    "vs_everything_pct": -25.835422235314766,
+    "vs_everything_ci_pct": [
+     -66.03463247052167,
+     20.97873272809383
+    ],
+    "outliers_held": 5,
+    "outliers_total": 8,
+    "deals": 2069
+   }
+  },
+  "n": 2693,
+  "years_of_follow_up": "3.0-3.9 (first rounds in 2012, outcomes frozen Dec 2015)",
+  "base": {
+   "success": 0.08132194578536947,
+   "bigwin": 0.00928332714444857,
+   "mean_multiple": 0.688140878035395
+  }
+ }
+}

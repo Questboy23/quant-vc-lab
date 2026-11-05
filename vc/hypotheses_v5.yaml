@@ -1,0 +1,26 @@
+# Round 5 registry (2026-10-03), written BEFORE any round-5 result. Outcomes over 30 months.
+# Feature tests: validation window 2018-2021 (a SECOND LOOK at years used in round 4 - labelled),
+# Holm across all 12. Strategies: judged ONCE on the fresh lockbox = first raises 2022-2023
+# (second raises 2022-2023 for L4/L5), 30-month windows complete by 2026Q2.
+# Frames: who-knows-first, place, time, network, second-look; mimetic AND anti-mimetic versions.
+- {id: G1,  feature: vc_fund_size,    primary: growth20_30, direction: "+", frame: who-knows-first, name: Size of the VC fund behind a director}
+- {id: G2,  feature: n_vc_directors,  primary: growth20_30, direction: "+", frame: who-knows-first, name: Number of VC partners on the board}
+- {id: G3,  feature: vc_dir_track,    primary: outlier30,   direction: "+", frame: who-knows-first, name: VC director's earlier startups scaled}
+- {id: G4,  feature: zip_density,     primary: outlier30,   direction: "+", frame: place (mimetic), name: Dense startup cluster}
+- {id: G5,  feature: zip_sparse,      primary: outlier30,   direction: "+", frame: place (anti-mimetic), name: Sparse area (bottom quartile density), note: cheaper and less competition}
+- {id: G6,  feature: sector_tailwind, primary: outlier30,   direction: "+", frame: time (mimetic), name: Sector whose earlier startups scaled}
+- {id: G7,  feature: sector_cold,     primary: outlier30,   direction: "+", frame: time (anti-mimetic), name: Cold sector (bottom quartile tailwind)}
+- {id: G8,  feature: exec_vc_tie,     primary: growth20_30, direction: "+", frame: network, name: Founder already worked alongside VCs}
+- {id: G9,  feature: exec_prior_vc,   primary: growth20_30, direction: "+", frame: network, name: Founder's earlier startup was VC-backed}
+- {id: G10, feature: serial_count,    primary: outlier30,   direction: "+", frame: network, name: Number of earlier startups the founders ran}
+- {id: G11, feature: unpopular_ind,   primary: outlier30,   direction: "+", frame: price (anti-mimetic), name: Unfashionable industry (manufacturing / other / energy)}
+- {id: G12, feature: bio_cheap,       primary: outlier30,   direction: "+", frame: exit route, name: Biotech raising a small first round}
+# Strategies (pre-declared; lockbox once):
+# L1 quality_in_cheap_half, round-4 features (pure replication on fresh years)
+# L2 quality_in_cheap_half, round-4 + round-5 features
+# L3 L2 with double weight on the top quarter of quality inside the cheap half
+# L4 second-raise momentum: buy at the second raise when it is >= 2x the first and within 18 months
+# L5 second-raise contrarian: buy at the second raise when it is <= 1x the first and within 18 months
+# ADDED after the 2018-21 second look, BEFORE opening the lockbox:
+# L6 two sleeves: half the money in L1 (first raises), half in L5 (flat second raises) - combined markup
+# L7 quality second-raise contrarian: L5 restricted to companies whose first-raise quality was top half

@@ -1,0 +1,50 @@
+{
+ "assumptions": "Fund economics: % return on the manager's (GP's) own money vs an outside investor (LP) in\nthe same fund. Percent only.\n\nFund: 10-year life, management fee 2%/yr of commitments years 1-5 and 1.5% years 6-10 (17.5% of\ncommitments in total; that's money not invested), carry 20% of profits above returned capital, no\nhurdle (standard in VC). GP commits 2% of the fund alongside LPs and pays no fee/carry on it.\nFee income minus operating costs is shown separately (costs = 70% of fees for a small fund).\nGross multiple = what the invested capital returns; LP net follows from it.\n\nGross scenarios (multiple on invested capital over ~10y), sourced:\n  market: LP net 10%/yr over a ~7y average hold ~ net TVPI 1.95x -> gross ~2.65x\n  our rule: market +6.5% (2012 lockbox point estimate for the drop-bottom-third rule)\n  top quartile fund: net TVPI ~2.5x (CA/PitchBook 2007-2014 vintages) -> gross ~3.2x\n  top decile: net ~3.0x -> gross ~3.9x\n  bad: gross 1.0x (money back before fees)\n",
+ "rows": {
+  "bad (money back)": {
+   "gross": 1.0,
+   "lp_net_multiple": 0.825,
+   "lp_net_irr_pct": -2.7107512655060617,
+   "gp_multiple_on_own_money": 0.8250000000000001,
+   "gp_irr_pct": -2.7107512655060617,
+   "gp_multiple_incl_fee_profit": 3.45,
+   "gp_irr_incl_fees_pct": 19.352439257022127
+  },
+  "VC market": {
+   "gross": 2.65,
+   "lp_net_multiple": 1.9537449999999998,
+   "lp_net_irr_pct": 10.04049978852921,
+   "gp_multiple_on_own_money": 13.811499999999999,
+   "gp_irr_pct": 45.50956744053778,
+   "gp_multiple_incl_fee_profit": 16.4365,
+   "gp_irr_incl_fees_pct": 49.17190954466373
+  },
+  "our rule (+25%, round 5 halved)": {
+   "gross": 3.3125,
+   "lp_net_multiple": 2.3931812499999996,
+   "lp_net_irr_pct": 13.27638221990326,
+   "gp_multiple_on_own_money": 19.714374999999997,
+   "gp_irr_pct": 53.09781830442017,
+   "gp_multiple_incl_fee_profit": 22.339374999999997,
+   "gp_irr_incl_fees_pct": 55.85632485417822
+  },
+  "top-quartile fund": {
+   "gross": 3.2,
+   "lp_net_multiple": 2.31856,
+   "lp_net_irr_pct": 12.764928388377728,
+   "gp_multiple_on_own_money": 18.712000000000003,
+   "gp_irr_pct": 51.96076051747283,
+   "gp_multiple_incl_fee_profit": 21.337000000000003,
+   "gp_irr_incl_fees_pct": 54.837515432370346
+  },
+  "top-decile fund": {
+   "gross": 3.9,
+   "lp_net_multiple": 2.78287,
+   "lp_net_irr_pct": 15.7441336149579,
+   "gp_multiple_on_own_money": 24.948999999999998,
+   "gp_irr_pct": 58.335763442592594,
+   "gp_multiple_incl_fee_profit": 27.573999999999998,
+   "gp_irr_incl_fees_pct": 60.61484450987098
+  }
+ }
+}

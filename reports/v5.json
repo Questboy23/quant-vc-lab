@@ -1,0 +1,880 @@
+{
+ "generated": "2026-10-04T00:41:22.097868+00:00",
+ "n": {
+  "train": 11850,
+  "valid": 6964,
+  "lockbox": 3587
+ },
+ "registry": [
+  {
+   "id": "G1",
+   "feature": "vc_fund_size",
+   "primary": "growth20_30",
+   "direction": "+",
+   "frame": "who-knows-first",
+   "name": "Size of the VC fund behind a director",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.0528593664571912,
+    "p_raw": 0.10292625590466548,
+    "p_holm": 0.9263363031419893,
+    "n": 6964,
+    "side": {
+     "growth20_30": {
+      "coef": 0.0528593664571912,
+      "p": 0.10292625590466548,
+      "n": 6964,
+      "events": 452
+     },
+     "outlier30": {
+      "coef": -0.04026643855279425,
+      "p": 0.46861442054333136,
+      "n": 6964,
+      "events": 231
+     },
+     "next30": {
+      "coef": 0.040074845661578616,
+      "p": 0.03857178644692026,
+      "n": 6964,
+      "events": 2728
+     },
+     "returns": {
+      "mult_hi": 1.7351342086250172,
+      "mult_lo": 1.494681937657515,
+      "mult_hi_excl_top": 1.7351342086250172,
+      "mult_lo_excl_top": 1.4711728442542804,
+      "outlier_rate_hi": 0.03040173724212812,
+      "outlier_rate_lo": 0.03359258646367698,
+      "exit_rate_hi": 0.05537459283387622,
+      "exit_rate_lo": 0.037564123779579676,
+      "n_hi": 921,
+      "n_lo": 6043
+     }
+    }
+   }
+  },
+  {
+   "id": "G2",
+   "feature": "n_vc_directors",
+   "primary": "growth20_30",
+   "direction": "+",
+   "frame": "who-knows-first",
+   "name": "Number of VC partners on the board",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.05814317897054463,
+    "p_raw": 0.056878146103769935,
+    "p_holm": 0.6256596071414693,
+    "n": 6964,
+    "side": {
+     "growth20_30": {
+      "coef": 0.05814317897054463,
+      "p": 0.056878146103769935,
+      "n": 6964,
+      "events": 452
+     },
+     "outlier30": {
+      "coef": -0.021210455609686606,
+      "p": 0.6862128395507503,
+      "n": 6964,
+      "events": 231
+     },
+     "next30": {
+      "coef": 0.047665023151112144,
+      "p": 0.011367676896195448,
+      "n": 6964,
+      "events": 2728
+     },
+     "returns": {
+      "mult_hi": 1.6970525479777003,
+      "mult_lo": 1.4889130020325974,
+      "mult_hi_excl_top": 1.6970525479777003,
+      "mult_lo_excl_top": 1.4640185556116427,
+      "outlier_rate_hi": 0.031821797931583136,
+      "outlier_rate_lo": 0.03346767128088313,
+      "exit_rate_hi": 0.05568814638027048,
+      "exit_rate_lo": 0.03644646924829157,
+      "n_hi": 1257,
+      "n_lo": 5707
+     }
+    }
+   }
+  },
+  {
+   "id": "G3",
+   "feature": "vc_dir_track",
+   "primary": "outlier30",
+   "direction": "+",
+   "frame": "who-knows-first",
+   "name": "VC director's earlier startups scaled",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.3111885721129304,
+    "p_raw": 0.2522066757076442,
+    "p_holm": 1.0,
+    "n": 696,
+    "side": {
+     "growth20_30": {
+      "coef": 0.273355259052257,
+      "p": 0.06521949717131281,
+      "n": 696,
+      "events": 79
+     },
+     "outlier30": {
+      "coef": 0.3111885721129304,
+      "p": 0.2522066757076442,
+      "n": 696,
+      "events": 24
+     },
+     "next30": {
+      "coef": 0.05721782041082202,
+      "p": 0.5075376125224526,
+      "n": 696,
+      "events": 302
+     },
+     "returns": {
+      "mult_hi": 1.9988525731925213,
+      "mult_lo": 1.496198306273139,
+      "mult_hi_excl_top": 1.9988525731925213,
+      "mult_lo_excl_top": 1.496198306273139,
+      "outlier_rate_hi": 0.04142011834319527,
+      "outlier_rate_lo": 0.027932960893854747,
+      "exit_rate_hi": 0.07692307692307693,
+      "exit_rate_lo": 0.05307262569832402,
+      "n_hi": 338,
+      "n_lo": 358
+     }
+    }
+   }
+  },
+  {
+   "id": "G4",
+   "feature": "zip_density",
+   "primary": "outlier30",
+   "direction": "+",
+   "frame": "place (mimetic)",
+   "name": "Dense startup cluster",
+   "result": {
+    "verdict": "passes",
+    "effect": 0.3002185150517909,
+    "p_raw": 6.48884047346694e-05,
+    "p_holm": 0.0007786608568160328,
+    "n": 6964,
+    "side": {
+     "growth20_30": {
+      "coef": 0.17190021303766004,
+      "p": 0.0016914946385679613,
+      "n": 6964,
+      "events": 452
+     },
+     "outlier30": {
+      "coef": 0.3002185150517909,
+      "p": 6.48884047346694e-05,
+      "n": 6964,
+      "events": 231
+     },
+     "next30": {
+      "coef": 0.021996669449217025,
+      "p": 0.386057167073375,
+      "n": 6964,
+      "events": 2728
+     },
+     "returns": {
+      "mult_hi": 1.7694169302938505,
+      "mult_lo": 1.2849387094581197,
+      "mult_hi_excl_top": 1.7285735977240708,
+      "mult_lo_excl_top": 1.2849387094581197,
+      "outlier_rate_hi": 0.04262672811059908,
+      "outlier_rate_lo": 0.02376861397479954,
+      "exit_rate_hi": 0.049827188940092165,
+      "exit_rate_lo": 0.03006872852233677,
+      "n_hi": 3472,
+      "n_lo": 3492
+     }
+    }
+   }
+  },
+  {
+   "id": "G5",
+   "feature": "zip_sparse",
+   "primary": "outlier30",
+   "direction": "+",
+   "frame": "place (anti-mimetic)",
+   "name": "Sparse area (bottom quartile density)",
+   "note": "cheaper and less competition",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.3030365310767931,
+    "p_raw": 0.09176468053623155,
+    "p_holm": 0.9176468053623155,
+    "n": 6964,
+    "side": {
+     "growth20_30": {
+      "coef": -0.3504899765967793,
+      "p": 0.021810202437319112,
+      "n": 6964,
+      "events": 452
+     },
+     "outlier30": {
+      "coef": -0.3030365310767931,
+      "p": 0.09176468053623155,
+      "n": 6964,
+      "events": 231
+     },
+     "next30": {
+      "coef": -0.04427963688822352,
+      "p": 0.4582536597732162,
+      "n": 6964,
+      "events": 2728
+     },
+     "returns": {
+      "mult_hi": 1.3397784528530061,
+      "mult_lo": 1.5812725854198093,
+      "mult_hi_excl_top": 1.3397784528530061,
+      "mult_lo_excl_top": 1.5549015373621127,
+      "outlier_rate_hi": 0.02531645569620253,
+      "outlier_rate_lo": 0.03547548291233284,
+      "exit_rate_hi": 0.027848101265822784,
+      "exit_rate_lo": 0.043462109955423475,
+      "n_hi": 1580,
+      "n_lo": 5384
+     }
+    }
+   }
+  },
+  {
+   "id": "G6",
+   "feature": "sector_tailwind",
+   "primary": "outlier30",
+   "direction": "+",
+   "frame": "time (mimetic)",
+   "name": "Sector whose earlier startups scaled",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.07935574743388839,
+    "p_raw": 0.2874596783381086,
+    "p_holm": 1.0,
+    "n": 6923,
+    "side": {
+     "growth20_30": {
+      "coef": -0.0682308521952963,
+      "p": 0.2340859861551443,
+      "n": 6923,
+      "events": 451
+     },
+     "outlier30": {
+      "coef": 0.07935574743388839,
+      "p": 0.2874596783381086,
+      "n": 6923,
+      "events": 230
+     },
+     "next30": {
+      "coef": 0.013895611897843132,
+      "p": 0.626583748145129,
+      "n": 6923,
+      "events": 2707
+     },
+     "returns": {
+      "mult_hi": 1.575124742307318,
+      "mult_lo": 1.4828030180189997,
+      "mult_hi_excl_top": 1.575124742307318,
+      "mult_lo_excl_top": 1.441818072473131,
+      "outlier_rate_hi": 0.03443287037037037,
+      "outlier_rate_lo": 0.032016152293048744,
+      "exit_rate_hi": 0.03530092592592592,
+      "exit_rate_lo": 0.04384193827516585,
+      "n_hi": 3456,
+      "n_lo": 3467
+     }
+    }
+   }
+  },
+  {
+   "id": "G7",
+   "feature": "sector_cold",
+   "primary": "outlier30",
+   "direction": "+",
+   "frame": "time (anti-mimetic)",
+   "name": "Cold sector (bottom quartile tailwind)",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.5293599773136141,
+    "p_raw": 0.1071774587069496,
+    "p_holm": 0.9263363031419893,
+    "n": 6923,
+    "side": {
+     "growth20_30": {
+      "coef": -0.08237425857123291,
+      "p": 0.7304591637822657,
+      "n": 6923,
+      "events": 451
+     },
+     "outlier30": {
+      "coef": -0.5293599773136141,
+      "p": 0.1071774587069496,
+      "n": 6923,
+      "events": 230
+     },
+     "next30": {
+      "coef": -0.1477726165347649,
+      "p": 0.14887443857410065,
+      "n": 6923,
+      "events": 2707
+     },
+     "returns": {
+      "mult_hi": 1.119520921677961,
+      "mult_lo": 1.5635230887012166,
+      "mult_hi_excl_top": 1.119520921677961,
+      "mult_lo_excl_top": 1.541277225148835,
+      "outlier_rate_hi": 0.018518518518518517,
+      "outlier_rate_lo": 0.03446655177816074,
+      "exit_rate_hi": 0.03518518518518519,
+      "exit_rate_lo": 0.03994986683377722,
+      "n_hi": 540,
+      "n_lo": 6383
+     }
+    }
+   }
+  },
+  {
+   "id": "G8",
+   "feature": "exec_vc_tie",
+   "primary": "growth20_30",
+   "direction": "+",
+   "frame": "network",
+   "name": "Founder already worked alongside VCs",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.15167429507961852,
+    "p_raw": 0.20393345452554934,
+    "p_holm": 1.0,
+    "n": 6964,
+    "side": {
+     "growth20_30": {
+      "coef": 0.15167429507961852,
+      "p": 0.20393345452554934,
+      "n": 6964,
+      "events": 452
+     },
+     "outlier30": {
+      "coef": -0.04171481618263815,
+      "p": 0.8022140725413015,
+      "n": 6964,
+      "events": 231
+     },
+     "next30": {
+      "coef": 0.23941796976831334,
+      "p": 8.925946653750853e-05,
+      "n": 6964,
+      "events": 2728
+     },
+     "returns": {
+      "mult_hi": 1.7391736509273983,
+      "mult_lo": 1.4728694888183729,
+      "mult_hi_excl_top": 1.637962051620423,
+      "mult_lo_excl_top": 1.4728694888183729,
+      "outlier_rate_hi": 0.033523537803138374,
+      "outlier_rate_lo": 0.03308162531463502,
+      "exit_rate_hi": 0.042796005706134094,
+      "exit_rate_lo": 0.039194534340165406,
+      "n_hi": 1402,
+      "n_lo": 5562
+     }
+    }
+   }
+  },
+  {
+   "id": "G9",
+   "feature": "exec_prior_vc",
+   "primary": "growth20_30",
+   "direction": "+",
+   "frame": "network",
+   "name": "Founder's earlier startup was VC-backed",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.0758002730147232,
+    "p_raw": 0.5768168762598056,
+    "p_holm": 1.0,
+    "n": 6964,
+    "side": {
+     "growth20_30": {
+      "coef": 0.0758002730147232,
+      "p": 0.5768168762598056,
+      "n": 6964,
+      "events": 452
+     },
+     "outlier30": {
+      "coef": -0.11729635434995635,
+      "p": 0.550117908173127,
+      "n": 6964,
+      "events": 231
+     },
+     "next30": {
+      "coef": 0.2074636818177398,
+      "p": 0.003290528471246332,
+      "n": 6964,
+      "events": 2728
+     },
+     "returns": {
+      "mult_hi": 1.638240064515377,
+      "mult_lo": 1.5082664082232788,
+      "mult_hi_excl_top": 1.638240064515377,
+      "mult_lo_excl_top": 1.4845436158611984,
+      "outlier_rate_hi": 0.031762295081967214,
+      "outlier_rate_lo": 0.033400133600534405,
+      "exit_rate_hi": 0.03483606557377049,
+      "exit_rate_lo": 0.04074816299265197,
+      "n_hi": 976,
+      "n_lo": 5988
+     }
+    }
+   }
+  },
+  {
+   "id": "G10",
+   "feature": "serial_count",
+   "primary": "outlier30",
+   "direction": "+",
+   "frame": "network",
+   "name": "Number of earlier startups the founders ran",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.0008457033193081759,
+    "p_raw": 0.9875996258106527,
+    "p_holm": 1.0,
+    "n": 6964,
+    "side": {
+     "growth20_30": {
+      "coef": 0.009117618399708342,
+      "p": 0.8156611107800451,
+      "n": 6964,
+      "events": 452
+     },
+     "outlier30": {
+      "coef": -0.0008457033193081759,
+      "p": 0.9875996258106527,
+      "n": 6964,
+      "events": 231
+     },
+     "next30": {
+      "coef": 0.06209832008092474,
+      "p": 0.002029905544735684,
+      "n": 6964,
+      "events": 2728
+     },
+     "returns": {
+      "mult_hi": 1.6939905023172896,
+      "mult_lo": 1.4556803281130806,
+      "mult_hi_excl_top": 1.6254012209934585,
+      "mult_lo_excl_top": 1.4556803281130806,
+      "outlier_rate_hi": 0.03431609473175447,
+      "outlier_rate_lo": 0.03268641470888662,
+      "exit_rate_hi": 0.04253262445625906,
+      "exit_rate_lo": 0.03881511746680286,
+      "n_hi": 2069,
+      "n_lo": 4895
+     }
+    }
+   }
+  },
+  {
+   "id": "G11",
+   "feature": "unpopular_ind",
+   "primary": "outlier30",
+   "direction": "+",
+   "frame": "price (anti-mimetic)",
+   "name": "Unfashionable industry (manufacturing / other / energy)",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.2640354510973659,
+    "p_raw": 0.3263167185255693,
+    "p_holm": 1.0,
+    "n": 6964,
+    "side": {
+     "growth20_30": {
+      "coef": -0.169715747040394,
+      "p": 0.41731845640013454,
+      "n": 6964,
+      "events": 452
+     },
+     "outlier30": {
+      "coef": -0.2640354510973659,
+      "p": 0.3263167185255693,
+      "n": 6964,
+      "events": 231
+     },
+     "next30": {
+      "coef": -0.1108807268877651,
+      "p": 0.26591492104419445,
+      "n": 6964,
+      "events": 2728
+     },
+     "returns": {
+      "mult_hi": 1.3442760897362256,
+      "mult_lo": 1.6064419712413758,
+      "mult_hi_excl_top": 1.2772990062740195,
+      "mult_lo_excl_top": 1.6064419712413758,
+      "outlier_rate_hi": 0.02824858757062147,
+      "outlier_rate_lo": 0.035330578512396696,
+      "exit_rate_hi": 0.03248587570621469,
+      "exit_rate_lo": 0.04318181818181818,
+      "n_hi": 2124,
+      "n_lo": 4840
+     }
+    }
+   }
+  },
+  {
+   "id": "G12",
+   "feature": "bio_cheap",
+   "primary": "outlier30",
+   "direction": "+",
+   "frame": "exit route",
+   "name": "Biotech raising a small first round",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.49571572624739657,
+    "p_raw": 0.33800052135697956,
+    "p_holm": 1.0,
+    "n": 6964,
+    "side": {
+     "growth20_30": {
+      "coef": -0.7530665328729704,
+      "p": 0.46298343988856727,
+      "n": 6964,
+      "events": 452
+     },
+     "outlier30": {
+      "coef": -0.49571572624739657,
+      "p": 0.33800052135697956,
+      "n": 6964,
+      "events": 231
+     },
+     "next30": {
+      "coef": -0.005599839061586178,
+      "p": 0.9761250935306446,
+      "n": 6964,
+      "events": 2728
+     },
+     "returns": {
+      "mult_hi": 1.8067812871935083,
+      "mult_lo": 1.519256861120804,
+      "mult_hi_excl_top": 1.8067812871935083,
+      "mult_lo_excl_top": 1.49833503327477,
+      "outlier_rate_hi": 0.02857142857142857,
+      "outlier_rate_lo": 0.033289144203859186,
+      "exit_rate_hi": 0.03428571428571429,
+      "exit_rate_lo": 0.040064810723228754,
+      "n_hi": 175,
+      "n_lo": 6789
+     }
+    }
+   }
+  }
+ ],
+ "valid": {
+  "L0_own_all": {
+   "rule": "own every first raise",
+   "deals": 6964,
+   "markup": 1.526482130299828,
+   "all_markup": 1.526482130299828,
+   "markup_excl_top": 1.5060871651770793,
+   "all_excl_top": 1.5060871651770793,
+   "vs_all_pct": 0.0,
+   "vs_all_ci_pct": [
+    0.0,
+    0.0
+   ],
+   "growth20_rate": 0.06490522688110281,
+   "growth20_all": 0.06490522688110281,
+   "outliers": 231,
+   "outliers_total": 231
+  },
+  "L1_quality_cheap_r4": {
+   "rule": "quality in cheap half (round-4 features)",
+   "deals": 807,
+   "markup": 2.537513944778471,
+   "all_markup": 1.526482130299828,
+   "markup_excl_top": 2.537513944778471,
+   "all_excl_top": 1.5060871651770793,
+   "vs_all_pct": 66.23279725390947,
+   "vs_all_ci_pct": [
+    40.35436123305551,
+    96.0102385952214
+   ],
+   "growth20_rate": 0.028500619578686492,
+   "growth20_all": 0.06490522688110281,
+   "outliers": 61,
+   "outliers_total": 231
+  },
+  "L2_quality_cheap_r5": {
+   "rule": "quality in cheap half (+ round-5 features)",
+   "deals": 834,
+   "markup": 2.4633754712506954,
+   "all_markup": 1.526482130299828,
+   "markup_excl_top": 2.4633754712506954,
+   "all_excl_top": 1.5060871651770793,
+   "vs_all_pct": 61.37597829375474,
+   "vs_all_ci_pct": [
+    36.20784048736494,
+    90.50139069113156
+   ],
+   "growth20_rate": 0.027577937649880094,
+   "growth20_all": 0.06490522688110281,
+   "outliers": 60,
+   "outliers_total": 231
+  },
+  "L3_tilted": {
+   "rule": "L2 with double weight on top-quarter quality",
+   "deals": 834,
+   "markup": 2.537645248258043,
+   "all_markup": 1.526482130299828,
+   "markup_excl_top": 2.537645248258043,
+   "all_excl_top": 1.5060871651770793,
+   "vs_all_pct": 66.24139895824426,
+   "vs_all_ci_pct": [
+    38.51018237802355,
+    96.92218433001116
+   ],
+   "growth20_rate": 0.027577937649880094,
+   "growth20_all": 0.06490522688110281,
+   "outliers": 60,
+   "outliers_total": 231
+  },
+  "L4_r2_momentum": {
+   "rule": "second raise >= 2x the first, within 18 months",
+   "deals": 841,
+   "markup": 1.49709586152926,
+   "all_markup": 1.949427254955401,
+   "markup_excl_top": 1.49709586152926,
+   "all_excl_top": 1.8517338803405132,
+   "vs_all_pct": -23.20329687995921,
+   "vs_all_ci_pct": [
+    -35.010648221176545,
+    -10.889761091930461
+   ],
+   "growth20_rate": 0.0,
+   "growth20_all": 0.0,
+   "outliers": 15,
+   "outliers_total": 66
+  },
+  "L5_r2_contrarian": {
+   "rule": "second raise <= 1x the first, within 18 months",
+   "deals": 638,
+   "markup": 2.518851047189001,
+   "all_markup": 1.949427254955401,
+   "markup_excl_top": 2.245375343274086,
+   "all_excl_top": 1.8517338803405132,
+   "vs_all_pct": 29.209799482701236,
+   "vs_all_ci_pct": [
+    8.338791485128594,
+    49.430705843224
+   ],
+   "growth20_rate": 0.0,
+   "growth20_all": 0.0,
+   "outliers": 36,
+   "outliers_total": 66
+  },
+  "r2_all": {
+   "rule": "every second raise within 18 months",
+   "deals": 1790,
+   "markup": 1.949427254955401,
+   "all_markup": 1.949427254955401,
+   "markup_excl_top": 1.8517338803405132,
+   "all_excl_top": 1.8517338803405132,
+   "vs_all_pct": 0.0,
+   "vs_all_ci_pct": [
+    0.0,
+    0.0
+   ],
+   "growth20_rate": 0.0,
+   "growth20_all": 0.0,
+   "outliers": 66,
+   "outliers_total": 66
+  },
+  "L7_r2_contrarian_quality": {
+   "rule": "flat second raise, first-raise quality top half",
+   "deals": 314,
+   "markup": 3.8748085140532047,
+   "all_markup": 1.949427254955401,
+   "markup_excl_top": 3.3225782714751317,
+   "all_excl_top": 1.8517338803405132,
+   "vs_all_pct": 98.76650971220018,
+   "vs_all_ci_pct": [
+    55.18336720915074,
+    147.4941462360523
+   ],
+   "growth20_rate": 0.0,
+   "growth20_all": 0.0,
+   "outliers": 30,
+   "outliers_total": 66
+  },
+  "L6_two_sleeves": {
+   "rule": "half L1 + half L5",
+   "deals": 1445,
+   "markup": 2.528182495983736,
+   "all_markup": 1.7379546926276146,
+   "vs_all_pct": 45.468837979969166,
+   "vs_all_ci_pct": [
+    24.346576359092055,
+    72.7204722192227
+   ],
+   "note": "CI is the average of the two sleeves' CIs (approximate)"
+  },
+  "auc_growth20_q2": 0.7639286762627471
+ },
+ "lockbox": {
+  "consumed_at": "2026-10-04T00:41:23.584799+00:00",
+  "result": {
+   "L0_own_all": {
+    "rule": "own every first raise",
+    "deals": 3587,
+    "markup": 0.7479598739508566,
+    "all_markup": 0.7479598739508566,
+    "markup_excl_top": 0.7300192722334302,
+    "all_excl_top": 0.7300192722334302,
+    "vs_all_pct": 0.0,
+    "vs_all_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "growth20_rate": 0.030387510454418735,
+    "growth20_all": 0.030387510454418735,
+    "outliers": 46,
+    "outliers_total": 46
+   },
+   "L1_quality_cheap_r4": {
+    "rule": "quality in cheap half (round-4 features)",
+    "deals": 427,
+    "markup": 1.139685804132643,
+    "all_markup": 0.7479598739508566,
+    "markup_excl_top": 1.139685804132643,
+    "all_excl_top": 0.7300192722334302,
+    "vs_all_pct": 52.37258626089398,
+    "vs_all_ci_pct": [
+     19.88598616984114,
+     87.43157640531348
+    ],
+    "growth20_rate": 0.0117096018735363,
+    "growth20_all": 0.030387510454418735,
+    "outliers": 9,
+    "outliers_total": 46
+   },
+   "L2_quality_cheap_r5": {
+    "rule": "quality in cheap half (+ round-5 features)",
+    "deals": 429,
+    "markup": 1.1264639685796494,
+    "all_markup": 0.7479598739508566,
+    "markup_excl_top": 1.1264639685796494,
+    "all_excl_top": 0.7300192722334302,
+    "vs_all_pct": 50.60486635860117,
+    "vs_all_ci_pct": [
+     18.309623574608015,
+     88.33472541913218
+    ],
+    "growth20_rate": 0.013986013986013986,
+    "growth20_all": 0.030387510454418735,
+    "outliers": 11,
+    "outliers_total": 46
+   },
+   "L3_tilted": {
+    "rule": "L2 with double weight on top-quarter quality",
+    "deals": 429,
+    "markup": 1.1268677165117968,
+    "all_markup": 0.7479598739508566,
+    "markup_excl_top": 1.1268677165117968,
+    "all_excl_top": 0.7300192722334302,
+    "vs_all_pct": 50.65884625059922,
+    "vs_all_ci_pct": [
+     18.02880622190748,
+     86.29449821345287
+    ],
+    "growth20_rate": 0.013986013986013986,
+    "growth20_all": 0.030387510454418735,
+    "outliers": 11,
+    "outliers_total": 46
+   },
+   "L4_r2_momentum": {
+    "rule": "second raise >= 2x the first, within 18 months",
+    "deals": 328,
+    "markup": 1.4223087622348412,
+    "all_markup": 1.2428221350438426,
+    "markup_excl_top": 0.7334880958604318,
+    "all_excl_top": 0.9669055566697633,
+    "vs_all_pct": 14.441859549328573,
+    "vs_all_ci_pct": [
+     -38.91404781451715,
+     64.04490708090988
+    ],
+    "growth20_rate": 0.0,
+    "growth20_all": 0.0,
+    "outliers": 2,
+    "outliers_total": 9
+   },
+   "L5_r2_contrarian": {
+    "rule": "second raise <= 1x the first, within 18 months",
+    "deals": 335,
+    "markup": 0.9863123378099062,
+    "all_markup": 1.2428221350438426,
+    "markup_excl_top": 0.9863123378099062,
+    "all_excl_top": 0.9669055566697633,
+    "vs_all_pct": -20.639300669108827,
+    "vs_all_ci_pct": [
+     -50.13245988147037,
+     18.986781127318263
+    ],
+    "growth20_rate": 0.0,
+    "growth20_all": 0.0,
+    "outliers": 4,
+    "outliers_total": 9
+   },
+   "r2_all": {
+    "rule": "every second raise within 18 months",
+    "deals": 818,
+    "markup": 1.2428221350438426,
+    "all_markup": 1.2428221350438426,
+    "markup_excl_top": 0.9669055566697633,
+    "all_excl_top": 0.9669055566697633,
+    "vs_all_pct": 0.0,
+    "vs_all_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "growth20_rate": 0.0,
+    "growth20_all": 0.0,
+    "outliers": 9,
+    "outliers_total": 9
+   },
+   "L7_r2_contrarian_quality": {
+    "rule": "flat second raise, first-raise quality top half",
+    "deals": 174,
+    "markup": 1.4695480409245805,
+    "all_markup": 1.2428221350438426,
+    "markup_excl_top": 1.4695480409245805,
+    "all_excl_top": 0.9669055566697633,
+    "vs_all_pct": 18.242828115765718,
+    "vs_all_ci_pct": [
+     -28.222405234996195,
+     82.76185396873544
+    ],
+    "growth20_rate": 0.0,
+    "growth20_all": 0.0,
+    "outliers": 4,
+    "outliers_total": 9
+   },
+   "L6_two_sleeves": {
+    "rule": "half L1 + half L5",
+    "deals": 762,
+    "markup": 1.0629990709712747,
+    "all_markup": 0.9953910044973496,
+    "vs_all_pct": 6.792111458558492,
+    "vs_all_ci_pct": [
+     -15.123236855814614,
+     53.20917876631587
+    ],
+    "note": "CI is the average of the two sleeves' CIs (approximate)"
+   },
+   "auc_growth20_q2": 0.7431456441801944
+  }
+ }
+}

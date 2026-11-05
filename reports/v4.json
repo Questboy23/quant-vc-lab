@@ -1,0 +1,2414 @@
+{
+ "generated": "2026-10-03T23:44:39.452683+00:00",
+ "n": {
+  "train": 7063,
+  "test": 4787,
+  "holdout": 6964
+ },
+ "base_rates": {
+  "next_raise": {
+   "holdout": 0.471,
+   "test": 0.4732,
+   "train": 0.5047
+  },
+  "growth20": {
+   "holdout": 0.0989,
+   "test": 0.0821,
+   "train": 0.0622
+  },
+  "big75": {
+   "holdout": 0.0204,
+   "test": 0.0144,
+   "train": 0.0064
+  },
+  "ipo": {
+   "holdout": 0.0067,
+   "test": 0.0096,
+   "train": 0.012
+  },
+  "unicorn": {
+   "holdout": 0.0057,
+   "test": 0.0117,
+   "train": 0.005
+  },
+  "acquired_any": {
+   "holdout": 0.0258,
+   "test": 0.0324,
+   "train": 0.0058
+  },
+  "exit": {
+   "holdout": 0.0379,
+   "test": 0.0526,
+   "train": 0.0228
+  },
+  "outlier": {
+   "holdout": 0.0438,
+   "test": 0.0476,
+   "train": 0.0413
+  }
+ },
+ "tail": {
+  "train": {
+   "share_value_top1pct": 0.5112481431394743,
+   "share_zero": 0.4927084808155175,
+   "share_below_1x": 0.6116381141158148,
+   "mean": 5.923087872623089
+  },
+  "test": {
+   "share_value_top1pct": 0.6593449529832298,
+   "share_zero": 0.5220388552329225,
+   "share_below_1x": 0.6296218926258617,
+   "mean": 9.44742236884898
+  },
+  "holdout": {
+   "share_value_top1pct": 0.5174845311694773,
+   "share_zero": 0.5267087880528432,
+   "share_below_1x": 0.623779437105112,
+   "mean": 5.879028307293354
+  }
+ },
+ "registry": [
+  {
+   "id": "F1",
+   "feature": "vc_director",
+   "primary": "outlier",
+   "direction": "+",
+   "name": "VC partner on the board at the first raise",
+   "intuition": "A director who also appears on Pooled Investment Fund filings is a VC. Smart money is visible in public filings.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.14454685469949555,
+    "p_raw": 0.48314855159204617,
+    "p_holm": 1.0,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": 0.054824037658555404,
+      "p": 0.6960155158791002,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.14454685469949555,
+      "p": 0.48314855159204617,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.28712743823226855,
+      "p": 0.0893970295004418,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.9788543390887706,
+      "p": 0.002490704149194193,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 16.76870009100403,
+      "mult_lo": 8.331782311524924,
+      "mult_hi_excl_top": 16.76870009100403,
+      "mult_lo_excl_top": 5.92589061451349,
+      "outlier_rate_hi": 0.04739336492890995,
+      "outlier_rate_lo": 0.04766490129995185,
+      "exit_rate_hi": 0.08214849921011058,
+      "exit_rate_lo": 0.04814636494944632,
+      "n_hi": 633,
+      "n_lo": 4154
+     }
+    }
+   }
+  },
+  {
+   "id": "F2",
+   "feature": "board_track",
+   "primary": "outlier",
+   "direction": "+",
+   "name": "Board track record (point-in-time)",
+   "intuition": "Directors whose earlier companies scaled (>= $20M later raise) before this company's first raise pick or build winners.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.28606771810787657,
+    "p_raw": 0.16575076273091705,
+    "p_holm": 1.0,
+    "n": 616,
+    "events": 32,
+    "side": {
+     "growth20": {
+      "coef": 0.23072532310245927,
+      "p": 0.038805641144263804,
+      "n": 616,
+      "events": 96
+     },
+     "outlier": {
+      "coef": 0.28606771810787657,
+      "p": 0.16575076273091705,
+      "n": 616,
+      "events": 32
+     },
+     "exit": {
+      "coef": 0.20735881933700887,
+      "p": 0.14299980308036767,
+      "n": 616,
+      "events": 58
+     },
+     "ipo": {
+      "coef": 0.18225733998470012,
+      "p": 0.5290227378794086,
+      "n": 616,
+      "events": 13
+     },
+     "returns": {
+      "mult_hi": 11.390884697894949,
+      "mult_lo": 4.884812164520512,
+      "mult_hi_excl_top": 11.390884697894949,
+      "mult_lo_excl_top": 4.884812164520512,
+      "outlier_rate_hi": 0.05813953488372093,
+      "outlier_rate_lo": 0.04748603351955307,
+      "exit_rate_hi": 0.13178294573643412,
+      "exit_rate_lo": 0.0670391061452514,
+      "n_hi": 258,
+      "n_lo": 358
+     }
+    }
+   }
+  },
+  {
+   "id": "F3",
+   "feature": "board_pro",
+   "primary": "growth20",
+   "direction": "+",
+   "name": "Professional board member",
+   "intuition": "A director already on 3+ other startups' filings.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.28349284924903334,
+    "p_raw": 0.024234517183685217,
+    "p_holm": 0.38775227493896347,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": 0.28349284924903334,
+      "p": 0.024234517183685217,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.4428332296361921,
+      "p": 0.011994920932896218,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.43398196619501095,
+      "p": 0.003965468404210295,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.37298265309077494,
+      "p": 0.25204233009667865,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 7.007602820833741,
+      "mult_lo": 9.949521253163454,
+      "mult_hi_excl_top": 7.007602820833741,
+      "mult_lo_excl_top": 7.432501732189192,
+      "outlier_rate_hi": 0.0587515299877601,
+      "outlier_rate_lo": 0.04534005037783375,
+      "exit_rate_hi": 0.09302325581395349,
+      "exit_rate_lo": 0.04433249370277078,
+      "n_hi": 817,
+      "n_lo": 3970
+     }
+    }
+   }
+  },
+  {
+   "id": "F4",
+   "feature": "serial_exec",
+   "primary": "growth20",
+   "direction": "+",
+   "name": "Serial founder/executive",
+   "intuition": "Officer appeared on an earlier startup's filing.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.12044821863653743,
+    "p_raw": 0.3086773539738139,
+    "p_holm": 1.0,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": 0.12044821863653743,
+      "p": 0.3086773539738139,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.09871610117303901,
+      "p": 0.5155699661694051,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": -0.03831445719838737,
+      "p": 0.7922449335052811,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.6605217213292701,
+      "p": 0.034994954884070534,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 12.56742267881154,
+      "mult_lo": 8.239563657139337,
+      "mult_hi_excl_top": 12.56742267881154,
+      "mult_lo_excl_top": 5.343401211822567,
+      "outlier_rate_hi": 0.050149700598802395,
+      "outlier_rate_lo": 0.04665314401622718,
+      "exit_rate_hi": 0.058383233532934134,
+      "exit_rate_lo": 0.05042016806722689,
+      "n_hi": 1336,
+      "n_lo": 3451
+     }
+    }
+   }
+  },
+  {
+   "id": "F5",
+   "feature": "exec_prior_scaleup",
+   "primary": "outlier",
+   "direction": "+",
+   "name": "Executive whose earlier startup scaled",
+   "intuition": "Proven builders.",
+   "result": {
+    "verdict": "passes",
+    "effect": 0.6717482582160422,
+    "p_raw": 0.0014638779471559886,
+    "p_holm": 0.029277558943119772,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": 0.5951902861730006,
+      "p": 0.0005252634230667288,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.6717482582160422,
+      "p": 0.0014638779471559886,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.09449311524160663,
+      "p": 0.6747243575999101,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.21434776727574179,
+      "p": 0.6215148529428597,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 12.700117669507382,
+      "mult_lo": 9.185297713694343,
+      "mult_hi_excl_top": 12.700117669507382,
+      "mult_lo_excl_top": 6.929525597576414,
+      "outlier_rate_hi": 0.08123249299719888,
+      "outlier_rate_lo": 0.04492099322799097,
+      "exit_rate_hi": 0.07282913165266107,
+      "exit_rate_lo": 0.051015801354401806,
+      "n_hi": 357,
+      "n_lo": 4430
+     }
+    }
+   }
+  },
+  {
+   "id": "F6",
+   "feature": "broker",
+   "primary": "growth20",
+   "direction": "-",
+   "name": "Brokered round",
+   "intuition": "Paying a broker/finder means VCs passed.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.7690622534374377,
+    "p_raw": 0.02795786770381759,
+    "p_holm": 0.41936801555726383,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": -0.7690622534374377,
+      "p": 0.02795786770381759,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.4025026606530759,
+      "p": 0.215747928062063,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": -0.1335277396109776,
+      "p": 0.7107031655625622,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 1.535606865269231,
+      "p": 0.0007009827158886721,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 6.9480657842105575,
+      "mult_lo": 9.538327739322948,
+      "mult_hi_excl_top": 6.9480657842105575,
+      "mult_lo_excl_top": 7.374953622332763,
+      "outlier_rate_hi": 0.06547619047619048,
+      "outlier_rate_lo": 0.04697986577181208,
+      "exit_rate_hi": 0.05357142857142857,
+      "exit_rate_lo": 0.05260878978133795,
+      "n_hi": 168,
+      "n_lo": 4619
+     }
+    }
+   }
+  },
+  {
+   "id": "F7",
+   "feature": "rule506c",
+   "primary": "growth20",
+   "direction": "-",
+   "name": "Public solicitation (506c)",
+   "intuition": "Advertising a raise to the public = no institutional lead.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -1.0094068162722185,
+    "p_raw": 0.005210995217678019,
+    "p_holm": 0.09379791391820434,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": -1.0094068162722185,
+      "p": 0.005210995217678019,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": -0.37251119514329356,
+      "p": 0.3037982533754696,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": -0.9842056002407772,
+      "p": 0.032197093359325794,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": -0.7741224603842276,
+      "p": 0.4546717045901246,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 2.8697652209368782,
+      "mult_lo": 9.796127906166802,
+      "mult_hi_excl_top": 2.8697652209368782,
+      "mult_lo_excl_top": 7.598063247840327,
+      "outlier_rate_hi": 0.03319502074688797,
+      "outlier_rate_lo": 0.04839419269687637,
+      "exit_rate_hi": 0.02074688796680498,
+      "exit_rate_lo": 0.054333479982402115,
+      "n_hi": 241,
+      "n_lo": 4546
+     }
+    }
+   }
+  },
+  {
+   "id": "F8",
+   "feature": "nonaccredited",
+   "primary": "growth20",
+   "direction": "-",
+   "name": "Non-accredited investors",
+   "intuition": "Friends and family money.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.2026474297766,
+    "p_raw": 0.6349503608663238,
+    "p_holm": 1.0,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": 0.2026474297766,
+      "p": 0.6349503608663238,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": -0.4963284241159536,
+      "p": 0.29026646870989037,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": -0.5557146730226551,
+      "p": 0.35076036001641786,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.4774402077013406,
+      "p": 0.6466484377802203,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 5.252590020323406,
+      "mult_lo": 9.576591409727353,
+      "mult_hi_excl_top": 5.252590020323406,
+      "mult_lo_excl_top": 7.424874113024731,
+      "outlier_rate_hi": 0.03496503496503497,
+      "outlier_rate_lo": 0.04801894918173988,
+      "exit_rate_hi": 0.02097902097902098,
+      "exit_rate_lo": 0.053617571059431525,
+      "n_hi": 143,
+      "n_lo": 4644
+     }
+    }
+   }
+  },
+  {
+   "id": "F9",
+   "feature": "de_out_of_state",
+   "primary": "growth20",
+   "direction": "+",
+   "name": "Delaware C-corp outside Delaware",
+   "intuition": "VC-ready lawyers from day one.",
+   "result": {
+    "verdict": "passes",
+    "effect": 0.908727849079242,
+    "p_raw": 3.376774296299701e-05,
+    "p_holm": 0.0007766580881489312,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": 0.908727849079242,
+      "p": 3.376774296299701e-05,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.5660158725474986,
+      "p": 0.0037985011780841357,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.7082724957880548,
+      "p": 0.0017187650776065656,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": -0.4216065784980512,
+      "p": 0.23894198266025535,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 8.669415113036834,
+      "mult_lo": 12.573315253050195,
+      "mult_hi_excl_top": 6.062074146208295,
+      "mult_lo_excl_top": 12.573315253050195,
+      "outlier_rate_hi": 0.050873989042525436,
+      "outlier_rate_lo": 0.03459119496855346,
+      "exit_rate_hi": 0.060005217845030004,
+      "exit_rate_lo": 0.023060796645702306,
+      "n_hi": 3833,
+      "n_lo": 954
+     }
+    }
+   }
+  },
+  {
+   "id": "F10",
+   "feature": "bay_area",
+   "primary": "outlier",
+   "direction": "+",
+   "name": "Bay Area address",
+   "intuition": "Density of talent, capital, acquirers.",
+   "result": {
+    "verdict": "passes",
+    "effect": 0.4676422519297984,
+    "p_raw": 0.002341871739840206,
+    "p_holm": 0.044495563056963915,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": 0.2907764349442223,
+      "p": 0.016855568005270667,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.4676422519297984,
+      "p": 0.002341871739840206,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.372277880556948,
+      "p": 0.0112828432433696,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": -0.4748518624988285,
+      "p": 0.26115917030689306,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 5.342260939377721,
+      "mult_lo": 10.479883883921229,
+      "mult_hi_excl_top": 5.342260939377721,
+      "mult_lo_excl_top": 7.867561677823928,
+      "outlier_rate_hi": 0.059251559251559255,
+      "outlier_rate_lo": 0.04470588235294118,
+      "exit_rate_hi": 0.07796257796257797,
+      "exit_rate_lo": 0.04627450980392157,
+      "n_hi": 962,
+      "n_lo": 3825
+     }
+    }
+   }
+  },
+  {
+   "id": "F11",
+   "feature": "hub",
+   "primary": "outlier",
+   "direction": "+",
+   "name": "Bay Area / NYC / Boston",
+   "intuition": "Any top hub.",
+   "result": {
+    "verdict": "passes",
+    "effect": 0.5251068903106675,
+    "p_raw": 0.00012784840590743246,
+    "p_holm": 0.0026848165240560815,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": 0.6190159350368467,
+      "p": 3.6679415583042474e-08,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.5251068903106675,
+      "p": 0.00012784840590743246,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.5793101866898318,
+      "p": 1.446202053690088e-05,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.14457115657227748,
+      "p": 0.6471096412950537,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 6.956118049015939,
+      "mult_lo": 10.80069373536048,
+      "mult_hi_excl_top": 6.956118049015939,
+      "mult_lo_excl_top": 7.579410502124544,
+      "outlier_rate_hi": 0.05875370919881306,
+      "outlier_rate_lo": 0.041586073500967116,
+      "exit_rate_hi": 0.07952522255192879,
+      "exit_rate_lo": 0.038039974210186976,
+      "n_hi": 1685,
+      "n_lo": 3102
+     }
+    }
+   }
+  },
+  {
+   "id": "F12",
+   "feature": "size_vs_peers",
+   "primary": "outlier",
+   "direction": "+",
+   "name": "First raise big for its industry-year",
+   "intuition": "Investors fought to get in.",
+   "no_size_control": true,
+   "result": {
+    "verdict": "rejected (opposite sign)",
+    "effect": -0.2784953048587578,
+    "p_raw": 8.495232063433893e-05,
+    "p_holm": 0.0018689510539554564,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": 1.0561293241238254,
+      "p": 1.0698505984329958e-55,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": -0.2784953048587578,
+      "p": 8.495232063433893e-05,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.48580240292646465,
+      "p": 1.4678373736919603e-12,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.6513916794620978,
+      "p": 0.00017065513344389019,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 4.04130976811489,
+      "mult_lo": 14.783966895434977,
+      "mult_hi_excl_top": 4.04130976811489,
+      "mult_lo_excl_top": 10.637282496305174,
+      "outlier_rate_hi": 0.03574432296047098,
+      "outlier_rate_lo": 0.0593607305936073,
+      "exit_rate_hi": 0.06980656013456686,
+      "exit_rate_lo": 0.0356994603569946,
+      "n_hi": 2378,
+      "n_lo": 2409
+     }
+    }
+   }
+  },
+  {
+   "id": "F13",
+   "feature": "heat",
+   "primary": "outlier",
+   "direction": "-",
+   "name": "Hot market at first raise",
+   "intuition": "Counter-cyclical: companies born in hot quarters are worse (more noise, worse prices).",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.2600579367981401,
+    "p_raw": 0.0733896472169454,
+    "p_holm": 0.8072861193863994,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": 0.21602360447891283,
+      "p": 0.06769182212524469,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.2600579367981401,
+      "p": 0.0733896472169454,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.01398012229219842,
+      "p": 0.9165942823541013,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": -0.23803782861554804,
+      "p": 0.42261404760751664,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 10.448743511968006,
+      "mult_lo": 8.642668036417604,
+      "mult_hi_excl_top": 10.448743511968006,
+      "mult_lo_excl_top": 4.876607979137698,
+      "outlier_rate_hi": 0.05110173464603844,
+      "outlier_rate_lo": 0.04483798040693293,
+      "exit_rate_hi": 0.04781997187060478,
+      "exit_rate_lo": 0.05651846269781462,
+      "n_hi": 2133,
+      "n_lo": 2654
+     }
+    }
+   }
+  },
+  {
+   "id": "F14",
+   "feature": "convertible",
+   "primary": "outlier",
+   "direction": "two",
+   "name": "SAFE / convertible first raise",
+   "intuition": "Modern seed instrument vs priced round.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.33154553849930735,
+    "p_raw": 0.06229645407790223,
+    "p_holm": 0.7475574489348267,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": 0.41865169838368277,
+      "p": 0.04843856050766585,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.33154553849930735,
+      "p": 0.06229645407790223,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.4354298100527203,
+      "p": 0.03535362674221379,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.5400045050183369,
+      "p": 0.27857141236693694,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 8.606550800256764,
+      "mult_lo": 9.578364464875532,
+      "mult_hi_excl_top": 8.606550800256764,
+      "mult_lo_excl_top": 7.165801886866568,
+      "outlier_rate_hi": 0.07131782945736434,
+      "outlier_rate_lo": 0.04394012554321584,
+      "exit_rate_hi": 0.04961240310077519,
+      "exit_rate_lo": 0.05311443746982134,
+      "n_hi": 645,
+      "n_lo": 4142
+     }
+    }
+   }
+  },
+  {
+   "id": "F15",
+   "feature": "rev_none",
+   "primary": "outlier",
+   "direction": "two",
+   "name": "Pre-revenue at first raise",
+   "intuition": "Venture-style bets vs small businesses with revenue.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.1708862301027197,
+    "p_raw": 0.45512682568827667,
+    "p_holm": 1.0,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": -0.48299705494779505,
+      "p": 0.06158348819696937,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": -0.1708862301027197,
+      "p": 0.45512682568827667,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": -0.22803660130551098,
+      "p": 0.3787039550164145,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.12421134440391207,
+      "p": 0.7913618139069449,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 21.641911818756036,
+      "mult_lo": 8.138552809571424,
+      "mult_hi_excl_top": 21.641911818756036,
+      "mult_lo_excl_top": 5.826692224844346,
+      "outlier_rate_hi": 0.04741379310344827,
+      "outlier_rate_lo": 0.04765209345362017,
+      "exit_rate_hi": 0.036637931034482756,
+      "exit_rate_lo": 0.05436039787184825,
+      "n_hi": 464,
+      "n_lo": 4323
+     }
+    }
+   }
+  },
+  {
+   "id": "F16",
+   "feature": "log_investors",
+   "primary": "growth20",
+   "direction": "two",
+   "name": "Number of investors in first raise",
+   "intuition": "Broad support, or a crowd of small angels.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.13201895999455177,
+    "p_raw": 0.007085585134646745,
+    "p_holm": 0.12045494728899467,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": 0.13201895999455177,
+      "p": 0.007085585134646745,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.1789506732380084,
+      "p": 0.021828030993508208,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.16129210527803586,
+      "p": 0.00699131940936125,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.02574519021455866,
+      "p": 0.8581608764969324,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 9.0902026887885,
+      "mult_lo": 9.750948673506244,
+      "mult_hi_excl_top": 9.0902026887885,
+      "mult_lo_excl_top": 5.889236632019388,
+      "outlier_rate_hi": 0.04547521600727603,
+      "outlier_rate_lo": 0.04945904173106646,
+      "exit_rate_hi": 0.06821282401091405,
+      "exit_rate_lo": 0.03941267387944358,
+      "n_hi": 2199,
+      "n_lo": 2588
+     }
+    }
+   }
+  },
+  {
+   "id": "F17",
+   "feature": "min_invest",
+   "primary": "growth20",
+   "direction": "+",
+   "name": "High minimum check",
+   "intuition": "Institutional-size tickets only.",
+   "result": {
+    "verdict": "rejected (opposite sign)",
+    "effect": -0.4430521956830783,
+    "p_raw": 1.1288063194518364e-08,
+    "p_holm": 2.7091351666844074e-07,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": -0.4430521956830783,
+      "p": 1.1288063194518364e-08,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": -0.27059324124793066,
+      "p": 0.000334199737748149,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": -0.245568470202413,
+      "p": 0.0022122078016635132,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.10595641485428531,
+      "p": 0.47889943033775295,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 9.918465981568046,
+      "mult_lo": 9.201946828696688,
+      "mult_hi_excl_top": 9.918465981568046,
+      "mult_lo_excl_top": 6.026232253626343,
+      "outlier_rate_hi": 0.03841463414634146,
+      "outlier_rate_lo": 0.052430886558627265,
+      "exit_rate_hi": 0.03231707317073171,
+      "exit_rate_lo": 0.06323482681919289,
+      "n_hi": 1640,
+      "n_lo": 3147
+     }
+    }
+   }
+  },
+  {
+   "id": "F18",
+   "feature": "sold_share",
+   "primary": "growth20",
+   "direction": "+",
+   "name": "Round fully sold",
+   "intuition": "Oversubscription vs struggling to fill.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.13655254087988342,
+    "p_raw": 0.03020222473455638,
+    "p_holm": 0.4228311462837893,
+    "n": 4602,
+    "events": 387,
+    "side": {
+     "growth20": {
+      "coef": 0.13655254087988342,
+      "p": 0.03020222473455638,
+      "n": 4602,
+      "events": 387
+     },
+     "outlier": {
+      "coef": 0.030513525326969528,
+      "p": 0.6553844214671205,
+      "n": 4602,
+      "events": 219
+     },
+     "exit": {
+      "coef": 0.2003888196841274,
+      "p": 0.007237250360088666,
+      "n": 4602,
+      "events": 245
+     },
+     "ipo": {
+      "coef": -0.22505676672300587,
+      "p": 0.1694298672823128,
+      "n": 4602,
+      "events": 43
+     },
+     "returns": {
+      "mult_hi": 8.341740676326852,
+      "mult_lo": 10.849009806171283,
+      "mult_hi_excl_top": 8.341740676326852,
+      "mult_lo_excl_top": 6.505900680000055,
+      "outlier_rate_hi": 0.042590178183398525,
+      "outlier_rate_lo": 0.05258583224684919,
+      "exit_rate_hi": 0.06388526727509779,
+      "exit_rate_lo": 0.042590178183398525,
+      "n_hi": 2301,
+      "n_lo": 2301
+     }
+    }
+   }
+  },
+  {
+   "id": "F19",
+   "feature": "age_years",
+   "primary": "outlier",
+   "direction": "two",
+   "name": "Company age at first raise",
+   "intuition": "Bootstrapped first vs raised at birth.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.15562652464173096,
+    "p_raw": 0.03784030585609512,
+    "p_holm": 0.4919239761292366,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": -0.14083071940488862,
+      "p": 0.011497893600997127,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": -0.15562652464173096,
+      "p": 0.03784030585609512,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": -0.29173466897002626,
+      "p": 0.00014824492626304523,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.04021830354927723,
+      "p": 0.8073828054653602,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 9.531096458382928,
+      "mult_lo": 9.394016421901407,
+      "mult_hi_excl_top": 4.17140284060309,
+      "mult_lo_excl_top": 9.394016421901407,
+      "outlier_rate_hi": 0.03753351206434316,
+      "outlier_rate_lo": 0.054072553045859,
+      "exit_rate_hi": 0.04075067024128686,
+      "exit_rate_lo": 0.06023271731690623,
+      "n_hi": 1865,
+      "n_lo": 2922
+     }
+    }
+   }
+  },
+  {
+   "id": "F20",
+   "feature": "has_ai",
+   "primary": "outlier",
+   "direction": "two",
+   "name": "AI in the name",
+   "intuition": "Hype or real tailwind.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.23421915208230085,
+    "p_raw": 0.753187751586106,
+    "p_holm": 1.0,
+    "n": 4787,
+    "events": 228,
+    "side": {
+     "growth20": {
+      "coef": 0.4758210590210014,
+      "p": 0.41282774070231076,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.23421915208230085,
+      "p": 0.753187751586106,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.036790872081737175,
+      "p": 0.9598753685177863,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": -18.291804841479784,
+      "p": 0.0,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 4.655190433583403,
+      "mult_lo": 9.482718689921013,
+      "mult_hi_excl_top": 4.655190433583403,
+      "mult_lo_excl_top": 7.379894593665472,
+      "outlier_rate_hi": 0.05714285714285714,
+      "outlier_rate_lo": 0.04755892255892256,
+      "exit_rate_hi": 0.05714285714285714,
+      "exit_rate_lo": 0.05260942760942761,
+      "n_hi": 35,
+      "n_lo": 4752
+     }
+    }
+   }
+  },
+  {
+   "id": "F21",
+   "feature": "n_dirs",
+   "primary": "growth20",
+   "direction": "+",
+   "name": "Board size at first raise",
+   "intuition": "A formed board = governance = VC.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.014908026274059622,
+    "p_raw": 0.8255710391781794,
+    "p_holm": 1.0,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": 0.014908026274059622,
+      "p": 0.8255710391781794,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": 0.1851878965715181,
+      "p": 0.04309016816174868,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": 0.0765791067833427,
+      "p": 0.3856030915407904,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.7022413751049221,
+      "p": 0.0001603408506177819,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 11.440255027541143,
+      "mult_lo": 8.867523113528367,
+      "mult_hi_excl_top": 11.440255027541143,
+      "mult_lo_excl_top": 6.172316079029722,
+      "outlier_rate_hi": 0.04633920296570899,
+      "outlier_rate_lo": 0.04800431499460626,
+      "exit_rate_hi": 0.06580166821130677,
+      "exit_rate_lo": 0.048813376483279394,
+      "n_hi": 1079,
+      "n_lo": 3708
+     }
+    }
+   }
+  },
+  {
+   "id": "F22",
+   "feature": "more_than_year",
+   "primary": "growth20",
+   "direction": "-",
+   "name": "Offering open more than a year",
+   "intuition": "Can't close the round.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.027820214067111368,
+    "p_raw": 0.911299319871203,
+    "p_holm": 1.0,
+    "n": 4787,
+    "events": 393,
+    "side": {
+     "growth20": {
+      "coef": -0.027820214067111368,
+      "p": 0.911299319871203,
+      "n": 4787,
+      "events": 393
+     },
+     "outlier": {
+      "coef": -0.7774032645573149,
+      "p": 0.0877278181713472,
+      "n": 4787,
+      "events": 228
+     },
+     "exit": {
+      "coef": -0.38723398837534406,
+      "p": 0.2656657083564252,
+      "n": 4787,
+      "events": 252
+     },
+     "ipo": {
+      "coef": 0.5709190748199638,
+      "p": 0.21255045524739036,
+      "n": 4787,
+      "events": 46
+     },
+     "returns": {
+      "mult_hi": 7.138021866950726,
+      "mult_lo": 9.550219161863872,
+      "mult_hi_excl_top": 7.138021866950726,
+      "mult_lo_excl_top": 7.369850375124863,
+      "outlier_rate_hi": 0.024509803921568627,
+      "outlier_rate_lo": 0.04865808422430722,
+      "exit_rate_hi": 0.04411764705882353,
+      "exit_rate_lo": 0.05302203796639755,
+      "n_hi": 204,
+      "n_lo": 4583
+     }
+    }
+   }
+  },
+  {
+   "id": "F23",
+   "feature": "tech",
+   "primary": "outlier",
+   "direction": "two",
+   "name": "Tech (vs everything else)",
+   "intuition": "Software scales.",
+   "result": {
+    "verdict": "untestable",
+    "effect": null,
+    "p_raw": null,
+    "p_holm": 1.0,
+    "n": null,
+    "events": null,
+    "side": {
+     "growth20": null,
+     "outlier": null,
+     "exit": null,
+     "ipo": null,
+     "returns": {
+      "mult_hi": 9.128055946387489,
+      "mult_lo": 9.851580349758603,
+      "mult_hi_excl_top": 5.390356004728823,
+      "mult_lo_excl_top": 9.851580349758603,
+      "outlier_rate_hi": 0.047494390426327596,
+      "outlier_rate_lo": 0.04779933743492665,
+      "exit_rate_hi": 0.05235602094240838,
+      "exit_rate_lo": 0.053005205868433505,
+      "n_hi": 2674,
+      "n_lo": 2113
+     }
+    }
+   }
+  },
+  {
+   "id": "F24",
+   "feature": "years_to_next",
+   "primary": "outlier",
+   "direction": "-",
+   "name": "Speed to next raise (round-2 decision)",
+   "intuition": "Fast follow-on = traction.",
+   "round2": true,
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.013911136839599087,
+    "p_raw": 0.8580705607231573,
+    "p_holm": 1.0,
+    "n": 2265,
+    "events": 204,
+    "side": {
+     "growth20": {
+      "coef": -0.002777378228420895,
+      "p": 0.9637123637265373,
+      "n": 2265,
+      "events": 393
+     },
+     "outlier": {
+      "coef": -0.013911136839599087,
+      "p": 0.8580705607231573,
+      "n": 2265,
+      "events": 204
+     },
+     "exit": {
+      "coef": -0.15163702159401526,
+      "p": 0.08395082012403945,
+      "n": 2265,
+      "events": 163
+     },
+     "ipo": {
+      "coef": -0.5104918977489746,
+      "p": 0.04864402309895625,
+      "n": 2265,
+      "events": 39
+     },
+     "returns": {
+      "mult_hi": 10.310938289397518,
+      "mult_lo": 17.154587127360642,
+      "mult_hi_excl_top": 10.310938289397518,
+      "mult_lo_excl_top": 17.154587127360642,
+      "outlier_rate_hi": 0.08303886925795052,
+      "outlier_rate_lo": 0.0970873786407767,
+      "exit_rate_hi": 0.06890459363957598,
+      "exit_rate_lo": 0.07502206531332745,
+      "n_hi": 1132,
+      "n_lo": 1133
+     }
+    }
+   }
+  }
+ ],
+ "model": {
+  "ridge_outlier": {
+   "C": 0.01,
+   "train_cv_auc": 0.6869,
+   "top_coefs": {
+    "size_vs_peers": -0.306,
+    "log_amount": -0.284,
+    "convertible": 0.158,
+    "board_pro": 0.123,
+    "ind_Biotechnology": 0.116,
+    "bio": 0.107,
+    "hub": 0.099,
+    "bay_area": 0.093,
+    "ind_Manufacturing": -0.085,
+    "rev_disclosed": -0.08,
+    "age_years": -0.077,
+    "broker": 0.074
+   }
+  },
+  "ridge_growth20": {
+   "C": 0.01,
+   "train_cv_auc": 0.8052,
+   "top_coefs": {
+    "log_amount": 0.464,
+    "size_vs_peers": 0.405,
+    "ind_Manufacturing": -0.155,
+    "board_pro": 0.152,
+    "sold_share": 0.149,
+    "de_out_of_state": 0.13,
+    "bio": 0.116,
+    "convertible": 0.11,
+    "heat_na": 0.107,
+    "more_than_year": -0.097,
+    "rev_disclosed": -0.091,
+    "ind_Biotechnology": 0.091
+   }
+  },
+  "ridge_exit": {
+   "C": 0.003,
+   "train_cv_auc": 0.7318,
+   "top_coefs": {
+    "log_amount": 0.146,
+    "size_vs_peers": 0.14,
+    "bio": 0.109,
+    "hub": 0.107,
+    "broker": 0.093,
+    "ind_Biotechnology": 0.093,
+    "boston": 0.078,
+    "bay_area": 0.075,
+    "min_invest": -0.07,
+    "rev_disclosed": -0.062,
+    "board_track": 0.061,
+    "name_len": -0.057
+   }
+  }
+ },
+ "test_rules": {
+  "own_all": {
+   "deals": 4787,
+   "markup": 9.447422368848981,
+   "markup_excl_top": 7.359968842390319,
+   "vs_all_pct": 0.0,
+   "vs_all_ci_pct": [
+    0.0,
+    0.0
+   ],
+   "outliers": 228,
+   "outliers_total": 228,
+   "unicorns": 56,
+   "unicorns_total": 56,
+   "ipos": 46,
+   "ipos_total": 46,
+   "exits": 252,
+   "exits_total": 252,
+   "outlier_rate": 0.04762899519532066,
+   "growth20_rate": 0.08209734698140798
+  },
+  "drop_bottom_third": {
+   "deals": 3192,
+   "markup": 8.396214837567742,
+   "markup_excl_top": 8.396214837567742,
+   "vs_all_pct": -11.126924257640791,
+   "vs_all_ci_pct": [
+    -48.62086488739281,
+    24.645026828783223
+   ],
+   "outliers": 173,
+   "outliers_total": 228,
+   "unicorns": 51,
+   "unicorns_total": 56,
+   "ipos": 41,
+   "ipos_total": 46,
+   "exits": 218,
+   "exits_total": 252,
+   "outlier_rate": 0.05419799498746867,
+   "growth20_rate": 0.112468671679198
+  },
+  "top_20pct": {
+   "deals": 959,
+   "markup": 8.166845638298454,
+   "markup_excl_top": 8.166845638298454,
+   "vs_all_pct": -13.554773784360242,
+   "vs_all_ci_pct": [
+    -51.70640750975017,
+    60.05256227671065
+   ],
+   "outliers": 57,
+   "outliers_total": 228,
+   "unicorns": 21,
+   "unicorns_total": 56,
+   "ipos": 27,
+   "ipos_total": 46,
+   "exits": 97,
+   "exits_total": 252,
+   "outlier_rate": 0.05943691345151199,
+   "growth20_rate": 0.18248175182481752
+  },
+  "top_10pct": {
+   "deals": 480,
+   "markup": 8.981544829737054,
+   "markup_excl_top": 8.981544829737054,
+   "vs_all_pct": -4.9312661266004865,
+   "vs_all_ci_pct": [
+    -48.79440285432113,
+    81.47793569725505
+   ],
+   "outliers": 33,
+   "outliers_total": 228,
+   "unicorns": 12,
+   "unicorns_total": 56,
+   "ipos": 23,
+   "ipos_total": 46,
+   "exits": 52,
+   "exits_total": 252,
+   "outlier_rate": 0.06875,
+   "growth20_rate": 0.23125
+  },
+  "price_adj_top20": {
+   "deals": 959,
+   "markup": 27.835156533666034,
+   "markup_excl_top": 17.42579865948406,
+   "vs_all_pct": 194.63228642605196,
+   "vs_all_ci_pct": [
+    46.59352619053543,
+    277.68502498882543
+   ],
+   "outliers": 76,
+   "outliers_total": 228,
+   "unicorns": 4,
+   "unicorns_total": 56,
+   "ipos": 4,
+   "ipos_total": 46,
+   "exits": 33,
+   "exits_total": 252,
+   "outlier_rate": 0.07924921793534932,
+   "growth20_rate": 0.020855057351407715
+  },
+  "quality_in_cheap_half": {
+   "deals": 729,
+   "markup": 21.14501026274003,
+   "markup_excl_top": 21.14501026274003,
+   "vs_all_pct": 123.81777205665693,
+   "vs_all_ci_pct": [
+    -11.746910097583052,
+    280.6436491308409
+   ],
+   "outliers": 67,
+   "outliers_total": 228,
+   "unicorns": 4,
+   "unicorns_total": 56,
+   "ipos": 6,
+   "ipos_total": 46,
+   "exits": 43,
+   "exits_total": 252,
+   "outlier_rate": 0.09190672153635117,
+   "growth20_rate": 0.04801097393689986
+  },
+  "auc_outlier": 0.5721750499301554,
+  "auc_exit": 0.6798319070369787,
+  "auc_growth20": 0.7305604681841189
+ },
+ "test_rules_by_floor": {
+  "3M": {
+   "own_all": {
+    "deals": 4787,
+    "markup": 5.8752514907453754,
+    "markup_excl_top": 5.180003249658332,
+    "vs_all_pct": 0.0,
+    "vs_all_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "outliers": 177,
+    "outliers_total": 177,
+    "unicorns": 56,
+    "unicorns_total": 56,
+    "ipos": 46,
+    "ipos_total": 46,
+    "exits": 252,
+    "exits_total": 252,
+    "outlier_rate": 0.03697514100689367,
+    "growth20_rate": 0.08209734698140798
+   },
+   "drop_bottom_third": {
+    "deals": 3192,
+    "markup": 5.777075418005181,
+    "markup_excl_top": 5.777075418005181,
+    "vs_all_pct": -1.6710105583538137,
+    "vs_all_ci_pct": [
+     -26.16557307516142,
+     21.587336716600714
+    ],
+    "outliers": 146,
+    "outliers_total": 177,
+    "unicorns": 51,
+    "unicorns_total": 56,
+    "ipos": 41,
+    "ipos_total": 46,
+    "exits": 218,
+    "exits_total": 252,
+    "outlier_rate": 0.045739348370927316,
+    "growth20_rate": 0.112468671679198
+   },
+   "top_20pct": {
+    "deals": 959,
+    "markup": 7.185019947693805,
+    "markup_excl_top": 7.185019947693805,
+    "vs_all_pct": 22.292976888079785,
+    "vs_all_ci_pct": [
+     -17.652429213354804,
+     74.12230845216851
+    ],
+    "outliers": 55,
+    "outliers_total": 177,
+    "unicorns": 21,
+    "unicorns_total": 56,
+    "ipos": 27,
+    "ipos_total": 46,
+    "exits": 97,
+    "exits_total": 252,
+    "outlier_rate": 0.05735140771637122,
+    "growth20_rate": 0.18248175182481752
+   },
+   "top_10pct": {
+    "deals": 480,
+    "markup": 8.421733407806839,
+    "markup_excl_top": 8.421733407806839,
+    "vs_all_pct": 43.34251769601099,
+    "vs_all_ci_pct": [
+     -8.274872104410601,
+     117.80921019894444
+    ],
+    "outliers": 33,
+    "outliers_total": 177,
+    "unicorns": 12,
+    "unicorns_total": 56,
+    "ipos": 23,
+    "ipos_total": 46,
+    "exits": 52,
+    "exits_total": 252,
+    "outlier_rate": 0.06875,
+    "growth20_rate": 0.23125
+   },
+   "price_adj_top20": {
+    "deals": 959,
+    "markup": 8.990303582419733,
+    "markup_excl_top": 8.990303582419733,
+    "vs_all_pct": 53.019893643381046,
+    "vs_all_ci_pct": [
+     -12.667877245562353,
+     127.3222423373865
+    ],
+    "outliers": 54,
+    "outliers_total": 177,
+    "unicorns": 3,
+    "unicorns_total": 56,
+    "ipos": 12,
+    "ipos_total": 46,
+    "exits": 54,
+    "exits_total": 252,
+    "outlier_rate": 0.056308654848800835,
+    "growth20_rate": 0.040667361835245046
+   },
+   "quality_in_cheap_half": {
+    "deals": 729,
+    "markup": 11.168365357961893,
+    "markup_excl_top": 11.168365357961893,
+    "vs_all_pct": 90.09169863714202,
+    "vs_all_ci_pct": [
+     4.511933308242111,
+     187.70098703375703
+    ],
+    "outliers": 49,
+    "outliers_total": 177,
+    "unicorns": 4,
+    "unicorns_total": 56,
+    "ipos": 6,
+    "ipos_total": 46,
+    "exits": 43,
+    "exits_total": 252,
+    "outlier_rate": 0.06721536351165981,
+    "growth20_rate": 0.04801097393689986
+   },
+   "auc_outlier": 0.6266504896013334,
+   "auc_exit": 0.6798319070369787,
+   "auc_growth20": 0.7305604681841189
+  },
+  "5M": {
+   "own_all": {
+    "deals": 4787,
+    "markup": 4.7260890247577585,
+    "markup_excl_top": 4.309191007420683,
+    "vs_all_pct": 0.0,
+    "vs_all_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "outliers": 155,
+    "outliers_total": 155,
+    "unicorns": 56,
+    "unicorns_total": 56,
+    "ipos": 46,
+    "ipos_total": 46,
+    "exits": 252,
+    "exits_total": 252,
+    "outlier_rate": 0.03237936076874869,
+    "growth20_rate": 0.08209734698140798
+   },
+   "drop_bottom_third": {
+    "deals": 3192,
+    "markup": 4.891880141567326,
+    "markup_excl_top": 4.891880141567326,
+    "vs_all_pct": 3.5079981765274937,
+    "vs_all_ci_pct": [
+     -17.618223508264595,
+     23.738207243266764
+    ],
+    "outliers": 127,
+    "outliers_total": 155,
+    "unicorns": 51,
+    "unicorns_total": 56,
+    "ipos": 41,
+    "ipos_total": 46,
+    "exits": 218,
+    "exits_total": 252,
+    "outlier_rate": 0.039786967418546364,
+    "growth20_rate": 0.112468671679198
+   },
+   "top_20pct": {
+    "deals": 959,
+    "markup": 6.529639170859506,
+    "markup_excl_top": 6.529639170859506,
+    "vs_all_pct": 38.16157792741093,
+    "vs_all_ci_pct": [
+     -0.7733363834686591,
+     86.98616223570205
+    ],
+    "outliers": 52,
+    "outliers_total": 155,
+    "unicorns": 21,
+    "unicorns_total": 56,
+    "ipos": 27,
+    "ipos_total": 46,
+    "exits": 97,
+    "exits_total": 252,
+    "outlier_rate": 0.054223149113660066,
+    "growth20_rate": 0.18248175182481752
+   },
+   "top_10pct": {
+    "deals": 480,
+    "markup": 8.01793767702299,
+    "markup_excl_top": 8.01793767702299,
+    "vs_all_pct": 69.65270089117628,
+    "vs_all_ci_pct": [
+     12.449545670895823,
+     147.58449256417424
+    ],
+    "outliers": 32,
+    "outliers_total": 155,
+    "unicorns": 12,
+    "unicorns_total": 56,
+    "ipos": 23,
+    "ipos_total": 46,
+    "exits": 52,
+    "exits_total": 252,
+    "outlier_rate": 0.06666666666666667,
+    "growth20_rate": 0.23125
+   },
+   "price_adj_top20": {
+    "deals": 959,
+    "markup": 8.649866020277948,
+    "markup_excl_top": 8.649866020277948,
+    "vs_all_pct": 83.023763940234,
+    "vs_all_ci_pct": [
+     23.45435102799691,
+     146.9018753725272
+    ],
+    "outliers": 55,
+    "outliers_total": 155,
+    "unicorns": 7,
+    "unicorns_total": 56,
+    "ipos": 19,
+    "ipos_total": 46,
+    "exits": 62,
+    "exits_total": 252,
+    "outlier_rate": 0.05735140771637122,
+    "growth20_rate": 0.0667361835245047
+   },
+   "quality_in_cheap_half": {
+    "deals": 729,
+    "markup": 8.026827259619893,
+    "markup_excl_top": 8.026827259619893,
+    "vs_all_pct": 69.84079685277021,
+    "vs_all_ci_pct": [
+     -0.012821176195598749,
+     153.2853218796668
+    ],
+    "outliers": 37,
+    "outliers_total": 155,
+    "unicorns": 4,
+    "unicorns_total": 56,
+    "ipos": 6,
+    "ipos_total": 46,
+    "exits": 43,
+    "exits_total": 252,
+    "outlier_rate": 0.05075445816186557,
+    "growth20_rate": 0.04801097393689986
+   },
+   "auc_outlier": 0.6381880606161903,
+   "auc_exit": 0.6798319070369787,
+   "auc_growth20": 0.7305604681841189
+  },
+  "8M": {
+   "own_all": {
+    "deals": 4787,
+    "markup": 3.6618897517934617,
+    "markup_excl_top": 3.401476439999018,
+    "vs_all_pct": 0.0,
+    "vs_all_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "outliers": 131,
+    "outliers_total": 131,
+    "unicorns": 56,
+    "unicorns_total": 56,
+    "ipos": 46,
+    "ipos_total": 46,
+    "exits": 252,
+    "exits_total": 252,
+    "outlier_rate": 0.027365782327135994,
+    "growth20_rate": 0.08209734698140798
+   },
+   "drop_bottom_third": {
+    "deals": 3192,
+    "markup": 4.01852455214479,
+    "markup_excl_top": 4.01852455214479,
+    "vs_all_pct": 9.739091685561018,
+    "vs_all_ci_pct": [
+     -8.965267399048393,
+     27.27975618757985
+    ],
+    "outliers": 112,
+    "outliers_total": 131,
+    "unicorns": 51,
+    "unicorns_total": 56,
+    "ipos": 41,
+    "ipos_total": 46,
+    "exits": 218,
+    "exits_total": 252,
+    "outlier_rate": 0.03508771929824561,
+    "growth20_rate": 0.112468671679198
+   },
+   "top_20pct": {
+    "deals": 959,
+    "markup": 5.560413624132797,
+    "markup_excl_top": 5.560413624132797,
+    "vs_all_pct": 51.84546780550961,
+    "vs_all_ci_pct": [
+     13.0704171339721,
+     97.41194532937078
+    ],
+    "outliers": 48,
+    "outliers_total": 131,
+    "unicorns": 21,
+    "unicorns_total": 56,
+    "ipos": 27,
+    "ipos_total": 46,
+    "exits": 97,
+    "exits_total": 252,
+    "outlier_rate": 0.05005213764337852,
+    "growth20_rate": 0.18248175182481752
+   },
+   "top_10pct": {
+    "deals": 480,
+    "markup": 7.092520716759181,
+    "markup_excl_top": 7.092520716759181,
+    "vs_all_pct": 93.68471465547319,
+    "vs_all_ci_pct": [
+     32.18123923553673,
+     170.16485358637712
+    ],
+    "outliers": 30,
+    "outliers_total": 131,
+    "unicorns": 12,
+    "unicorns_total": 56,
+    "ipos": 23,
+    "ipos_total": 46,
+    "exits": 52,
+    "exits_total": 252,
+    "outlier_rate": 0.0625,
+    "growth20_rate": 0.23125
+   },
+   "price_adj_top20": {
+    "deals": 959,
+    "markup": 6.59446392472952,
+    "markup_excl_top": 6.59446392472952,
+    "vs_all_pct": 80.08362817312533,
+    "vs_all_ci_pct": [
+     25.73086168910621,
+     136.70830774749084
+    ],
+    "outliers": 50,
+    "outliers_total": 131,
+    "unicorns": 8,
+    "unicorns_total": 56,
+    "ipos": 21,
+    "ipos_total": 46,
+    "exits": 67,
+    "exits_total": 252,
+    "outlier_rate": 0.05213764337851929,
+    "growth20_rate": 0.09176225234619395
+   },
+   "quality_in_cheap_half": {
+    "deals": 729,
+    "markup": 5.120532574476985,
+    "markup_excl_top": 5.120532574476985,
+    "vs_all_pct": 39.833062204265765,
+    "vs_all_ci_pct": [
+     -17.709416426698166,
+     110.01510510662752
+    ],
+    "outliers": 25,
+    "outliers_total": 131,
+    "unicorns": 4,
+    "unicorns_total": 56,
+    "ipos": 6,
+    "ipos_total": 46,
+    "exits": 43,
+    "exits_total": 252,
+    "outlier_rate": 0.03429355281207133,
+    "growth20_rate": 0.04801097393689986
+   },
+   "auc_outlier": 0.6612078972220036,
+   "auc_exit": 0.6798319070369787,
+   "auc_growth20": 0.7305604681841189
+  }
+ },
+ "holdout": {
+  "consumed_at": "2026-10-03T23:44:44.552201+00:00",
+  "primary": "price_adj_top20 @ $5M floor",
+  "result": {
+   "own_all": {
+    "deals": 6964,
+    "markup": 5.879028307293354,
+    "markup_excl_top": 5.260449469155542,
+    "vs_all_pct": 0.0,
+    "vs_all_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "outliers": 305,
+    "outliers_total": 305,
+    "unicorns": 40,
+    "unicorns_total": 40,
+    "ipos": 47,
+    "ipos_total": 47,
+    "exits": 264,
+    "exits_total": 264,
+    "outlier_rate": 0.04379666858127513,
+    "growth20_rate": 0.09893739230327397
+   },
+   "drop_bottom_third": {
+    "deals": 4644,
+    "markup": 5.3581511624470055,
+    "markup_excl_top": 5.3581511624470055,
+    "vs_all_pct": -8.85991898015125,
+    "vs_all_ci_pct": [
+     -29.474738379955667,
+     12.949625091363682
+    ],
+    "outliers": 206,
+    "outliers_total": 305,
+    "unicorns": 36,
+    "unicorns_total": 40,
+    "ipos": 36,
+    "ipos_total": 47,
+    "exits": 208,
+    "exits_total": 264,
+    "outlier_rate": 0.044358311800172266,
+    "growth20_rate": 0.13027562446167099
+   },
+   "top_20pct": {
+    "deals": 1395,
+    "markup": 4.103212799779231,
+    "markup_excl_top": 4.103212799779231,
+    "vs_all_pct": -30.205935652854354,
+    "vs_all_ci_pct": [
+     -47.98952123740492,
+     -5.860896380705438
+    ],
+    "outliers": 58,
+    "outliers_total": 305,
+    "unicorns": 15,
+    "unicorns_total": 40,
+    "ipos": 26,
+    "ipos_total": 47,
+    "exits": 91,
+    "exits_total": 264,
+    "outlier_rate": 0.04157706093189964,
+    "growth20_rate": 0.1913978494623656
+   },
+   "top_10pct": {
+    "deals": 699,
+    "markup": 4.336082924634205,
+    "markup_excl_top": 4.336082924634205,
+    "vs_all_pct": -26.244904804166623,
+    "vs_all_ci_pct": [
+     -46.243068218779705,
+     1.2344085869691268
+    ],
+    "outliers": 37,
+    "outliers_total": 305,
+    "unicorns": 8,
+    "unicorns_total": 40,
+    "ipos": 22,
+    "ipos_total": 47,
+    "exits": 55,
+    "exits_total": 264,
+    "outlier_rate": 0.05293276108726753,
+    "growth20_rate": 0.21602288984263232
+   },
+   "price_adj_top20": {
+    "deals": 1395,
+    "markup": 10.628169419099176,
+    "markup_excl_top": 10.628169419099176,
+    "vs_all_pct": 80.78105536444133,
+    "vs_all_ci_pct": [
+     27.826553738638893,
+     142.17904544822463
+    ],
+    "outliers": 124,
+    "outliers_total": 305,
+    "unicorns": 3,
+    "unicorns_total": 40,
+    "ipos": 9,
+    "ipos_total": 47,
+    "exits": 28,
+    "exits_total": 264,
+    "outlier_rate": 0.08888888888888889,
+    "growth20_rate": 0.022222222222222223
+   },
+   "quality_in_cheap_half": {
+    "deals": 1103,
+    "markup": 9.466173491797733,
+    "markup_excl_top": 9.466173491797733,
+    "vs_all_pct": 61.0159536067256,
+    "vs_all_ci_pct": [
+     13.852216986487797,
+     125.47574418742866
+    ],
+    "outliers": 93,
+    "outliers_total": 305,
+    "unicorns": 5,
+    "unicorns_total": 40,
+    "ipos": 6,
+    "ipos_total": 47,
+    "exits": 30,
+    "exits_total": 264,
+    "outlier_rate": 0.0843155031731641,
+    "growth20_rate": 0.050770625566636446
+   },
+   "auc_outlier": 0.5120372034396934,
+   "auc_exit": 0.6161145974672094,
+   "auc_growth20": 0.6897596262265886
+  },
+  "by_floor": {
+   "3M": {
+    "own_all": {
+     "deals": 6964,
+     "markup": 4.648081864361063,
+     "markup_excl_top": 4.055135540726283,
+     "vs_all_pct": 0.0,
+     "vs_all_ci_pct": [
+      0.0,
+      0.0
+     ],
+     "outliers": 229,
+     "outliers_total": 229,
+     "unicorns": 40,
+     "unicorns_total": 40,
+     "ipos": 47,
+     "ipos_total": 47,
+     "exits": 264,
+     "exits_total": 264,
+     "outlier_rate": 0.032883400344629526,
+     "growth20_rate": 0.09893739230327397
+    },
+    "drop_bottom_third": {
+     "deals": 4644,
+     "markup": 4.08220748172462,
+     "markup_excl_top": 4.08220748172462,
+     "vs_all_pct": -12.174363514878195,
+     "vs_all_ci_pct": [
+      -34.30160188329808,
+      13.169508956539344
+     ],
+     "outliers": 161,
+     "outliers_total": 229,
+     "unicorns": 36,
+     "unicorns_total": 40,
+     "ipos": 36,
+     "ipos_total": 47,
+     "exits": 208,
+     "exits_total": 264,
+     "outlier_rate": 0.03466838931955211,
+     "growth20_rate": 0.13027562446167099
+    },
+    "top_20pct": {
+     "deals": 1395,
+     "markup": 3.8234601588834662,
+     "markup_excl_top": 3.8234601588834662,
+     "vs_all_pct": -17.74111836971597,
+     "vs_all_ci_pct": [
+      -39.37124231411867,
+      11.163197596437513
+     ],
+     "outliers": 53,
+     "outliers_total": 229,
+     "unicorns": 15,
+     "unicorns_total": 40,
+     "ipos": 26,
+     "ipos_total": 47,
+     "exits": 91,
+     "exits_total": 264,
+     "outlier_rate": 0.03799283154121864,
+     "growth20_rate": 0.1913978494623656
+    },
+    "top_10pct": {
+     "deals": 699,
+     "markup": 4.1969910510095625,
+     "markup_excl_top": 4.1969910510095625,
+     "vs_all_pct": -9.704880992097342,
+     "vs_all_ci_pct": [
+      -35.470258061734725,
+      23.65910097303967
+     ],
+     "outliers": 34,
+     "outliers_total": 229,
+     "unicorns": 8,
+     "unicorns_total": 40,
+     "ipos": 22,
+     "ipos_total": 47,
+     "exits": 55,
+     "exits_total": 264,
+     "outlier_rate": 0.04864091559370529,
+     "growth20_rate": 0.21602288984263232
+    },
+    "price_adj_top20": {
+     "deals": 1395,
+     "markup": 9.543265773386626,
+     "markup_excl_top": 6.585023257203019,
+     "vs_all_pct": 105.3162154169259,
+     "vs_all_ci_pct": [
+      30.28646282141272,
+      177.8516695511441
+     ],
+     "outliers": 80,
+     "outliers_total": 229,
+     "unicorns": 6,
+     "unicorns_total": 40,
+     "ipos": 13,
+     "ipos_total": 47,
+     "exits": 41,
+     "exits_total": 264,
+     "outlier_rate": 0.05734767025089606,
+     "growth20_rate": 0.04157706093189964
+    },
+    "quality_in_cheap_half": {
+     "deals": 1103,
+     "markup": 6.755511997970245,
+     "markup_excl_top": 6.755511997970245,
+     "vs_all_pct": 45.33978090549131,
+     "vs_all_ci_pct": [
+      1.9427782671957994,
+      103.87792458898835
+     ],
+     "outliers": 67,
+     "outliers_total": 229,
+     "unicorns": 5,
+     "unicorns_total": 40,
+     "ipos": 6,
+     "ipos_total": 47,
+     "exits": 30,
+     "exits_total": 264,
+     "outlier_rate": 0.06074342701722575,
+     "growth20_rate": 0.050770625566636446
+    },
+    "auc_outlier": 0.5453412564878122,
+    "auc_exit": 0.6161145974672094,
+    "auc_growth20": 0.6897596262265886
+   },
+   "5M": {
+    "own_all": {
+     "deals": 6964,
+     "markup": 3.807837869175344,
+     "markup_excl_top": 3.4522164183451234,
+     "vs_all_pct": 0.0,
+     "vs_all_ci_pct": [
+      0.0,
+      0.0
+     ],
+     "outliers": 198,
+     "outliers_total": 198,
+     "unicorns": 40,
+     "unicorns_total": 40,
+     "ipos": 47,
+     "ipos_total": 47,
+     "exits": 264,
+     "exits_total": 264,
+     "outlier_rate": 0.028431935669155656,
+     "growth20_rate": 0.09893739230327397
+    },
+    "drop_bottom_third": {
+     "deals": 4644,
+     "markup": 3.4702152377867024,
+     "markup_excl_top": 3.4702152377867024,
+     "vs_all_pct": -8.86651803433427,
+     "vs_all_ci_pct": [
+      -29.09414564721097,
+      14.615905706379317
+     ],
+     "outliers": 143,
+     "outliers_total": 198,
+     "unicorns": 36,
+     "unicorns_total": 40,
+     "ipos": 36,
+     "ipos_total": 47,
+     "exits": 208,
+     "exits_total": 264,
+     "outlier_rate": 0.03079242032730405,
+     "growth20_rate": 0.13027562446167099
+    },
+    "top_20pct": {
+     "deals": 1395,
+     "markup": 3.5966802596845704,
+     "markup_excl_top": 3.5966802596845704,
+     "vs_all_pct": -5.545341391767378,
+     "vs_all_ci_pct": [
+      -27.823284718511786,
+      23.082455136187164
+     ],
+     "outliers": 50,
+     "outliers_total": 198,
+     "unicorns": 15,
+     "unicorns_total": 40,
+     "ipos": 26,
+     "ipos_total": 47,
+     "exits": 91,
+     "exits_total": 264,
+     "outlier_rate": 0.035842293906810034,
+     "growth20_rate": 0.1913978494623656
+    },
+    "top_10pct": {
+     "deals": 699,
+     "markup": 4.035216429001461,
+     "markup_excl_top": 4.035216429001461,
+     "vs_all_pct": 5.971329863247576,
+     "vs_all_ci_pct": [
+      -22.068363768323884,
+      40.968496900565945
+     ],
+     "outliers": 34,
+     "outliers_total": 198,
+     "unicorns": 8,
+     "unicorns_total": 40,
+     "ipos": 22,
+     "ipos_total": 47,
+     "exits": 55,
+     "exits_total": 264,
+     "outlier_rate": 0.04864091559370529,
+     "growth20_rate": 0.21602288984263232
+    },
+    "price_adj_top20": {
+     "deals": 1395,
+     "markup": 4.117317281642747,
+     "markup_excl_top": 4.117317281642747,
+     "vs_all_pct": 8.127431447978829,
+     "vs_all_ci_pct": [
+      -18.693303521676274,
+      39.75221956667274
+     ],
+     "outliers": 60,
+     "outliers_total": 198,
+     "unicorns": 2,
+     "unicorns_total": 40,
+     "ipos": 13,
+     "ipos_total": 47,
+     "exits": 50,
+     "exits_total": 264,
+     "outlier_rate": 0.043010752688172046,
+     "growth20_rate": 0.05949820788530466
+    },
+    "quality_in_cheap_half": {
+     "deals": 1103,
+     "markup": 5.207128017541798,
+     "markup_excl_top": 5.207128017541798,
+     "vs_all_pct": 36.74762940128793,
+     "vs_all_ci_pct": [
+      -0.832623630983842,
+      85.05331401985484
+     ],
+     "outliers": 51,
+     "outliers_total": 198,
+     "unicorns": 5,
+     "unicorns_total": 40,
+     "ipos": 6,
+     "ipos_total": 47,
+     "exits": 30,
+     "exits_total": 264,
+     "outlier_rate": 0.04623753399818677,
+     "growth20_rate": 0.050770625566636446
+    },
+    "auc_outlier": 0.5592993935810961,
+    "auc_exit": 0.6161145974672094,
+    "auc_growth20": 0.6897596262265886
+   },
+   "8M": {
+    "own_all": {
+     "deals": 6964,
+     "markup": 3.042817279111405,
+     "markup_excl_top": 2.820649078232346,
+     "vs_all_pct": 0.0,
+     "vs_all_ci_pct": [
+      0.0,
+      0.0
+     ],
+     "outliers": 158,
+     "outliers_total": 158,
+     "unicorns": 40,
+     "unicorns_total": 40,
+     "ipos": 47,
+     "ipos_total": 47,
+     "exits": 264,
+     "exits_total": 264,
+     "outlier_rate": 0.022688110281447443,
+     "growth20_rate": 0.09893739230327397
+    },
+    "drop_bottom_third": {
+     "deals": 4644,
+     "markup": 2.979369982363821,
+     "markup_excl_top": 2.979369982363821,
+     "vs_all_pct": -2.085149745373882,
+     "vs_all_ci_pct": [
+      -20.117944194645943,
+      17.611118615742516
+     ],
+     "outliers": 117,
+     "outliers_total": 158,
+     "unicorns": 36,
+     "unicorns_total": 40,
+     "ipos": 36,
+     "ipos_total": 47,
+     "exits": 208,
+     "exits_total": 264,
+     "outlier_rate": 0.025193798449612403,
+     "growth20_rate": 0.13027562446167099
+    },
+    "top_20pct": {
+     "deals": 1395,
+     "markup": 3.3659431840340677,
+     "markup_excl_top": 3.3659431840340677,
+     "vs_all_pct": 10.619300315562331,
+     "vs_all_ci_pct": [
+      -12.727852518560457,
+      38.25545188003696
+     ],
+     "outliers": 45,
+     "outliers_total": 158,
+     "unicorns": 15,
+     "unicorns_total": 40,
+     "ipos": 26,
+     "ipos_total": 47,
+     "exits": 91,
+     "exits_total": 264,
+     "outlier_rate": 0.03225806451612903,
+     "growth20_rate": 0.1913978494623656
+    },
+    "top_10pct": {
+     "deals": 699,
+     "markup": 3.836472824046489,
+     "markup_excl_top": 3.836472824046489,
+     "vs_all_pct": 26.082918300202884,
+     "vs_all_ci_pct": [
+      -4.163508921148507,
+      61.63597763759798
+     ],
+     "outliers": 31,
+     "outliers_total": 158,
+     "unicorns": 8,
+     "unicorns_total": 40,
+     "ipos": 22,
+     "ipos_total": 47,
+     "exits": 55,
+     "exits_total": 264,
+     "outlier_rate": 0.044349070100143065,
+     "growth20_rate": 0.21602288984263232
+    },
+    "price_adj_top20": {
+     "deals": 1395,
+     "markup": 3.468982358049585,
+     "markup_excl_top": 3.468982358049585,
+     "vs_all_pct": 14.005608613562014,
+     "vs_all_ci_pct": [
+      -12.504566617210832,
+      46.34281355584455
+     ],
+     "outliers": 40,
+     "outliers_total": 158,
+     "unicorns": 2,
+     "unicorns_total": 40,
+     "ipos": 15,
+     "ipos_total": 47,
+     "exits": 59,
+     "exits_total": 264,
+     "outlier_rate": 0.02867383512544803,
+     "growth20_rate": 0.08100358422939068
+    },
+    "quality_in_cheap_half": {
+     "deals": 1103,
+     "markup": 3.8590101899078473,
+     "markup_excl_top": 3.8590101899078473,
+     "vs_all_pct": 26.823592609372703,
+     "vs_all_ci_pct": [
+      -6.054811846386087,
+      68.45163738898808
+     ],
+     "outliers": 33,
+     "outliers_total": 158,
+     "unicorns": 5,
+     "unicorns_total": 40,
+     "ipos": 6,
+     "ipos_total": 47,
+     "exits": 30,
+     "exits_total": 264,
+     "outlier_rate": 0.029918404351767906,
+     "growth20_rate": 0.050770625566636446
+    },
+    "auc_outlier": 0.5846874686148111,
+    "auc_exit": 0.6161145974672094,
+    "auc_growth20": 0.6897596262265886
+   }
+  }
+ }
+}

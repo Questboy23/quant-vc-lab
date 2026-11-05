@@ -1,0 +1,34 @@
+# Round 4 registry (2026-10-03), written BEFORE any round-4 result. Data: 25,082 US startups'
+# first Form D, 2010-2025 (SEC). Splits by first-filing year, full 4.5-year outcome windows:
+#   train 2010-2014 | test 2015-2017 | sealed holdout 2018-2021 (opened once, data/holdout_fd)
+# Logit on TEST with year fixed effects + log first-raise size + industry (tech/bio) controls.
+# Holm across all 24 primaries. Outcomes: growth20 (later raise >= $20M), outlier (paper markup
+# >= 20x or unicorn), exit (underwritten IPO or matched acquisition or unicorn).
+
+- {id: F1,  feature: vc_director, primary: outlier, direction: "+", name: VC partner on the board at the first raise, intuition: "A director who also appears on Pooled Investment Fund filings is a VC. Smart money is visible in public filings."}
+- {id: F2,  feature: board_track, primary: outlier, direction: "+", name: Board track record (point-in-time), intuition: "Directors whose earlier companies scaled (>= $20M later raise) before this company's first raise pick or build winners."}
+- {id: F3,  feature: board_pro, primary: growth20, direction: "+", name: Professional board member, intuition: "A director already on 3+ other startups' filings."}
+- {id: F4,  feature: serial_exec, primary: growth20, direction: "+", name: Serial founder/executive, intuition: "Officer appeared on an earlier startup's filing."}
+- {id: F5,  feature: exec_prior_scaleup, primary: outlier, direction: "+", name: Executive whose earlier startup scaled, intuition: "Proven builders."}
+- {id: F6,  feature: broker, primary: growth20, direction: "-", name: Brokered round, intuition: "Paying a broker/finder means VCs passed."}
+- {id: F7,  feature: rule506c, primary: growth20, direction: "-", name: Public solicitation (506c), intuition: "Advertising a raise to the public = no institutional lead."}
+- {id: F8,  feature: nonaccredited, primary: growth20, direction: "-", name: Non-accredited investors, intuition: "Friends and family money."}
+- {id: F9,  feature: de_out_of_state, primary: growth20, direction: "+", name: Delaware C-corp outside Delaware, intuition: "VC-ready lawyers from day one."}
+- {id: F10, feature: bay_area, primary: outlier, direction: "+", name: Bay Area address, intuition: "Density of talent, capital, acquirers."}
+- {id: F11, feature: hub, primary: outlier, direction: "+", name: Bay Area / NYC / Boston, intuition: "Any top hub."}
+- {id: F12, feature: size_vs_peers, primary: outlier, direction: "+", name: First raise big for its industry-year, intuition: "Investors fought to get in.", no_size_control: true}
+- {id: F13, feature: heat, primary: outlier, direction: "-", name: Hot market at first raise, intuition: "Counter-cyclical: companies born in hot quarters are worse (more noise, worse prices)."}
+- {id: F14, feature: convertible, primary: outlier, direction: two, name: SAFE / convertible first raise, intuition: "Modern seed instrument vs priced round."}
+- {id: F15, feature: rev_none, primary: outlier, direction: two, name: Pre-revenue at first raise, intuition: "Venture-style bets vs small businesses with revenue."}
+- {id: F16, feature: log_investors, primary: growth20, direction: two, name: Number of investors in first raise, intuition: "Broad support, or a crowd of small angels."}
+- {id: F17, feature: min_invest, primary: growth20, direction: "+", name: High minimum check, intuition: "Institutional-size tickets only."}
+- {id: F18, feature: sold_share, primary: growth20, direction: "+", name: Round fully sold, intuition: "Oversubscription vs struggling to fill."}
+- {id: F19, feature: age_years, primary: outlier, direction: two, name: Company age at first raise, intuition: "Bootstrapped first vs raised at birth."}
+- {id: F20, feature: has_ai, primary: outlier, direction: two, name: AI in the name, intuition: "Hype or real tailwind."}
+- {id: F21, feature: n_dirs, primary: growth20, direction: "+", name: Board size at first raise, intuition: "A formed board = governance = VC."}
+- {id: F22, feature: more_than_year, primary: growth20, direction: "-", name: Offering open more than a year, intuition: "Can't close the round."}
+- {id: F23, feature: tech, primary: outlier, direction: two, name: Tech (vs everything else), intuition: "Software scales."}
+- {id: F24, feature: years_to_next, primary: outlier, direction: "-", name: Speed to next raise (round-2 decision), intuition: "Fast follow-on = traction.", round2: true}
+
+# Portfolio rules, pre-declared: own-all; drop bottom third; top 20%; top 10% — by the combined score
+# (ridge + equal-weight vote on all first-raise features, fit on train). Holdout opened once for all four.

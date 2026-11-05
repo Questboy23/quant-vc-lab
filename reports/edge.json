@@ -1,0 +1,28 @@
+{
+ "pooled_edge": 0.4967094729852227,
+ "pooled_ci": [
+  0.26455486038131154,
+  0.7714844303775129
+ ],
+ "edge_used_halved": 0.24835473649261136,
+ "market_gross_multiple": 2.047428093029082,
+ "G_market": 0.14840811706995885,
+ "G_strategy": 0.1940533621936234,
+ "net_irr": {
+  "standard fund (2% fee, 20% carry)": {
+   "market": 0.09999999999999991,
+   "strategy_halved_edge": 0.14237838723170218,
+   "strategy_full_edge": 0.17755901819939657
+  },
+  "low-fee vehicle (1% fee, 10% carry)": {
+   "market": 0.12277568401742164,
+   "strategy_halved_edge": 0.16723098383299517,
+   "strategy_full_edge": 0.2038658617099628
+  },
+  "direct / own index (no fees)": {
+   "market": 0.14840811706995782,
+   "strategy_halved_edge": 0.1940533621936234,
+   "strategy_full_edge": 0.23154165667152288
+  }
+ }
+}

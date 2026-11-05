@@ -1,0 +1,154 @@
+{
+ "consumed_at": "2026-10-04T00:41:23.584799+00:00",
+ "result": {
+  "L0_own_all": {
+   "rule": "own every first raise",
+   "deals": 3587,
+   "markup": 0.7479598739508566,
+   "all_markup": 0.7479598739508566,
+   "markup_excl_top": 0.7300192722334302,
+   "all_excl_top": 0.7300192722334302,
+   "vs_all_pct": 0.0,
+   "vs_all_ci_pct": [
+    0.0,
+    0.0
+   ],
+   "growth20_rate": 0.030387510454418735,
+   "growth20_all": 0.030387510454418735,
+   "outliers": 46,
+   "outliers_total": 46
+  },
+  "L1_quality_cheap_r4": {
+   "rule": "quality in cheap half (round-4 features)",
+   "deals": 427,
+   "markup": 1.139685804132643,
+   "all_markup": 0.7479598739508566,
+   "markup_excl_top": 1.139685804132643,
+   "all_excl_top": 0.7300192722334302,
+   "vs_all_pct": 52.37258626089398,
+   "vs_all_ci_pct": [
+    19.88598616984114,
+    87.43157640531348
+   ],
+   "growth20_rate": 0.0117096018735363,
+   "growth20_all": 0.030387510454418735,
+   "outliers": 9,
+   "outliers_total": 46
+  },
+  "L2_quality_cheap_r5": {
+   "rule": "quality in cheap half (+ round-5 features)",
+   "deals": 429,
+   "markup": 1.1264639685796494,
+   "all_markup": 0.7479598739508566,
+   "markup_excl_top": 1.1264639685796494,
+   "all_excl_top": 0.7300192722334302,
+   "vs_all_pct": 50.60486635860117,
+   "vs_all_ci_pct": [
+    18.309623574608015,
+    88.33472541913218
+   ],
+   "growth20_rate": 0.013986013986013986,
+   "growth20_all": 0.030387510454418735,
+   "outliers": 11,
+   "outliers_total": 46
+  },
+  "L3_tilted": {
+   "rule": "L2 with double weight on top-quarter quality",
+   "deals": 429,
+   "markup": 1.1268677165117968,
+   "all_markup": 0.7479598739508566,
+   "markup_excl_top": 1.1268677165117968,
+   "all_excl_top": 0.7300192722334302,
+   "vs_all_pct": 50.65884625059922,
+   "vs_all_ci_pct": [
+    18.02880622190748,
+    86.29449821345287
+   ],
+   "growth20_rate": 0.013986013986013986,
+   "growth20_all": 0.030387510454418735,
+   "outliers": 11,
+   "outliers_total": 46
+  },
+  "L4_r2_momentum": {
+   "rule": "second raise >= 2x the first, within 18 months",
+   "deals": 328,
+   "markup": 1.4223087622348412,
+   "all_markup": 1.2428221350438426,
+   "markup_excl_top": 0.7334880958604318,
+   "all_excl_top": 0.9669055566697633,
+   "vs_all_pct": 14.441859549328573,
+   "vs_all_ci_pct": [
+    -38.91404781451715,
+    64.04490708090988
+   ],
+   "growth20_rate": 0.0,
+   "growth20_all": 0.0,
+   "outliers": 2,
+   "outliers_total": 9
+  },
+  "L5_r2_contrarian": {
+   "rule": "second raise <= 1x the first, within 18 months",
+   "deals": 335,
+   "markup": 0.9863123378099062,
+   "all_markup": 1.2428221350438426,
+   "markup_excl_top": 0.9863123378099062,
+   "all_excl_top": 0.9669055566697633,
+   "vs_all_pct": -20.639300669108827,
+   "vs_all_ci_pct": [
+    -50.13245988147037,
+    18.986781127318263
+   ],
+   "growth20_rate": 0.0,
+   "growth20_all": 0.0,
+   "outliers": 4,
+   "outliers_total": 9
+  },
+  "r2_all": {
+   "rule": "every second raise within 18 months",
+   "deals": 818,
+   "markup": 1.2428221350438426,
+   "all_markup": 1.2428221350438426,
+   "markup_excl_top": 0.9669055566697633,
+   "all_excl_top": 0.9669055566697633,
+   "vs_all_pct": 0.0,
+   "vs_all_ci_pct": [
+    0.0,
+    0.0
+   ],
+   "growth20_rate": 0.0,
+   "growth20_all": 0.0,
+   "outliers": 9,
+   "outliers_total": 9
+  },
+  "L7_r2_contrarian_quality": {
+   "rule": "flat second raise, first-raise quality top half",
+   "deals": 174,
+   "markup": 1.4695480409245805,
+   "all_markup": 1.2428221350438426,
+   "markup_excl_top": 1.4695480409245805,
+   "all_excl_top": 0.9669055566697633,
+   "vs_all_pct": 18.242828115765718,
+   "vs_all_ci_pct": [
+    -28.222405234996195,
+    82.76185396873544
+   ],
+   "growth20_rate": 0.0,
+   "growth20_all": 0.0,
+   "outliers": 4,
+   "outliers_total": 9
+  },
+  "L6_two_sleeves": {
+   "rule": "half L1 + half L5",
+   "deals": 762,
+   "markup": 1.0629990709712747,
+   "all_markup": 0.9953910044973496,
+   "vs_all_pct": 6.792111458558492,
+   "vs_all_ci_pct": [
+    -15.123236855814614,
+    53.20917876631587
+   ],
+   "note": "CI is the average of the two sleeves' CIs (approximate)"
+  },
+  "auc_growth20_q2": 0.7431456441801944
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "rows": [
+  {
+   "years": 1,
+   "strategy_ev_pct": 16.700000000000003,
+   "strategy_range": [
+    9.000000000000007,
+    23.0
+   ],
+   "strategy_median_pct": 13.109518463389346,
+   "strategy_annual_pct": 16.7,
+   "market_ev_pct": 10.000000000000009,
+   "market_range": [
+    7.000000000000006,
+    12.99999999999999
+   ],
+   "market_median_pct": 6.615655792397868,
+   "market_annual_pct": 10.0,
+   "market_realized_pct": 21.10000000000001,
+   "market_realized_annual_pct": 21.1,
+   "top10_hindsight_pct": 31.000000000000007,
+   "top10_annual_pct": 31.000000000000007,
+   "strategy_vs_market_pts": 6.699999999999994,
+   "gp_manager_pct": 36.429127541936104,
+   "strategy_as_share_of_top10": 0.5387096774193548
+  },
+  {
+   "years": 3,
+   "strategy_ev_pct": 58.93244630000001,
+   "strategy_range": [
+    29.50290000000002,
+    86.08669999999998
+   ],
+   "strategy_median_pct": 44.70963911562589,
+   "strategy_annual_pct": 16.7,
+   "market_ev_pct": 33.10000000000004,
+   "market_range": [
+    22.50430000000001,
+    44.28969999999997
+   ],
+   "market_median_pct": 21.188929099682575,
+   "market_annual_pct": 10.0,
+   "market_realized_pct": 28.436550299999986,
+   "market_realized_annual_pct": 8.7,
+   "top10_hindsight_pct": 124.8091,
+   "top10_annual_pct": 31.000000000000007,
+   "strategy_vs_market_pts": 25.832446299999972,
+   "gp_manager_pct": 153.93426414534565,
+   "strategy_as_share_of_top10": 0.47218068474173763
+  },
+  {
+   "years": 5,
+   "strategy_ev_pct": 116.44835035906071,
+   "strategy_range": [
+    53.86239549000005,
+    181.53056842999996
+   ],
+   "strategy_median_pct": 85.13808508302247,
+   "strategy_annual_pct": 16.7,
+   "market_ev_pct": 61.05100000000006,
+   "market_range": [
+    40.25517307000004,
+    84.24351792999991
+   ],
+   "market_median_pct": 37.754220308187755,
+   "market_annual_pct": 10.0,
+   "market_realized_pct": 62.520433688803266,
+   "market_realized_annual_pct": 10.2,
+   "top10_hindsight_pct": 285.79489651000006,
+   "top10_annual_pct": 31.000000000000007,
+   "strategy_vs_market_pts": 55.39735035906065,
+   "gp_manager_pct": 372.6454802492032,
+   "strategy_as_share_of_top10": 0.4074542680120467
+  },
+  {
+   "years": 10,
+   "strategy_ev_pct": 368.49888373158706,
+   "strategy_range": [
+    136.73636745921192,
+    692.594609605189
+   ],
+   "strategy_median_pct": 242.76110548208467,
+   "strategy_annual_pct": 16.7,
+   "market_ev_pct": 159.37424601000023,
+   "market_range": [
+    96.71513572895665,
+    239.45673899222197
+   ],
+   "market_median_pct": 89.76225212716729,
+   "market_annual_pct": 10.0,
+   "market_realized_pct": 301.0516310100376,
+   "market_realized_annual_pct": 14.9,
+   "top10_hindsight_pct": 1388.3770217316167,
+   "top10_annual_pct": 31.000000000000007,
+   "strategy_vs_market_pts": 209.12463772158682,
+   "gp_manager_pct": 2133.9374999999995,
+   "strategy_as_share_of_top10": 0.2654170142285894
+  },
+  {
+   "years": 20,
+   "strategy_ev_pct": 2094.912040577431,
+   "strategy_range": [
+    460.44107677783,
+    6182.062151752019
+   ],
+   "strategy_median_pct": 1074.8517543130079,
+   "strategy_annual_pct": 16.7,
+   "market_ev_pct": 572.7499949325611,
+   "market_range": [
+    286.96844624861836,
+    1052.3087764723352
+   ],
+   "market_median_pct": 260.097123323746,
+   "market_annual_pct": 10.0,
+   "market_realized_pct": 1032.084484963965,
+   "market_realized_annual_pct": 12.9,
+   "top10_hindsight_pct": 9115.638215718884,
+   "top10_annual_pct": 25.379424149259844,
+   "strategy_vs_market_pts": 1522.16204564487,
+   "gp_manager_pct": 5694.258546959648,
+   "strategy_as_share_of_top10": 0.22981518035292284
+  },
+  {
+   "years": 30,
+   "strategy_ev_pct": 10183.138408995464,
+   "strategy_range": [
+    1226.7678469131276,
+    49691.28598683426
+   ],
+   "strategy_median_pct": 3926.93486085893,
+   "strategy_annual_pct": 16.7,
+   "market_ev_pct": 1644.940226888645,
+   "market_range": [
+    661.2255042662042,
+    3811.5897957341617
+   ],
+   "market_median_pct": 583.3284110642834,
+   "market_annual_pct": 10.0,
+   "market_realized_pct": null,
+   "market_realized_annual_pct": null,
+   "top10_hindsight_pct": 56960.80279592794,
+   "top10_annual_pct": 23.56000842737305,
+   "strategy_vs_market_pts": 8538.19818210682,
+   "gp_manager_pct": 14928.814418046579,
+   "strategy_as_share_of_top10": 0.1787744889319475
+  },
+  {
+   "years": 40,
+   "strategy_ev_pct": 48076.388658717835,
+   "strategy_range": [
+    3040.9420053989356,
+    394543.0487847522
+   ],
+   "strategy_median_pct": 13702.766446123518,
+   "strategy_annual_pct": 16.7,
+   "market_ev_pct": 4425.92555681761,
+   "market_range": [
+    1397.4457839206984,
+    13178.155163351705
+   ],
+   "market_median_pct": 1196.6993822603717,
+   "market_annual_pct": 10.0,
+   "market_realized_pct": null,
+   "market_realized_annual_pct": null,
+   "top10_hindsight_pct": 353205.4509629307,
+   "top10_annual_pct": 22.66022541113799,
+   "strategy_vs_market_pts": 43650.463101900226,
+   "gp_manager_pct": 38880.87408105051,
+   "strategy_as_share_of_top10": 0.13611451501569127
+  }
+ ],
+ "notes": "Expected percent return by horizon (1-40y): our strategy vs total VC market vs the best 10 VCs.\n\nAnnual rates (net to investor) and where each comes from:\n  MARKET   10.0%/yr (range 7-13). Cambridge Associates US VC index, pooled net IRR to Dec 2025:\n           20y 12.9%, 25y 8.1%, 10y 14.9%; post-2000 VC PME ~0.94-0.96 (Harris-Jenkinson-Kaplan),\n           i.e. roughly public-equity returns going forward.\n  STRATEGY (updated round 4, SEC Form D 2010-2021, 25k startups) market + 1.5 pt (range -1..+4):\n           \"best quality in the cheaper half of first raises\" beat owning every first raise by +37%\n           on the sealed 2018-21 holdout ($5M floor; +45% at $3M, +27% at $8M) and +40..+90% on\n           2015-17. Paper markups over 4.5 years, not cash: halved, spread over a 10-year fund.\n  (round 3) market + 0.5 pt (range -2..+2): the drop-bottom-third rule scored\n           +26% on 2008-10 but only +6.5% (CI -34..+28) on the sealed 2012 lockbox; the lockbox wins.\n           (Round-2 text follows.) market + 1.0 pt (range -1..+3). Broad index of every accessible seed/A deal (or 20+ funds)\n           across >=5 vintages, minus the model's bottom third. Screen measured +21% (2008-10) and\n           +19% (2011, second look) over a ~10y life ~= +2 pt/yr, halved for shrinkage/frictions.\n           Emerging/prior-top-quartile manager tilt (HJKS PME 1.24/1.20 vs ~0.96) adds ~+0.5, an\n           extra fee layer costs ~-0.5: net +1.0.\n  TOP 10   HINDSIGHT, NOT INVESTABLE. Years 1-10: 31%/yr = mean top-decile net IRR of 2007-2014\n           vintages (PitchBook 2Q18). Beyond 10y no fund stays top decile; the best long records in\n           public LP disclosures are ~17-22%/yr (Sequoia legacy 17.4%, Khosla IV 22%), so 20%/yr after year 10.\nEV = mean outcome ((1+r)^T - 1). Median uses 25%/yr volatility for a diversified VC book.\n"
+}

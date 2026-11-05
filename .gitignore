@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+data/raw/
+data/formd/
+data/*.parquet
+reports/*.log
+.pytest_cache/
+data/raw/cb2013/
+data/raw/k/
+data/fd/
+data/edgar_idx/
+reports/live_model_v4.joblib
+.env

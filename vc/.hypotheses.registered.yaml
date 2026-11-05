@@ -1,0 +1,361 @@
+# Quant VC Lab hypothesis registry. Registered BEFORE any test-window result was computed
+# (2026-09-30). `result` blocks are written back by analysis/run_all.py; do not hand-edit them.
+#
+# kind:      logit   -> logistic regression on TEST cohorts 2008-2010 with cohort-year fixed
+#                       effects + log first-round size + stage dummies (+ `controls`)
+#            spline  -> likelihood-ratio test of a 3-df natural spline in `feature`
+#            returns -> bespoke price-adjusted multiple comparison (see analysis/hypotheses.py)
+# direction: + / - / two   (the sign the intuition predicts; two = no prior sign)
+# primary:   the ONE pre-registered outcome that decides pass/fail. Other outcomes are shown.
+# Holm correction is applied across every primary test in this file together.
+
+- id: P1
+  source: prior
+  name: Smart money
+  intuition: Top-40 investors by train-period success rate pick (or make) winners.
+  feature: smart_money
+  definition: Any of the 40 highest-success investors (>=10 train companies) is in the first round.
+  kind: logit
+  primary: bigwin
+  direction: "+"
+
+- id: P2
+  source: prior
+  name: Big syndicate / consensus
+  intuition: More investors in the first round = more independent diligence agreeing.
+  feature: log_syndicate
+  definition: log(1 + distinct investors in first round), companies with >=1 recorded investor.
+  subset: has_investor_record == 1
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: P2b
+  source: prior
+  name: Champion rule (solo investor)
+  intuition: A single conviction investor beats committee consensus.
+  feature: solo_investor
+  definition: Exactly one recorded first-round investor (vs 2+).
+  subset: has_investor_record == 1
+  kind: logit
+  primary: bigwin
+  direction: "+"
+
+- id: P3
+  source: prior
+  name: Crowded category (Girard)
+  intuition: Mimetic competition in crowded categories kills outsized outcomes.
+  feature: log_crowding
+  definition: log(1 + first equity rounds worldwide in same primary category, years t-1..t).
+  kind: logit
+  primary: bigwin
+  direction: "-"
+
+- id: P4
+  source: prior
+  name: Atypical combinations (Uzzi novelty)
+  intuition: Rare category pairings are novel ideas with fat right tails.
+  feature: atypicality
+  definition: -min over category pairs of log((obs+1)/(exp+1)), counts from earlier cohorts only; needs >=2 categories.
+  kind: logit
+  primary: bigwin
+  direction: "+"
+
+- id: P5
+  source: prior
+  name: Kill zone
+  intuition: Big Tech having bought into a category chills independent big outcomes.
+  feature: kill_zone
+  definition: A Big Tech acquirer bought a same-primary-category company in the 3 years before the first round.
+  kind: logit
+  primary: bigwin
+  direction: "-"
+
+- id: P6
+  source: prior
+  name: SF Bay Area
+  intuition: Density of talent, capital and acquirers.
+  feature: sf
+  definition: Crunchbase region == SF Bay Area.
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: P7
+  source: prior
+  name: Real-word name
+  intuition: Memorable dictionary names signal marketing sense.
+  feature: name_real_word
+  definition: Lower-cased company name is a /usr/share/dict/words entry.
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: P8
+  source: prior
+  name: .com domain
+  intuition: Owning the .com signals resources/seriousness.
+  feature: dot_com
+  definition: Homepage host ends in .com (NaN if no homepage recorded).
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: P9
+  source: prior
+  name: Exact-match domain
+  intuition: Owning name.com exactly signals resources.
+  feature: exact_domain
+  definition: Homepage host stem == normalised company name (NaN if no homepage).
+  kind: logit
+  primary: success
+  direction: "+"
+
+# ---------------- spec hypotheses ----------------
+- id: N1
+  source: spec
+  name: Form D timing
+  intuition: Late Form D filers are sloppy (or hiding); prompt filers are well-run.
+  feature: formd_late
+  definition: Original Form D filed >15 days after date of first sale (Rule 503 deadline); SEC DERA data sets matched by name+state. Exists only 2008+, so there is no train window.
+  kind: logit
+  primary: success
+  direction: "-"
+
+- id: N2
+  source: spec
+  name: Round-size surprise
+  intuition: A first round far above the category-year median means investors fought to get in.
+  feature: size_surprise
+  definition: log(first round / median first round in same primary category and cohort year). Round size is NOT separately controlled here (it is the feature).
+  kind: logit
+  no_size_control: true
+  primary: bigwin
+  direction: "+"
+
+- id: N3
+  source: spec
+  name: Investor reputation momentum
+  intuition: Recent hit rate (3y) beats all-time reputation.
+  feature: inv_momentum3
+  definition: Point-in-time max over first-round investors of exits realised in [d-3y,d) / portfolio before d; controls for all-time point-in-time exit rate.
+  controls: [inv_alltime_pit]
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: N4
+  source: spec
+  name: Follow-the-follow-on
+  intuition: A seed investor re-upping in the next round has inside information.
+  feature: insider_follow_on
+  definition: Any first-round investor also appears in the next equity round (Crunchbase has no lead flag, so participation not leadership). Defined only for companies that raised a next round with recorded investors - the tradable decision point is round 2.
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: N5
+  source: spec
+  name: Geographic arbitrage
+  intuition: The same signals are priced cheaper outside SF, so non-SF strong-signal deals return more.
+  feature: sf
+  definition: Among the top quintile of the train-fit prior composite P(big win), mean price-adjusted multiple of non-SF minus SF.
+  kind: returns
+  primary: multiple
+  direction: "+"
+
+- id: N6a
+  source: spec
+  name: Acquirer appetite - Big Tech
+  intuition: Categories Big Tech is actively buying produce exits.
+  feature: log_appetite_bigtech
+  definition: log(1 + Big Tech acquisitions in same primary category, prior 2 years).
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: N6b
+  source: spec
+  name: Acquirer appetite - PE / financial
+  intuition: Financial buyers provide a floor exit.
+  feature: log_appetite_pe
+  definition: log(1 + PE/financial-acquirer acquisitions in same category, prior 2 years).
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: N6c
+  source: spec
+  name: Acquirer appetite - strategic
+  intuition: Non-Big-Tech strategics buying in the category create exit liquidity.
+  feature: log_appetite_strategic
+  definition: log(1 + other corporate acquisitions in same category, prior 2 years).
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: N7
+  source: spec
+  name: Name semantics
+  intuition: Names far from their category's naming conventions stand out (or confuse).
+  feature: name_sem_dist
+  definition: Cosine distance of name char-ngram TF-IDF from TRAIN centroid of its primary category (no taglines exist in this dataset).
+  kind: logit
+  primary: success
+  direction: two
+
+- id: N8
+  source: spec
+  name: Company age at first round (nonlinear)
+  intuition: Too young = no traction, too old = stalled; a sweet spot exists.
+  feature: age_at_first
+  definition: Years from founded_at to first round, 3-df natural spline, likelihood-ratio test.
+  kind: spline
+  primary: success
+  direction: two
+
+- id: N9
+  source: spec
+  name: Syndicate diversity
+  intuition: Investors from many regions bring wider networks.
+  feature: n_inv_regions
+  definition: Distinct investor home regions in the first round, controlling for syndicate size.
+  controls: [log_syndicate]
+  subset: has_investor_record == 1
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: N10
+  source: spec
+  name: Contrarian but cheap (Thiel secret)
+  intuition: The contrarian portfolio fails on hit rate; a cheap entry price may rescue it.
+  feature: contrarian_cheap
+  definition: Below-train-median crowding AND above-train-median atypicality AND solo investor, restricted to the cheapest train-tercile entry price, vs all test deals.
+  kind: returns
+  primary: multiple
+  direction: "+"
+
+# ---------------- own hypotheses ----------------
+- id: N11
+  source: own
+  name: Accelerator-backed
+  intuition: YC/Techstars-style selection plus network.
+  feature: accelerator
+  definition: A named accelerator in the first round.
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: N12
+  source: own
+  name: Angel-heavy syndicate
+  intuition: Rounds dominated by individuals lack institutional follow-on capacity.
+  feature: share_person
+  definition: Share of first-round investors that are people (not organisations).
+  subset: has_investor_record == 1
+  kind: logit
+  primary: bigwin
+  direction: "-"
+
+- id: N13
+  source: own
+  name: Investor experience
+  intuition: Experienced investors select and help better.
+  feature: log_inv_prior_deals
+  definition: log(1 + mean prior Crunchbase deals of first-round investors, point-in-time).
+  subset: has_investor_record == 1
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: N14
+  source: own
+  name: Local investors
+  intuition: Co-located investors monitor better, or local-only rounds lack reach.
+  feature: share_local
+  definition: Share of first-round investors whose region equals the company's.
+  subset: has_investor_record == 1
+  kind: logit
+  primary: success
+  direction: two
+
+- id: N15
+  source: own
+  name: Category breadth
+  intuition: Listing many categories = unfocused.
+  feature: n_categories
+  definition: Number of Crunchbase categories listed.
+  kind: logit
+  primary: success
+  direction: "-"
+
+- id: N16
+  source: own
+  name: NY / Boston hub
+  intuition: Second-tier hubs also carry a density premium.
+  feature: hub_ny_bos
+  definition: Region is New York City or Boston.
+  kind: logit
+  primary: success
+  direction: "+"
+
+- id: N17
+  source: own
+  name: Digit in name
+  intuition: Names with digits look amateurish.
+  feature: name_has_digit
+  definition: Normalised name contains a digit.
+  kind: logit
+  primary: success
+  direction: "-"
+
+- id: N18
+  source: own
+  name: Short name
+  intuition: Short names are costlier to get, so signal resources.
+  feature: name_len
+  definition: Length of normalised name.
+  kind: logit
+  primary: success
+  direction: "-"
+
+- id: N19
+  source: own
+  name: Seed/angel entry beats Series A entry
+  intuition: Earlier entry is cheaper per unit of eventual outcome.
+  feature: stage
+  definition: Mean price-adjusted multiple of seed+angel first rounds minus Series A first rounds.
+  kind: returns
+  primary: multiple
+  direction: "+"
+
+- id: N20
+  source: own
+  name: Second-tier smart money
+  intuition: Investors ranked 41-120 carry signal without the top-40 price premium.
+  feature: second_tier_money
+  definition: A rank 41-120 investor (train success rate) in the first round and no top-40 investor.
+  kind: logit
+  primary: bigwin
+  direction: "+"
+
+- id: N21
+  source: own
+  name: Category momentum
+  intuition: Hot categories (deal count rising) get follow-on capital and exits.
+  feature: cat_momentum
+  definition: log((first rounds in category, year t + 1)/(year t-2 + 1)) within the US panel.
+  kind: logit
+  primary: success
+  direction: two
+
+- id: N22
+  source: own
+  name: Speed to next round
+  intuition: Fast follow-on = traction. Tradable only at round 2.
+  feature: years_to_next
+  definition: Years from first to next equity round, among companies that raised one.
+  kind: logit
+  primary: success
+  direction: "-"

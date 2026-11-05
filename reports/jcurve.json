@@ -1,0 +1,92 @@
+{
+ "assumptions": "Horizon returns that respect HOW venture money moves: Takahashi-Alexander (Yale) fund cash-flow\nmodel with fees, carry and the J-curve, run as a program that starts with $1 today.\n\nMechanics (yearly):\n  * You set aside 100. Uncalled cash earns CASH_RATE (3.5%).\n  * Each fund calls capital: 25% / 33% / 50%-of-remaining in years 1/2/3+ (TA defaults).\n  * Fees 2%/yr of commitment years 1-5, 1.5% years 6-10, paid out of called capital.\n  * Invested NAV grows at gross rate G. Distributions = NAV*(1+G)*(age/LIFE)^BOW, LIFE=12, BOW=2.5.\n  * 20% carry on distributions once a fund has returned its paid-in capital.\n  * Every distribution is recommitted to a new fund the next year (a perpetual VC programme).\n  G is solved so that a single fund's NET IRR equals the target:\n      market 10%  (CA US VC index, 20y 12.9% / 25y 8.1%)\n      strategy  round 5: quality-in-cheap-half edge pooled over 3 out-of-sample windows (+50%),\n                halved to +25% on the fund multiple, held through a low-fee vehicle (1%/10%)\n                -> net IRR from analysis/edge.py (~16.7%); via a standard 2/20 fund it is ~14.2%\n      best-10 hindsight: 31% for fund 1 (top-decile vintages 2007-14), 20% for later funds.\nValue at horizon T = cash + NAV of all funds; percent = value - 100.\n",
+ "gross_growth": {
+  "strategy": [
+   0.2177,
+   0.2177
+  ],
+  "market": [
+   0.1443,
+   0.1443
+  ],
+  "best10_hindsight": [
+   0.3707,
+   0.2529
+  ]
+ },
+ "net_irr_targets": {
+  "strategy": [
+   0.16723098383299517,
+   0.16723098383299517
+  ],
+  "market": [
+   0.1,
+   0.1
+  ],
+  "best10_hindsight": [
+   0.31,
+   0.2
+  ]
+ },
+ "rows": [
+  {
+   "years": 1,
+   "strategy_pct": 1.4999999999999858,
+   "market_pct": 1.4999999999999858,
+   "best10_hindsight_pct": 1.4999999999999858
+  },
+  {
+   "years": 3,
+   "strategy_pct": 18.268106800549546,
+   "market_pct": 12.614783917291135,
+   "best10_hindsight_pct": 30.82824051908716
+  },
+  {
+   "years": 5,
+   "strategy_pct": 57.31171056820614,
+   "market_pct": 35.36742484125523,
+   "best10_hindsight_pct": 113.30979393365453
+  },
+  {
+   "years": 10,
+   "strategy_pct": 170.67388564519234,
+   "market_pct": 93.45247765310594,
+   "best10_hindsight_pct": 411.3185396528657
+  },
+  {
+   "years": 20,
+   "strategy_pct": 678.7516387828434,
+   "market_pct": 284.47685219608314,
+   "best10_hindsight_pct": 1684.5808610529261
+  },
+  {
+   "years": 30,
+   "strategy_pct": 2107.0436923774255,
+   "market_pct": 650.3984397713198,
+   "best10_hindsight_pct": 6015.959842156254
+  },
+  {
+   "years": 40,
+   "strategy_pct": 6065.283232063219,
+   "market_pct": 1338.6301178857943,
+   "best10_hindsight_pct": 20562.20110978983
+  }
+ ],
+ "market_fund_tvpi_by_year": [
+  0.92,
+  0.986,
+  1.059,
+  1.155,
+  1.267,
+  1.39,
+  1.508,
+  1.609,
+  1.628,
+  1.628,
+  1.622,
+  1.619,
+  1.619,
+  1.619,
+  1.619
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "features": [
+  "sf",
+  "name_real_word",
+  "name_len",
+  "log_raised"
+ ],
+ "coef": {
+  "sf": 0.17006,
+  "name_real_word": 0.012293,
+  "name_len": 0.056179,
+  "log_raised": 0.566415
+ },
+ "intercept": -2.5986963654214805,
+ "mean": {
+  "sf": 0.356013,
+  "name_real_word": 0.041139,
+  "name_len": 11.013449,
+  "log_raised": 6.363737
+ },
+ "sd": {
+  "sf": 0.478914,
+  "name_real_word": 0.198651,
+  "name_len": 5.233508,
+  "log_raised": 0.663873
+ },
+ "floor": 2000000.0,
+ "train_auc": null,
+ "test_auc_bigwin": 0.7627,
+ "note": "Reduced model: Form D shows no investors, so syndicate, accelerator and investor-experience features cannot be scored. Mostly a round-size-and-location score."
+}

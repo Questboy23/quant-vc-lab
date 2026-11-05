@@ -1,0 +1,34 @@
+# Round 3 registry, written 2026-10-03 BEFORE any round-3 result was computed.
+# Trial budget: these 12 tests + 2 pre-declared portfolio rules (R-A, R-B). Holm across the 12.
+# Test window 2008-2010 (already used in rounds 1-2: these are new features, but the window is
+# not virgin). Lockbox = 2012 cohort, opened ONCE at the end for R-A and R-B only.
+# Founder tests: only companies with >=1 founder on record, controlling for log(people listed).
+
+- {id: R1, name: Founder has a prior exit, feature: prior_exit, kind: logit, primary: bigwin, direction: "+", founder: true,
+   intuition: "Founders who already sold a company know how to build and sell one, and attract talent."}
+- {id: R2, name: Serial founder, feature: serial, kind: logit, primary: success, direction: "+", founder: true,
+   intuition: "Experience compounds."}
+- {id: R3, name: Big Tech alum founder, feature: bigtech_alum, kind: logit, primary: bigwin, direction: "+", founder: true,
+   intuition: "Google/Facebook/PayPal mafia: networks, recruiting, acquirer relationships."}
+- {id: R4, name: Elite-school founder, feature: elite_school, kind: logit, primary: bigwin, direction: "+", founder: true,
+   intuition: "Selection plus network."}
+- {id: R5, name: PhD founder, feature: phd, kind: logit, primary: bigwin, direction: two, founder: true,
+   intuition: "Deep tech moats, or academic founders who cannot sell."}
+- {id: R6, name: MBA founder, feature: mba, kind: logit, primary: success, direction: two, founder: true,
+   intuition: "Operators, or suits."}
+- {id: R7, name: Multiple founders, feature: multi_founder, kind: logit, primary: success, direction: "+", founder: true,
+   intuition: "Solo founders burn out; teams split the load."}
+- {id: R8, name: Press momentum before the round, feature: log_ms_pre, kind: logit, primary: success, direction: "+", founder: true,
+   intuition: "Milestones announced before the first round = early traction."}
+- {id: R9, name: Investor backed the founder before, feature: investor_repeat, kind: logit, primary: success, direction: "+", founder: true,
+   intuition: "How the right people come to you, part 1: a founder's past backers re-up because they know them."}
+- {id: R10, name: Investor network centrality, feature: net_centrality, kind: logit, primary: bigwin, direction: "+", founder: false,
+   intuition: "How the right people come to you, part 2: the most connected investors see (and win) the best deals."}
+- {id: R11, name: Accelerator index, feature: accelerator, kind: returns, primary: multiple, direction: "+", founder: false,
+   intuition: "How the right people come to you, part 3: run or join a programme, and deals apply to you, cheaply."}
+- {id: R12, name: Founder quality index, feature: founder_index, kind: logit, primary: bigwin, direction: "+", founder: true,
+   intuition: "prior_exit + bigtech_alum + elite_school, added up."}
+
+# Portfolio rules (pre-declared, fixed, not tuned):
+# R-A: own every deal, drop the bottom third of the round-3 combined score (28 old + 12 new features).
+# R-B: R-A, plus double-size checks in the top 10% of the score.

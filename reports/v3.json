@@ -1,0 +1,750 @@
+{
+ "generated": "2026-10-03T22:52:08.667039+00:00",
+ "registry": [
+  {
+   "id": "R1",
+   "name": "Founder has a prior exit",
+   "feature": "prior_exit",
+   "kind": "logit",
+   "primary": "bigwin",
+   "direction": "+",
+   "intuition": "Founders who already sold a company know how to build and sell one, and attract talent.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.020265080821443803,
+    "p_raw": 0.9404532247474655,
+    "p_holm": 1.0,
+    "n": 2521,
+    "events": 106,
+    "side": {
+     "success": {
+      "coef": 0.3960301886949297,
+      "se": 0.14169386624359215,
+      "p": 0.0051904437113330605,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": -0.020265080821443803,
+      "se": 0.27128538756727333,
+      "p": 0.9404532247474655,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": -0.07486227716076004,
+      "se": 0.20046907946796583,
+      "p": 0.7088243190059307,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 2.164343728279044,
+      "mult_lo": 4.440740461766781,
+      "mult_hi_excl_top": 2.164343728279044,
+      "mult_lo_excl_top": 1.5918859714429598,
+      "outlier_rate_hi": 0.016556291390728478,
+      "outlier_rate_lo": 0.013519603424966201,
+      "n_hi": 302,
+      "n_lo": 2219
+     }
+    }
+   }
+  },
+  {
+   "id": "R2",
+   "name": "Serial founder",
+   "feature": "serial",
+   "kind": "logit",
+   "primary": "success",
+   "direction": "+",
+   "intuition": "Experience compounds.",
+   "result": {
+    "verdict": "passes",
+    "effect": 0.41463028599326446,
+    "p_raw": 4.5582024301600695e-05,
+    "p_holm": 0.0005469842916192083,
+    "n": 2521,
+    "events": 570,
+    "side": {
+     "success": {
+      "coef": 0.41463028599326446,
+      "se": 0.10169495495344559,
+      "p": 4.5582024301600695e-05,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": -0.3418205650490485,
+      "se": 0.21345270582610856,
+      "p": 0.10929104690145194,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": 0.04198066005240058,
+      "se": 0.1187732864102717,
+      "p": 0.7237495799010815,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 1.899905552295541,
+      "mult_lo": 5.61046557388133,
+      "mult_hi_excl_top": 1.899905552295541,
+      "mult_lo_excl_top": 1.508134707370861,
+      "outlier_rate_hi": 0.011224489795918367,
+      "outlier_rate_lo": 0.015574302401038288,
+      "n_hi": 980,
+      "n_lo": 1541
+     }
+    }
+   }
+  },
+  {
+   "id": "R3",
+   "name": "Big Tech alum founder",
+   "feature": "bigtech_alum",
+   "kind": "logit",
+   "primary": "bigwin",
+   "direction": "+",
+   "intuition": "Google/Facebook/PayPal mafia: networks, recruiting, acquirer relationships.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.35944841226558377,
+    "p_raw": 0.279078726172318,
+    "p_holm": 1.0,
+    "n": 2521,
+    "events": 106,
+    "side": {
+     "success": {
+      "coef": 0.4324057481562385,
+      "se": 0.1523070043049752,
+      "p": 0.004524941848337349,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": -0.35944841226558377,
+      "se": 0.3320873306020544,
+      "p": 0.279078726172318,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": -0.10889143072378622,
+      "se": 0.20001349032716956,
+      "p": 0.5861521891109601,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 27.33966103573127,
+      "mult_lo": 1.4117202543385607,
+      "mult_hi_excl_top": 3.7596597662021685,
+      "mult_lo_excl_top": 1.4117202543385607,
+      "outlier_rate_hi": 0.029850746268656716,
+      "outlier_rate_lo": 0.011984021304926764,
+      "n_hi": 268,
+      "n_lo": 2253
+     }
+    }
+   }
+  },
+  {
+   "id": "R4",
+   "name": "Elite-school founder",
+   "feature": "elite_school",
+   "kind": "logit",
+   "primary": "bigwin",
+   "direction": "+",
+   "intuition": "Selection plus network.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.16686035391366522,
+    "p_raw": 0.4337268704622901,
+    "p_holm": 1.0,
+    "n": 2521,
+    "events": 106,
+    "side": {
+     "success": {
+      "coef": 0.2663606398235915,
+      "se": 0.1095961906033426,
+      "p": 0.015082904795148174,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": 0.16686035391366522,
+      "se": 0.21315014210647729,
+      "p": 0.4337268704622901,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": -0.36891484704934047,
+      "se": 0.1459230787787536,
+      "p": 0.011466665905558619,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 11.415483761623152,
+      "mult_lo": 1.365538947293555,
+      "mult_hi_excl_top": 2.4243377270955455,
+      "mult_lo_excl_top": 1.365538947293555,
+      "outlier_rate_hi": 0.021337126600284494,
+      "outlier_rate_lo": 0.011001100110011002,
+      "n_hi": 703,
+      "n_lo": 1818
+     }
+    }
+   }
+  },
+  {
+   "id": "R5",
+   "name": "PhD founder",
+   "feature": "phd",
+   "kind": "logit",
+   "primary": "bigwin",
+   "direction": "two",
+   "intuition": "Deep tech moats, or academic founders who cannot sell.",
+   "result": {
+    "verdict": "passes",
+    "effect": 0.7015640884244191,
+    "p_raw": 0.004984769197509202,
+    "p_holm": 0.04486292277758282,
+    "n": 2521,
+    "events": 106,
+    "side": {
+     "success": {
+      "coef": 0.22250116330162292,
+      "se": 0.17283538976041365,
+      "p": 0.19796925081873296,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": 0.7015640884244191,
+      "se": 0.24984330381209793,
+      "p": 0.004984769197509202,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": -0.5461635719246042,
+      "se": 0.2795593394098344,
+      "p": 0.05074157823374383,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 3.1489211546170166,
+      "mult_lo": 4.253480337682906,
+      "mult_hi_excl_top": 3.1489211546170166,
+      "mult_lo_excl_top": 1.5356538776130917,
+      "outlier_rate_hi": 0.03076923076923077,
+      "outlier_rate_lo": 0.012467755803955288,
+      "n_hi": 195,
+      "n_lo": 2326
+     }
+    }
+   }
+  },
+  {
+   "id": "R6",
+   "name": "MBA founder",
+   "feature": "mba",
+   "kind": "logit",
+   "primary": "success",
+   "direction": "two",
+   "intuition": "Operators, or suits.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.2393671395295615,
+    "p_raw": 0.05421616530351039,
+    "p_holm": 0.37951315712457273,
+    "n": 2521,
+    "events": 570,
+    "side": {
+     "success": {
+      "coef": 0.2393671395295615,
+      "se": 0.1243397537309005,
+      "p": 0.05421616530351039,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": 0.01856801286899247,
+      "se": 0.2395259880599892,
+      "p": 0.9382100200218301,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": -0.8044719857228712,
+      "se": 0.19760123628946172,
+      "p": 4.67737728574332e-05,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 1.6473414277277743,
+      "mult_lo": 4.709841259679117,
+      "mult_hi_excl_top": 1.6473414277277743,
+      "mult_lo_excl_top": 1.663317557297092,
+      "outlier_rate_hi": 0.017937219730941704,
+      "outlier_rate_lo": 0.013012048192771084,
+      "n_hi": 446,
+      "n_lo": 2075
+     }
+    }
+   }
+  },
+  {
+   "id": "R7",
+   "name": "Multiple founders",
+   "feature": "multi_founder",
+   "kind": "logit",
+   "primary": "success",
+   "direction": "+",
+   "intuition": "Solo founders burn out; teams split the load.",
+   "result": {
+    "verdict": "passes",
+    "effect": 0.3640755087818674,
+    "p_raw": 0.0008239104255709578,
+    "p_holm": 0.009063014681280535,
+    "n": 2521,
+    "events": 570,
+    "side": {
+     "success": {
+      "coef": 0.3640755087818674,
+      "se": 0.10885359785326412,
+      "p": 0.0008239104255709578,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": 0.2929089692323789,
+      "se": 0.2558980046942762,
+      "p": 0.25236175326989074,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": 0.043821034626166926,
+      "se": 0.1242299674659817,
+      "p": 0.7242824278995932,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 6.425331685911107,
+      "mult_lo": 1.0211281820353764,
+      "mult_hi_excl_top": 2.119418483243016,
+      "mult_lo_excl_top": 1.0211281820353764,
+      "outlier_rate_hi": 0.018392370572207085,
+      "outlier_rate_lo": 0.007597340930674264,
+      "n_hi": 1468,
+      "n_lo": 1053
+     }
+    }
+   }
+  },
+  {
+   "id": "R8",
+   "name": "Press momentum before the round",
+   "feature": "log_ms_pre",
+   "kind": "logit",
+   "primary": "success",
+   "direction": "+",
+   "intuition": "Milestones announced before the first round = early traction.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.0056361327927912696,
+    "p_raw": 0.7870175653690084,
+    "p_holm": 1.0,
+    "n": 2521,
+    "events": 570,
+    "side": {
+     "success": {
+      "coef": 0.0056361327927912696,
+      "se": 0.02086023595608148,
+      "p": 0.7870175653690084,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": -0.07574302654746774,
+      "se": 0.05705607073483999,
+      "p": 0.18433700935571518,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": -0.017399391276828893,
+      "se": 0.028773759728651146,
+      "p": 0.5453806862090119,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 1.4048175023998917,
+      "mult_lo": 4.267986416107508,
+      "mult_hi_excl_top": 1.4048175023998917,
+      "mult_lo_excl_top": 1.6697413447325518,
+      "outlier_rate_hi": 0.022727272727272728,
+      "outlier_rate_lo": 0.013563501849568433,
+      "n_hi": 88,
+      "n_lo": 2433
+     }
+    }
+   }
+  },
+  {
+   "id": "R9",
+   "name": "Investor backed the founder before",
+   "feature": "investor_repeat",
+   "kind": "logit",
+   "primary": "success",
+   "direction": "+",
+   "intuition": "How the right people come to you, part 1: a founder's past backers re-up because they know them.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": 0.337962863737076,
+    "p_raw": 0.0409296809788884,
+    "p_holm": 0.3274374478311072,
+    "n": 2521,
+    "events": 570,
+    "side": {
+     "success": {
+      "coef": 0.337962863737076,
+      "se": 0.16532432191693508,
+      "p": 0.0409296809788884,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": -0.24406532281411655,
+      "se": 0.30551142621183086,
+      "p": 0.42436312002656285,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": -0.33529593985839895,
+      "se": 0.2587446715071323,
+      "p": 0.19502496099559408,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 2.5234159186771863,
+      "mult_lo": 4.325286131461008,
+      "mult_hi_excl_top": 2.5234159186771863,
+      "mult_lo_excl_top": 1.57794929934425,
+      "outlier_rate_hi": 0.013636363636363636,
+      "outlier_rate_lo": 0.013906996957844416,
+      "n_hi": 220,
+      "n_lo": 2301
+     }
+    }
+   }
+  },
+  {
+   "id": "R10",
+   "name": "Investor network centrality",
+   "feature": "net_centrality",
+   "kind": "logit",
+   "primary": "bigwin",
+   "direction": "+",
+   "intuition": "How the right people come to you, part 2: the most connected investors see (and win) the best deals.",
+   "result": {
+    "verdict": "passes",
+    "effect": 0.36723767450898676,
+    "p_raw": 0.0032545470935468825,
+    "p_holm": 0.03254547093546883,
+    "n": 2198,
+    "events": 98,
+    "side": {
+     "success": {
+      "coef": 0.4556104498399999,
+      "se": 0.05653841182535442,
+      "p": 7.728485014739508e-16,
+      "n": 2198,
+      "events": 548
+     },
+     "bigwin": {
+      "coef": 0.36723767450898676,
+      "se": 0.12479984345944942,
+      "p": 0.0032545470935468825,
+      "n": 2198,
+      "events": 98
+     },
+     "closed": {
+      "coef": -0.10890217037029307,
+      "se": 0.062194047137248895,
+      "p": 0.07994481926088427,
+      "n": 2198,
+      "events": 340
+     },
+     "returns": {
+      "mult_hi": 2.3431531697883354,
+      "mult_lo": 1.3115534151540933,
+      "mult_hi_excl_top": 1.8265876263596572,
+      "mult_lo_excl_top": 1.3115534151540933,
+      "outlier_rate_hi": 0.017479300827966882,
+      "outlier_rate_lo": 0.009900990099009901,
+      "n_hi": 1087,
+      "n_lo": 1111
+     }
+    }
+   }
+  },
+  {
+   "id": "R11",
+   "name": "Accelerator index",
+   "feature": "accelerator",
+   "kind": "returns",
+   "primary": "multiple",
+   "direction": "+",
+   "intuition": "How the right people come to you, part 3: run or join a programme, and deals apply to you, cheaply.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -1.830950523920167,
+    "p_raw": 0.42100000000000004,
+    "p_holm": 1.0,
+    "n": 246,
+    "mult_group": 1.4817989444326598,
+    "mult_all": 3.312749468352827,
+    "ci": [
+     -6.715778369714327,
+     1.3684229913679016
+    ],
+    "mult_group_excl_top": 1.4817989444326598,
+    "mult_all_excl_top": 1.3506609087341845,
+    "outliers_in_group": 3,
+    "outliers_total": 36,
+    "side": {}
+   }
+  },
+  {
+   "id": "R12",
+   "name": "Founder quality index",
+   "feature": "founder_index",
+   "kind": "logit",
+   "primary": "bigwin",
+   "direction": "+",
+   "intuition": "prior_exit + bigtech_alum + elite_school, added up.",
+   "result": {
+    "verdict": "no evidence",
+    "effect": -0.004569650725883863,
+    "p_raw": 0.9623610647318296,
+    "p_holm": 1.0,
+    "n": 2521,
+    "events": 106,
+    "side": {
+     "success": {
+      "coef": 0.1996299433738149,
+      "se": 0.05164625134823662,
+      "p": 0.00011093787862261749,
+      "n": 2521,
+      "events": 570
+     },
+     "bigwin": {
+      "coef": -0.004569650725883863,
+      "se": 0.09683326335358101,
+      "p": 0.9623610647318296,
+      "n": 2521,
+      "events": 106
+     },
+     "closed": {
+      "coef": -0.13837587390085324,
+      "se": 0.0728412726720325,
+      "p": 0.057473747408497936,
+      "n": 2521,
+      "events": 427
+     },
+     "returns": {
+      "mult_hi": 9.266112094173726,
+      "mult_lo": 1.248499056861682,
+      "mult_hi_excl_top": 2.38068800703542,
+      "mult_lo_excl_top": 1.248499056861682,
+      "outlier_rate_hi": 0.018518518518518517,
+      "outlier_rate_lo": 0.011228945726762321,
+      "n_hi": 918,
+      "n_lo": 1603
+     }
+    }
+   }
+  }
+ ],
+ "model": {
+  "ridge_bigwin_cv_auc": 0.8192,
+  "ridge_outlier_cv_auc": 0.7832
+ },
+ "test_rules_v3": {
+  "own_everything": {
+   "multiple": 3.312749468352827,
+   "multiple_excl_top_deal": 1.3506609087341845,
+   "vs_everything_pct": 0.0,
+   "vs_everything_ci_pct": [
+    0.0,
+    0.0
+   ],
+   "outliers_held": 36,
+   "outliers_total": 36,
+   "deals": 3222
+  },
+  "R-A_drop_bottom_third": {
+   "multiple": 4.163870797193639,
+   "multiple_excl_top_deal": 1.6199754150669061,
+   "vs_everything_pct": 25.69229387768972,
+   "vs_everything_ci_pct": [
+    10.389329240474176,
+    29.814212713810907
+   ],
+   "outliers_held": 33,
+   "outliers_total": 36,
+   "deals": 2485
+  },
+  "R-B_plus_double_top10": {
+   "multiple": 4.180504385110712,
+   "multiple_excl_top_deal": 1.7063385685034715,
+   "vs_everything_pct": 26.194402113642255,
+   "vs_everything_ci_pct": [
+    15.884247835348031,
+    37.06041366243951
+   ],
+   "outliers_held": 33,
+   "outliers_total": 36,
+   "deals": 2485
+  }
+ },
+ "test_rules_v2_features_only": {
+  "own_everything": {
+   "multiple": 3.312749468352827,
+   "multiple_excl_top_deal": 1.3506609087341845,
+   "vs_everything_pct": 0.0,
+   "vs_everything_ci_pct": [
+    0.0,
+    0.0
+   ],
+   "outliers_held": 36,
+   "outliers_total": 36,
+   "deals": 3222
+  },
+  "R-A_drop_bottom_third": {
+   "multiple": 4.0494195724668565,
+   "multiple_excl_top_deal": 1.5408246616182921,
+   "vs_everything_pct": 22.23742275567606,
+   "vs_everything_ci_pct": [
+    4.178570056052777,
+    26.861288577364117
+   ],
+   "outliers_held": 31,
+   "outliers_total": 36,
+   "deals": 2520
+  },
+  "R-B_plus_double_top10": {
+   "multiple": 4.055839199845094,
+   "multiple_excl_top_deal": 1.5960711341385325,
+   "vs_everything_pct": 22.431208233254885,
+   "vs_everything_ci_pct": [
+    6.663692601093474,
+    29.27637515789574
+   ],
+   "outliers_held": 31,
+   "outliers_total": 36,
+   "deals": 2520
+  }
+ },
+ "lockbox2012": {
+  "consumed_at": "2026-10-03T22:52:11.517870+00:00",
+  "result": {
+   "rules_v3": {
+    "own_everything": {
+     "multiple": 0.688140878035395,
+     "multiple_excl_top_deal": 0.4552818225749977,
+     "vs_everything_pct": 0.0,
+     "vs_everything_ci_pct": [
+      0.0,
+      0.0
+     ],
+     "outliers_held": 8,
+     "outliers_total": 8,
+     "deals": 2693
+    },
+    "R-A_drop_bottom_third": {
+     "multiple": 0.7331734157938307,
+     "multiple_excl_top_deal": 0.43721987154800523,
+     "vs_everything_pct": 6.544087002504639,
+     "vs_everything_ci_pct": [
+      -34.170753614654295,
+      27.53771782583008
+     ],
+     "outliers_held": 7,
+     "outliers_total": 8,
+     "deals": 2119
+    },
+    "R-B_plus_double_top10": {
+     "multiple": 0.7195317597033913,
+     "multiple_excl_top_deal": 0.43119262648636736,
+     "vs_everything_pct": 4.5616940760176306,
+     "vs_everything_ci_pct": [
+      -34.64660261285049,
+      25.263329931450684
+     ],
+     "outliers_held": 7,
+     "outliers_total": 8,
+     "deals": 2119
+    }
+   },
+   "rules_v2_features": {
+    "own_everything": {
+     "multiple": 0.688140878035395,
+     "multiple_excl_top_deal": 0.4552818225749977,
+     "vs_everything_pct": 0.0,
+     "vs_everything_ci_pct": [
+      0.0,
+      0.0
+     ],
+     "outliers_held": 8,
+     "outliers_total": 8,
+     "deals": 2693
+    },
+    "R-A_drop_bottom_third": {
+     "multiple": 0.5191752408314019,
+     "multiple_excl_top_deal": 0.36758876851072075,
+     "vs_everything_pct": -24.5539311203806,
+     "vs_everything_ci_pct": [
+      -65.78424294359245,
+      22.958254895479733
+     ],
+     "outliers_held": 5,
+     "outliers_total": 8,
+     "deals": 2069
+    },
+    "R-B_plus_double_top10": {
+     "multiple": 0.5103567766211483,
+     "multiple_excl_top_deal": 0.3624843034025734,
+     "vs_everything_pct": -25.835422235314766,
+     "vs_everything_ci_pct": [
+      -66.03463247052167,
+      20.97873272809383
+     ],
+     "outliers_held": 5,
+     "outliers_total": 8,
+     "deals": 2069
+    }
+   },
+   "n": 2693,
+   "years_of_follow_up": "3.0-3.9 (first rounds in 2012, outcomes frozen Dec 2015)",
+   "base": {
+    "success": 0.08132194578536947,
+    "bigwin": 0.00928332714444857,
+    "mean_multiple": 0.688140878035395
+   }
+  }
+ }
+}

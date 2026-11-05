@@ -1,0 +1,506 @@
+{
+ "consumed_at": "2026-10-03T23:44:44.552201+00:00",
+ "primary": "price_adj_top20 @ $5M floor",
+ "result": {
+  "own_all": {
+   "deals": 6964,
+   "markup": 5.879028307293354,
+   "markup_excl_top": 5.260449469155542,
+   "vs_all_pct": 0.0,
+   "vs_all_ci_pct": [
+    0.0,
+    0.0
+   ],
+   "outliers": 305,
+   "outliers_total": 305,
+   "unicorns": 40,
+   "unicorns_total": 40,
+   "ipos": 47,
+   "ipos_total": 47,
+   "exits": 264,
+   "exits_total": 264,
+   "outlier_rate": 0.04379666858127513,
+   "growth20_rate": 0.09893739230327397
+  },
+  "drop_bottom_third": {
+   "deals": 4644,
+   "markup": 5.3581511624470055,
+   "markup_excl_top": 5.3581511624470055,
+   "vs_all_pct": -8.85991898015125,
+   "vs_all_ci_pct": [
+    -29.474738379955667,
+    12.949625091363682
+   ],
+   "outliers": 206,
+   "outliers_total": 305,
+   "unicorns": 36,
+   "unicorns_total": 40,
+   "ipos": 36,
+   "ipos_total": 47,
+   "exits": 208,
+   "exits_total": 264,
+   "outlier_rate": 0.044358311800172266,
+   "growth20_rate": 0.13027562446167099
+  },
+  "top_20pct": {
+   "deals": 1395,
+   "markup": 4.103212799779231,
+   "markup_excl_top": 4.103212799779231,
+   "vs_all_pct": -30.205935652854354,
+   "vs_all_ci_pct": [
+    -47.98952123740492,
+    -5.860896380705438
+   ],
+   "outliers": 58,
+   "outliers_total": 305,
+   "unicorns": 15,
+   "unicorns_total": 40,
+   "ipos": 26,
+   "ipos_total": 47,
+   "exits": 91,
+   "exits_total": 264,
+   "outlier_rate": 0.04157706093189964,
+   "growth20_rate": 0.1913978494623656
+  },
+  "top_10pct": {
+   "deals": 699,
+   "markup": 4.336082924634205,
+   "markup_excl_top": 4.336082924634205,
+   "vs_all_pct": -26.244904804166623,
+   "vs_all_ci_pct": [
+    -46.243068218779705,
+    1.2344085869691268
+   ],
+   "outliers": 37,
+   "outliers_total": 305,
+   "unicorns": 8,
+   "unicorns_total": 40,
+   "ipos": 22,
+   "ipos_total": 47,
+   "exits": 55,
+   "exits_total": 264,
+   "outlier_rate": 0.05293276108726753,
+   "growth20_rate": 0.21602288984263232
+  },
+  "price_adj_top20": {
+   "deals": 1395,
+   "markup": 10.628169419099176,
+   "markup_excl_top": 10.628169419099176,
+   "vs_all_pct": 80.78105536444133,
+   "vs_all_ci_pct": [
+    27.826553738638893,
+    142.17904544822463
+   ],
+   "outliers": 124,
+   "outliers_total": 305,
+   "unicorns": 3,
+   "unicorns_total": 40,
+   "ipos": 9,
+   "ipos_total": 47,
+   "exits": 28,
+   "exits_total": 264,
+   "outlier_rate": 0.08888888888888889,
+   "growth20_rate": 0.022222222222222223
+  },
+  "quality_in_cheap_half": {
+   "deals": 1103,
+   "markup": 9.466173491797733,
+   "markup_excl_top": 9.466173491797733,
+   "vs_all_pct": 61.0159536067256,
+   "vs_all_ci_pct": [
+    13.852216986487797,
+    125.47574418742866
+   ],
+   "outliers": 93,
+   "outliers_total": 305,
+   "unicorns": 5,
+   "unicorns_total": 40,
+   "ipos": 6,
+   "ipos_total": 47,
+   "exits": 30,
+   "exits_total": 264,
+   "outlier_rate": 0.0843155031731641,
+   "growth20_rate": 0.050770625566636446
+  },
+  "auc_outlier": 0.5120372034396934,
+  "auc_exit": 0.6161145974672094,
+  "auc_growth20": 0.6897596262265886
+ },
+ "by_floor": {
+  "3M": {
+   "own_all": {
+    "deals": 6964,
+    "markup": 4.648081864361063,
+    "markup_excl_top": 4.055135540726283,
+    "vs_all_pct": 0.0,
+    "vs_all_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "outliers": 229,
+    "outliers_total": 229,
+    "unicorns": 40,
+    "unicorns_total": 40,
+    "ipos": 47,
+    "ipos_total": 47,
+    "exits": 264,
+    "exits_total": 264,
+    "outlier_rate": 0.032883400344629526,
+    "growth20_rate": 0.09893739230327397
+   },
+   "drop_bottom_third": {
+    "deals": 4644,
+    "markup": 4.08220748172462,
+    "markup_excl_top": 4.08220748172462,
+    "vs_all_pct": -12.174363514878195,
+    "vs_all_ci_pct": [
+     -34.30160188329808,
+     13.169508956539344
+    ],
+    "outliers": 161,
+    "outliers_total": 229,
+    "unicorns": 36,
+    "unicorns_total": 40,
+    "ipos": 36,
+    "ipos_total": 47,
+    "exits": 208,
+    "exits_total": 264,
+    "outlier_rate": 0.03466838931955211,
+    "growth20_rate": 0.13027562446167099
+   },
+   "top_20pct": {
+    "deals": 1395,
+    "markup": 3.8234601588834662,
+    "markup_excl_top": 3.8234601588834662,
+    "vs_all_pct": -17.74111836971597,
+    "vs_all_ci_pct": [
+     -39.37124231411867,
+     11.163197596437513
+    ],
+    "outliers": 53,
+    "outliers_total": 229,
+    "unicorns": 15,
+    "unicorns_total": 40,
+    "ipos": 26,
+    "ipos_total": 47,
+    "exits": 91,
+    "exits_total": 264,
+    "outlier_rate": 0.03799283154121864,
+    "growth20_rate": 0.1913978494623656
+   },
+   "top_10pct": {
+    "deals": 699,
+    "markup": 4.1969910510095625,
+    "markup_excl_top": 4.1969910510095625,
+    "vs_all_pct": -9.704880992097342,
+    "vs_all_ci_pct": [
+     -35.470258061734725,
+     23.65910097303967
+    ],
+    "outliers": 34,
+    "outliers_total": 229,
+    "unicorns": 8,
+    "unicorns_total": 40,
+    "ipos": 22,
+    "ipos_total": 47,
+    "exits": 55,
+    "exits_total": 264,
+    "outlier_rate": 0.04864091559370529,
+    "growth20_rate": 0.21602288984263232
+   },
+   "price_adj_top20": {
+    "deals": 1395,
+    "markup": 9.543265773386626,
+    "markup_excl_top": 6.585023257203019,
+    "vs_all_pct": 105.3162154169259,
+    "vs_all_ci_pct": [
+     30.28646282141272,
+     177.8516695511441
+    ],
+    "outliers": 80,
+    "outliers_total": 229,
+    "unicorns": 6,
+    "unicorns_total": 40,
+    "ipos": 13,
+    "ipos_total": 47,
+    "exits": 41,
+    "exits_total": 264,
+    "outlier_rate": 0.05734767025089606,
+    "growth20_rate": 0.04157706093189964
+   },
+   "quality_in_cheap_half": {
+    "deals": 1103,
+    "markup": 6.755511997970245,
+    "markup_excl_top": 6.755511997970245,
+    "vs_all_pct": 45.33978090549131,
+    "vs_all_ci_pct": [
+     1.9427782671957994,
+     103.87792458898835
+    ],
+    "outliers": 67,
+    "outliers_total": 229,
+    "unicorns": 5,
+    "unicorns_total": 40,
+    "ipos": 6,
+    "ipos_total": 47,
+    "exits": 30,
+    "exits_total": 264,
+    "outlier_rate": 0.06074342701722575,
+    "growth20_rate": 0.050770625566636446
+   },
+   "auc_outlier": 0.5453412564878122,
+   "auc_exit": 0.6161145974672094,
+   "auc_growth20": 0.6897596262265886
+  },
+  "5M": {
+   "own_all": {
+    "deals": 6964,
+    "markup": 3.807837869175344,
+    "markup_excl_top": 3.4522164183451234,
+    "vs_all_pct": 0.0,
+    "vs_all_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "outliers": 198,
+    "outliers_total": 198,
+    "unicorns": 40,
+    "unicorns_total": 40,
+    "ipos": 47,
+    "ipos_total": 47,
+    "exits": 264,
+    "exits_total": 264,
+    "outlier_rate": 0.028431935669155656,
+    "growth20_rate": 0.09893739230327397
+   },
+   "drop_bottom_third": {
+    "deals": 4644,
+    "markup": 3.4702152377867024,
+    "markup_excl_top": 3.4702152377867024,
+    "vs_all_pct": -8.86651803433427,
+    "vs_all_ci_pct": [
+     -29.09414564721097,
+     14.615905706379317
+    ],
+    "outliers": 143,
+    "outliers_total": 198,
+    "unicorns": 36,
+    "unicorns_total": 40,
+    "ipos": 36,
+    "ipos_total": 47,
+    "exits": 208,
+    "exits_total": 264,
+    "outlier_rate": 0.03079242032730405,
+    "growth20_rate": 0.13027562446167099
+   },
+   "top_20pct": {
+    "deals": 1395,
+    "markup": 3.5966802596845704,
+    "markup_excl_top": 3.5966802596845704,
+    "vs_all_pct": -5.545341391767378,
+    "vs_all_ci_pct": [
+     -27.823284718511786,
+     23.082455136187164
+    ],
+    "outliers": 50,
+    "outliers_total": 198,
+    "unicorns": 15,
+    "unicorns_total": 40,
+    "ipos": 26,
+    "ipos_total": 47,
+    "exits": 91,
+    "exits_total": 264,
+    "outlier_rate": 0.035842293906810034,
+    "growth20_rate": 0.1913978494623656
+   },
+   "top_10pct": {
+    "deals": 699,
+    "markup": 4.035216429001461,
+    "markup_excl_top": 4.035216429001461,
+    "vs_all_pct": 5.971329863247576,
+    "vs_all_ci_pct": [
+     -22.068363768323884,
+     40.968496900565945
+    ],
+    "outliers": 34,
+    "outliers_total": 198,
+    "unicorns": 8,
+    "unicorns_total": 40,
+    "ipos": 22,
+    "ipos_total": 47,
+    "exits": 55,
+    "exits_total": 264,
+    "outlier_rate": 0.04864091559370529,
+    "growth20_rate": 0.21602288984263232
+   },
+   "price_adj_top20": {
+    "deals": 1395,
+    "markup": 4.117317281642747,
+    "markup_excl_top": 4.117317281642747,
+    "vs_all_pct": 8.127431447978829,
+    "vs_all_ci_pct": [
+     -18.693303521676274,
+     39.75221956667274
+    ],
+    "outliers": 60,
+    "outliers_total": 198,
+    "unicorns": 2,
+    "unicorns_total": 40,
+    "ipos": 13,
+    "ipos_total": 47,
+    "exits": 50,
+    "exits_total": 264,
+    "outlier_rate": 0.043010752688172046,
+    "growth20_rate": 0.05949820788530466
+   },
+   "quality_in_cheap_half": {
+    "deals": 1103,
+    "markup": 5.207128017541798,
+    "markup_excl_top": 5.207128017541798,
+    "vs_all_pct": 36.74762940128793,
+    "vs_all_ci_pct": [
+     -0.832623630983842,
+     85.05331401985484
+    ],
+    "outliers": 51,
+    "outliers_total": 198,
+    "unicorns": 5,
+    "unicorns_total": 40,
+    "ipos": 6,
+    "ipos_total": 47,
+    "exits": 30,
+    "exits_total": 264,
+    "outlier_rate": 0.04623753399818677,
+    "growth20_rate": 0.050770625566636446
+   },
+   "auc_outlier": 0.5592993935810961,
+   "auc_exit": 0.6161145974672094,
+   "auc_growth20": 0.6897596262265886
+  },
+  "8M": {
+   "own_all": {
+    "deals": 6964,
+    "markup": 3.042817279111405,
+    "markup_excl_top": 2.820649078232346,
+    "vs_all_pct": 0.0,
+    "vs_all_ci_pct": [
+     0.0,
+     0.0
+    ],
+    "outliers": 158,
+    "outliers_total": 158,
+    "unicorns": 40,
+    "unicorns_total": 40,
+    "ipos": 47,
+    "ipos_total": 47,
+    "exits": 264,
+    "exits_total": 264,
+    "outlier_rate": 0.022688110281447443,
+    "growth20_rate": 0.09893739230327397
+   },
+   "drop_bottom_third": {
+    "deals": 4644,
+    "markup": 2.979369982363821,
+    "markup_excl_top": 2.979369982363821,
+    "vs_all_pct": -2.085149745373882,
+    "vs_all_ci_pct": [
+     -20.117944194645943,
+     17.611118615742516
+    ],
+    "outliers": 117,
+    "outliers_total": 158,
+    "unicorns": 36,
+    "unicorns_total": 40,
+    "ipos": 36,
+    "ipos_total": 47,
+    "exits": 208,
+    "exits_total": 264,
+    "outlier_rate": 0.025193798449612403,
+    "growth20_rate": 0.13027562446167099
+   },
+   "top_20pct": {
+    "deals": 1395,
+    "markup": 3.3659431840340677,
+    "markup_excl_top": 3.3659431840340677,
+    "vs_all_pct": 10.619300315562331,
+    "vs_all_ci_pct": [
+     -12.727852518560457,
+     38.25545188003696
+    ],
+    "outliers": 45,
+    "outliers_total": 158,
+    "unicorns": 15,
+    "unicorns_total": 40,
+    "ipos": 26,
+    "ipos_total": 47,
+    "exits": 91,
+    "exits_total": 264,
+    "outlier_rate": 0.03225806451612903,
+    "growth20_rate": 0.1913978494623656
+   },
+   "top_10pct": {
+    "deals": 699,
+    "markup": 3.836472824046489,
+    "markup_excl_top": 3.836472824046489,
+    "vs_all_pct": 26.082918300202884,
+    "vs_all_ci_pct": [
+     -4.163508921148507,
+     61.63597763759798
+    ],
+    "outliers": 31,
+    "outliers_total": 158,
+    "unicorns": 8,
+    "unicorns_total": 40,
+    "ipos": 22,
+    "ipos_total": 47,
+    "exits": 55,
+    "exits_total": 264,
+    "outlier_rate": 0.044349070100143065,
+    "growth20_rate": 0.21602288984263232
+   },
+   "price_adj_top20": {
+    "deals": 1395,
+    "markup": 3.468982358049585,
+    "markup_excl_top": 3.468982358049585,
+    "vs_all_pct": 14.005608613562014,
+    "vs_all_ci_pct": [
+     -12.504566617210832,
+     46.34281355584455
+    ],
+    "outliers": 40,
+    "outliers_total": 158,
+    "unicorns": 2,
+    "unicorns_total": 40,
+    "ipos": 15,
+    "ipos_total": 47,
+    "exits": 59,
+    "exits_total": 264,
+    "outlier_rate": 0.02867383512544803,
+    "growth20_rate": 0.08100358422939068
+   },
+   "quality_in_cheap_half": {
+    "deals": 1103,
+    "markup": 3.8590101899078473,
+    "markup_excl_top": 3.8590101899078473,
+    "vs_all_pct": 26.823592609372703,
+    "vs_all_ci_pct": [
+     -6.054811846386087,
+     68.45163738898808
+    ],
+    "outliers": 33,
+    "outliers_total": 158,
+    "unicorns": 5,
+    "unicorns_total": 40,
+    "ipos": 6,
+    "ipos_total": 47,
+    "exits": 30,
+    "exits_total": 264,
+    "outlier_rate": 0.029918404351767906,
+    "growth20_rate": 0.050770625566636446
+   },
+   "auc_outlier": 0.5846874686148111,
+   "auc_exit": 0.6161145974672094,
+   "auc_growth20": 0.6897596262265886
+  }
+ }
+}
