@@ -1,26 +1,26 @@
 {
- "generated": "2026-11-07T11:56:01.337024+00:00",
+ "generated": "2026-11-10T11:32:54.607162+00:00",
  "model": "round-4 Form D model",
  "days": [
+  "2026-11-09",
   "2026-11-06",
   "2026-11-05",
   "2026-11-04",
-  "2026-11-03",
-  "2026-11-02"
+  "2026-11-03"
  ],
- "filings_seen": 844,
- "scored": 52,
- "rule_picks": 3,
+ "filings_seen": 834,
+ "scored": 51,
+ "rule_picks": 4,
  "dropped": {
-  "fund_like": 481,
+  "fund_like": 482,
   "parse_failed": 0,
   "amendment": 0,
-  "not_startup": 293,
-  "size_out_of_range": 18,
+  "not_startup": 282,
+  "size_out_of_range": 19,
   "not_first_raise": 18
  },
  "fetch": {
-  "calls": 368,
+  "calls": 357,
   "failed": 0,
   "throttled_429": 0
  },
@@ -79,6 +79,32 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163963&type=D"
   },
   {
+   "filed": "20261109",
+   "cik": "2164088",
+   "name": "IDEW, Inc.",
+   "city": "New York",
+   "state": "NY",
+   "industry": "Other",
+   "amount": 400000.0,
+   "first_raise": true,
+   "quality_pct": 0.663,
+   "p_growth20": 0.0299,
+   "p_exit": 0.0347,
+   "cheap_half": true,
+   "rule_pick": true,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 1,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164088&type=D"
+  },
+  {
    "filed": "20261105",
    "cik": "2163653",
    "name": "Harmonee AI Inc.",
@@ -103,32 +129,6 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163653&type=D"
-  },
-  {
-   "filed": "20261102",
-   "cik": "2161032",
-   "name": "LOGOSFI, Inc.",
-   "city": "NEW YORK",
-   "state": "NY",
-   "industry": "Other Technology",
-   "amount": 3425000.0,
-   "first_raise": true,
-   "quality_pct": 0.961,
-   "p_growth20": 0.1599,
-   "p_exit": 0.0638,
-   "cheap_half": false,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 1,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2161032&type=D"
   },
   {
    "filed": "20261106",
@@ -391,6 +391,58 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2162824&type=D"
   },
   {
+   "filed": "20261109",
+   "cik": "2163779",
+   "name": "Marble Group, Inc.",
+   "city": "NEW YORK",
+   "state": "NY",
+   "industry": "Other Technology",
+   "amount": 10873968.0,
+   "first_raise": true,
+   "quality_pct": 0.834,
+   "p_growth20": 0.241,
+   "p_exit": 0.0659,
+   "cheap_half": false,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 1,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163779&type=D"
+  },
+  {
+   "filed": "20261109",
+   "cik": "2006375",
+   "name": "Newton Research, Inc.",
+   "city": "NEEDHAM",
+   "state": "MA",
+   "industry": "Other Technology",
+   "amount": 17899859.0,
+   "first_raise": false,
+   "quality_pct": 0.833,
+   "p_growth20": 0.3653,
+   "p_exit": 0.1012,
+   "cheap_half": false,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 1,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 1,
+    "hub": 1,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2006375&type=D"
+  },
+  {
    "filed": "20261105",
    "cik": "2161361",
    "name": "THEZERO INC.",
@@ -521,32 +573,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2162905&type=D"
   },
   {
-   "filed": "20261102",
-   "cik": "2159631",
-   "name": "Aventra Defense Systems, Inc.",
-   "city": "HERNDON",
-   "state": "VA",
-   "industry": "Other Technology",
-   "amount": 12499977.0,
-   "first_raise": true,
-   "quality_pct": 0.646,
-   "p_growth20": 0.2458,
-   "p_exit": 0.0471,
-   "cheap_half": false,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 1,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 1,
-    "hub": 0,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2159631&type=D"
-  },
-  {
    "filed": "20261105",
    "cik": "1969461",
    "name": "Not Wood, Inc.",
@@ -571,32 +597,6 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1969461&type=D"
-  },
-  {
-   "filed": "20261102",
-   "cik": "1810252",
-   "name": "HData, Inc.",
-   "city": "LOCKPORT",
-   "state": "IL",
-   "industry": "Other",
-   "amount": 4100011.0,
-   "first_raise": false,
-   "quality_pct": 0.623,
-   "p_growth20": 0.1019,
-   "p_exit": 0.0531,
-   "cheap_half": false,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 1,
-    "serial_exec": 1,
-    "exec_prior_scaleup": 0,
-    "board_pro": 1,
-    "hub": 0,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1810252&type=D"
   },
   {
    "filed": "20261106",
@@ -625,32 +625,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2142358&type=D"
   },
   {
-   "filed": "20261102",
-   "cik": "2159631",
-   "name": "Aventra Defense Systems, Inc.",
-   "city": "HERNDON",
-   "state": "VA",
-   "industry": "Other Technology",
-   "amount": 3000111.0,
-   "first_raise": true,
-   "quality_pct": 0.571,
-   "p_growth20": 0.1004,
-   "p_exit": 0.0349,
-   "cheap_half": false,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 1,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 1,
-    "hub": 0,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2159631&type=D"
-  },
-  {
    "filed": "20261105",
    "cik": "1949856",
    "name": "Primordial Labs, Inc.",
@@ -675,32 +649,6 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1949856&type=D"
-  },
-  {
-   "filed": "20261102",
-   "cik": "2127537",
-   "name": "A10 Systems Inc.",
-   "city": "LOWELL",
-   "state": "MA",
-   "industry": "Telecommunications",
-   "amount": 4814331.0,
-   "first_raise": true,
-   "quality_pct": 0.535,
-   "p_growth20": 0.1435,
-   "p_exit": 0.0487,
-   "cheap_half": false,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2127537&type=D"
   },
   {
    "filed": "20261106",
@@ -779,32 +727,6 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1980558&type=D"
-  },
-  {
-   "filed": "20261102",
-   "cik": "2163196",
-   "name": "Energetic Events, Inc.",
-   "city": "NEW YORK",
-   "state": "NY",
-   "industry": "Other",
-   "amount": 250050.0,
-   "first_raise": true,
-   "quality_pct": 0.447,
-   "p_growth20": 0.0186,
-   "p_exit": 0.0218,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 1,
-    "hub": 1,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163196&type=D"
   },
   {
    "filed": "20261104",
@@ -1067,17 +989,17 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2112552&type=D"
   },
   {
-   "filed": "20261102",
-   "cik": "2163187",
-   "name": "UpLiv Technologies Inc.",
-   "city": "MINNEAPOLIS",
-   "state": "MN",
+   "filed": "20261109",
+   "cik": "2164298",
+   "name": "Talent Shares, Inc.",
+   "city": "Dover",
+   "state": "DE",
    "industry": "Other Technology",
-   "amount": 250000.0,
+   "amount": 344800.0,
    "first_raise": true,
-   "quality_pct": 0.339,
-   "p_growth20": 0.0178,
-   "p_exit": 0.0167,
+   "quality_pct": 0.323,
+   "p_growth20": 0.0163,
+   "p_exit": 0.0183,
    "cheap_half": true,
    "rule_pick": false,
    "signals": {
@@ -1086,11 +1008,37 @@
     "exec_prior_scaleup": 0,
     "board_pro": 0,
     "hub": 0,
-    "de_out_of_state": 1,
+    "de_out_of_state": 0,
     "broker": 0,
     "rule506c": 0
    },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163187&type=D"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164298&type=D"
+  },
+  {
+   "filed": "20261109",
+   "cik": "2164423",
+   "name": "D'LUX Storage, Inc.",
+   "city": "SAN JOSE",
+   "state": "CA",
+   "industry": "Other",
+   "amount": 249993.0,
+   "first_raise": true,
+   "quality_pct": 0.321,
+   "p_growth20": 0.014,
+   "p_exit": 0.0173,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 1,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 1
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164423&type=D"
   },
   {
    "filed": "20261105",
@@ -1223,6 +1171,32 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2161479&type=D"
   },
   {
+   "filed": "20261109",
+   "cik": "2164056",
+   "name": "GiftBetter Inc.",
+   "city": "ST. LOUIS",
+   "state": "MO",
+   "industry": "Other Technology",
+   "amount": 500000.0,
+   "first_raise": true,
+   "quality_pct": 0.178,
+   "p_growth20": 0.018,
+   "p_exit": 0.019,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164056&type=D"
+  },
+  {
    "filed": "20261106",
    "cik": "2162515",
    "name": "Good Part Hair, Inc.",
@@ -1275,32 +1249,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2115573&type=D"
   },
   {
-   "filed": "20261102",
-   "cik": "2162814",
-   "name": "Sarah247, Inc.",
-   "city": "JACKSONVILLE",
-   "state": "FL",
-   "industry": "Other Technology",
-   "amount": 102000.0,
-   "first_raise": true,
-   "quality_pct": 0.147,
-   "p_growth20": 0.0046,
-   "p_exit": 0.0115,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2162814&type=D"
-  },
-  {
    "filed": "20261106",
    "cik": "2050711",
    "name": "TAPREADY INC",
@@ -1325,6 +1273,32 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2050711&type=D"
+  },
+  {
+   "filed": "20261109",
+   "cik": "2128839",
+   "name": "RICH RISING GROUP, INC",
+   "city": "BEVERLY HILLS",
+   "state": "CA",
+   "industry": "Other Technology",
+   "amount": 7500000.0,
+   "first_raise": true,
+   "quality_pct": 0.12,
+   "p_growth20": 0.0752,
+   "p_exit": 0.0222,
+   "cheap_half": false,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 0,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2128839&type=D"
   },
   {
    "filed": "20261103",
