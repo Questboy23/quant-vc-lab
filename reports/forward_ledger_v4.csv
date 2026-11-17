@@ -319,3 +319,9 @@ filed,cik,name,state,industry,amount,first_raise,quality_pct,p_growth20,p_exit,r
 20261113,2050476,CrunchAtlas  Inc.,NH,Other Technology,250000.0,False,0.327,0.0139,0.0179,False,2026-11-14
 20261113,2160337,EatFuti Inc.,IA,Other Technology,1349991.0,True,0.308,0.0309,0.0268,False,2026-11-14
 20261113,2163084,Clearwood  PBC,OR,Other Technology,110000.0,True,0.218,0.006,0.0146,False,2026-11-14
+20261116,2163236,Tabi Tech Inc,FL,Other Technology,1000000.0,True,0.605,0.0247,0.036,True,2026-11-17
+20261116,2109978,Linok Inc.,FL,Other Technology,3134981.0,False,0.804,0.1123,0.0485,False,2026-11-17
+20261116,2164266,Potentiam Biosciences  Inc.,TX,Biotechnology,250000.0,True,0.499,0.0162,0.0249,False,2026-11-17
+20261116,2160558,Action Intel Inc.,KY,Other Technology,834998.0,True,0.47,0.0391,0.0296,False,2026-11-17
+20261116,2163236,Tabi Tech Inc,FL,Other Technology,2999998.0,True,0.103,0.0449,0.022,False,2026-11-17
+20261116,2075849,Tysons Club Inc.,VA,Other,1001300.0,False,0.071,0.0201,0.0184,False,2026-11-17

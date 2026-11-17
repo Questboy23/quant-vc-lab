@@ -1,26 +1,26 @@
 {
- "generated": "2026-11-14T11:36:39.696062+00:00",
+ "generated": "2026-11-17T11:33:02.803801+00:00",
  "model": "round-4 Form D model",
  "days": [
+  "2026-11-16",
   "2026-11-13",
   "2026-11-12",
   "2026-11-11",
-  "2026-11-10",
-  "2026-11-09"
+  "2026-11-10"
  ],
- "filings_seen": 760,
- "scored": 42,
+ "filings_seen": 786,
+ "scored": 41,
  "rule_picks": 6,
  "dropped": {
-  "fund_like": 450,
+  "fund_like": 454,
   "parse_failed": 0,
   "amendment": 0,
-  "not_startup": 251,
-  "size_out_of_range": 17,
-  "not_first_raise": 14
+  "not_startup": 276,
+  "size_out_of_range": 15,
+  "not_first_raise": 15
  },
  "fetch": {
-  "calls": 315,
+  "calls": 337,
   "failed": 1,
   "throttled_429": 0
  },
@@ -79,32 +79,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2160665&type=D"
   },
   {
-   "filed": "20261109",
-   "cik": "2164088",
-   "name": "IDEW, Inc.",
-   "city": "New York",
-   "state": "NY",
-   "industry": "Other",
-   "amount": 400000.0,
-   "first_raise": true,
-   "quality_pct": 0.663,
-   "p_growth20": 0.0299,
-   "p_exit": 0.0347,
-   "cheap_half": true,
-   "rule_pick": true,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 1,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164088&type=D"
-  },
-  {
    "filed": "20261110",
    "cik": "2164197",
    "name": "Walnut Technology Corp",
@@ -129,6 +103,32 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164197&type=D"
+  },
+  {
+   "filed": "20261116",
+   "cik": "2163236",
+   "name": "Tabi Tech Inc",
+   "city": "MIAMI",
+   "state": "FL",
+   "industry": "Other Technology",
+   "amount": 1000000.0,
+   "first_raise": true,
+   "quality_pct": 0.605,
+   "p_growth20": 0.0247,
+   "p_exit": 0.036,
+   "cheap_half": true,
+   "rule_pick": true,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 1,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163236&type=D"
   },
   {
    "filed": "20261113",
@@ -235,43 +235,17 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2090889&type=D"
   },
   {
-   "filed": "20261109",
-   "cik": "2163779",
-   "name": "Marble Group, Inc.",
-   "city": "NEW YORK",
-   "state": "NY",
+   "filed": "20261116",
+   "cik": "2109978",
+   "name": "Linok Inc.",
+   "city": "LAKEWOOD RANCH",
+   "state": "FL",
    "industry": "Other Technology",
-   "amount": 10873968.0,
-   "first_raise": true,
-   "quality_pct": 0.834,
-   "p_growth20": 0.241,
-   "p_exit": 0.0659,
-   "cheap_half": false,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 1,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163779&type=D"
-  },
-  {
-   "filed": "20261109",
-   "cik": "2006375",
-   "name": "Newton Research, Inc.",
-   "city": "NEEDHAM",
-   "state": "MA",
-   "industry": "Other Technology",
-   "amount": 17899859.0,
+   "amount": 3134981.0,
    "first_raise": false,
-   "quality_pct": 0.833,
-   "p_growth20": 0.3653,
-   "p_exit": 0.1012,
+   "quality_pct": 0.804,
+   "p_growth20": 0.1123,
+   "p_exit": 0.0485,
    "cheap_half": false,
    "rule_pick": false,
    "signals": {
@@ -279,12 +253,12 @@
     "serial_exec": 1,
     "exec_prior_scaleup": 0,
     "board_pro": 1,
-    "hub": 1,
+    "hub": 0,
     "de_out_of_state": 1,
     "broker": 0,
     "rule506c": 0
    },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2006375&type=D"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2109978&type=D"
   },
   {
    "filed": "20261110",
@@ -363,6 +337,58 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2160820&type=D"
+  },
+  {
+   "filed": "20261116",
+   "cik": "2164266",
+   "name": "Potentiam Biosciences, Inc.",
+   "city": "IRVING",
+   "state": "TX",
+   "industry": "Biotechnology",
+   "amount": 250000.0,
+   "first_raise": true,
+   "quality_pct": 0.499,
+   "p_growth20": 0.0162,
+   "p_exit": 0.0249,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164266&type=D"
+  },
+  {
+   "filed": "20261116",
+   "cik": "2160558",
+   "name": "Action Intel Inc.",
+   "city": "LOUISVILLE",
+   "state": "KY",
+   "industry": "Other Technology",
+   "amount": 834998.0,
+   "first_raise": true,
+   "quality_pct": 0.47,
+   "p_growth20": 0.0391,
+   "p_exit": 0.0296,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 1,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 1,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2160558&type=D"
   },
   {
    "filed": "20261110",
@@ -571,58 +597,6 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2050476&type=D"
-  },
-  {
-   "filed": "20261109",
-   "cik": "2164298",
-   "name": "Talent Shares, Inc.",
-   "city": "Dover",
-   "state": "DE",
-   "industry": "Other Technology",
-   "amount": 344800.0,
-   "first_raise": true,
-   "quality_pct": 0.323,
-   "p_growth20": 0.0163,
-   "p_exit": 0.0183,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 0,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164298&type=D"
-  },
-  {
-   "filed": "20261109",
-   "cik": "2164423",
-   "name": "D'LUX Storage, Inc.",
-   "city": "SAN JOSE",
-   "state": "CA",
-   "industry": "Other",
-   "amount": 249993.0,
-   "first_raise": true,
-   "quality_pct": 0.321,
-   "p_growth20": 0.014,
-   "p_exit": 0.0173,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 1,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 1,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 1
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164423&type=D"
   },
   {
    "filed": "20261112",
@@ -885,58 +859,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1977710&type=D"
   },
   {
-   "filed": "20261109",
-   "cik": "2164056",
-   "name": "GiftBetter Inc.",
-   "city": "ST. LOUIS",
-   "state": "MO",
-   "industry": "Other Technology",
-   "amount": 500000.0,
-   "first_raise": true,
-   "quality_pct": 0.178,
-   "p_growth20": 0.018,
-   "p_exit": 0.019,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 1,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164056&type=D"
-  },
-  {
-   "filed": "20261109",
-   "cik": "2128839",
-   "name": "RICH RISING GROUP, INC",
-   "city": "BEVERLY HILLS",
-   "state": "CA",
-   "industry": "Other Technology",
-   "amount": 7500000.0,
-   "first_raise": true,
-   "quality_pct": 0.12,
-   "p_growth20": 0.0752,
-   "p_exit": 0.0222,
-   "cheap_half": false,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 0,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2128839&type=D"
-  },
-  {
    "filed": "20261112",
    "cik": "1986601",
    "name": "Smart Response Technologies, Inc.",
@@ -987,6 +909,32 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2071964&type=D"
+  },
+  {
+   "filed": "20261116",
+   "cik": "2163236",
+   "name": "Tabi Tech Inc",
+   "city": "MIAMI",
+   "state": "FL",
+   "industry": "Other Technology",
+   "amount": 2999998.0,
+   "first_raise": true,
+   "quality_pct": 0.103,
+   "p_growth20": 0.0449,
+   "p_exit": 0.022,
+   "cheap_half": false,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163236&type=D"
   },
   {
    "filed": "20261110",
@@ -1065,6 +1013,32 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164572&type=D"
+  },
+  {
+   "filed": "20261116",
+   "cik": "2075849",
+   "name": "Tysons Club Inc.",
+   "city": "Vienna",
+   "state": "VA",
+   "industry": "Other",
+   "amount": 1001300.0,
+   "first_raise": false,
+   "quality_pct": 0.071,
+   "p_growth20": 0.0201,
+   "p_exit": 0.0184,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 0,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2075849&type=D"
   },
   {
    "filed": "20261112",
