@@ -1,27 +1,27 @@
 {
- "generated": "2026-11-18T11:32:33.390016+00:00",
+ "generated": "2026-11-19T11:34:08.987534+00:00",
  "model": "round-4 Form D model",
  "days": [
+  "2026-11-18",
   "2026-11-17",
   "2026-11-16",
   "2026-11-13",
-  "2026-11-12",
-  "2026-11-11"
+  "2026-11-12"
  ],
- "filings_seen": 773,
- "scored": 36,
+ "filings_seen": 941,
+ "scored": 43,
  "rule_picks": 4,
  "dropped": {
-  "fund_like": 462,
+  "fund_like": 574,
   "parse_failed": 0,
   "amendment": 0,
-  "not_startup": 258,
-  "size_out_of_range": 17,
-  "not_first_raise": 12
+  "not_startup": 302,
+  "size_out_of_range": 22,
+  "not_first_raise": 15
  },
  "fetch": {
-  "calls": 316,
-  "failed": 1,
+  "calls": 372,
+  "failed": 0,
   "throttled_429": 0
  },
  "rule": "first Form D, raise below $2.0M, quality score in the top half",
@@ -261,6 +261,58 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2159328&type=D"
   },
   {
+   "filed": "20261118",
+   "cik": "2165599",
+   "name": "SalesPatriot, Inc.",
+   "city": "WILMINGTON",
+   "state": "DE",
+   "industry": "Other Technology",
+   "amount": 19999918.0,
+   "first_raise": true,
+   "quality_pct": 0.741,
+   "p_growth20": 0.2608,
+   "p_exit": 0.0824,
+   "cheap_half": false,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 1,
+    "hub": 0,
+    "de_out_of_state": 0,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2165599&type=D"
+  },
+  {
+   "filed": "20261118",
+   "cik": "2164621",
+   "name": "Amperage Infrastructure Corp",
+   "city": "LOVELAND",
+   "state": "CO",
+   "industry": "Other Technology",
+   "amount": 19077775.0,
+   "first_raise": true,
+   "quality_pct": 0.705,
+   "p_growth20": 0.2798,
+   "p_exit": 0.0632,
+   "cheap_half": false,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 1,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 1,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164621&type=D"
+  },
+  {
    "filed": "20261117",
    "cik": "2150140",
    "name": "Gamow Labs, Inc.",
@@ -311,6 +363,32 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1994140&type=D"
+  },
+  {
+   "filed": "20261118",
+   "cik": "1995626",
+   "name": "Spakl Tech, Inc.",
+   "city": "CHARLOTTE",
+   "state": "NC",
+   "industry": "Other Technology",
+   "amount": 14726689.0,
+   "first_raise": false,
+   "quality_pct": 0.567,
+   "p_growth20": 0.1815,
+   "p_exit": 0.0483,
+   "cheap_half": false,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1995626&type=D"
   },
   {
    "filed": "20261113",
@@ -495,6 +573,58 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1960557&type=D"
   },
   {
+   "filed": "20261118",
+   "cik": "1989290",
+   "name": "Safe Oil Corp",
+   "city": "COLUMBIA",
+   "state": "SC",
+   "industry": "Other Technology",
+   "amount": 2398677.0,
+   "first_raise": false,
+   "quality_pct": 0.372,
+   "p_growth20": 0.0608,
+   "p_exit": 0.0331,
+   "cheap_half": false,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1989290&type=D"
+  },
+  {
+   "filed": "20261118",
+   "cik": "2164340",
+   "name": "Flor de Azar, Inc.",
+   "city": "BROOKLYN",
+   "state": "NY",
+   "industry": "Other",
+   "amount": 296500.0,
+   "first_raise": true,
+   "quality_pct": 0.361,
+   "p_growth20": 0.0195,
+   "p_exit": 0.0195,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164340&type=D"
+  },
+  {
    "filed": "20261117",
    "cik": "2165223",
    "name": "Recipe Intelligence, Inc.",
@@ -623,6 +753,32 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2160337&type=D"
+  },
+  {
+   "filed": "20261118",
+   "cik": "2116264",
+   "name": "SecondAppraisal Inc",
+   "city": "West Jordan",
+   "state": "UT",
+   "industry": "Other",
+   "amount": 999997.0,
+   "first_raise": false,
+   "quality_pct": 0.284,
+   "p_growth20": 0.0293,
+   "p_exit": 0.0194,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 1,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 1,
+    "hub": 0,
+    "de_out_of_state": 0,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2116264&type=D"
   },
   {
    "filed": "20261112",
@@ -779,6 +935,32 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163084&type=D"
+  },
+  {
+   "filed": "20261118",
+   "cik": "2165860",
+   "name": "aVillage Group, Inc.",
+   "city": "Washington",
+   "state": "DC",
+   "industry": "Other Technology",
+   "amount": 100000.0,
+   "first_raise": true,
+   "quality_pct": 0.211,
+   "p_growth20": 0.0068,
+   "p_exit": 0.0138,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2165860&type=D"
   },
   {
    "filed": "20261117",
