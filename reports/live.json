@@ -1,26 +1,26 @@
 {
- "generated": "2026-11-19T11:34:08.987534+00:00",
+ "generated": "2026-11-20T11:37:25.211585+00:00",
  "model": "round-4 Form D model",
  "days": [
+  "2026-11-19",
   "2026-11-18",
   "2026-11-17",
   "2026-11-16",
-  "2026-11-13",
-  "2026-11-12"
+  "2026-11-13"
  ],
- "filings_seen": 941,
- "scored": 43,
- "rule_picks": 4,
+ "filings_seen": 899,
+ "scored": 44,
+ "rule_picks": 5,
  "dropped": {
-  "fund_like": 574,
+  "fund_like": 553,
   "parse_failed": 0,
   "amendment": 0,
-  "not_startup": 302,
+  "not_startup": 280,
   "size_out_of_range": 22,
-  "not_first_raise": 15
+  "not_first_raise": 17
  },
  "fetch": {
-  "calls": 372,
+  "calls": 351,
   "failed": 0,
   "throttled_429": 0
  },
@@ -53,30 +53,56 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2160773&type=D"
   },
   {
-   "filed": "20261112",
-   "cik": "2160665",
-   "name": "Aerial Illuminations, Inc.",
-   "city": "GROVELAND",
-   "state": "FL",
-   "industry": "Other",
-   "amount": 1125000.0,
+   "filed": "20261119",
+   "cik": "2020104",
+   "name": "BANIQL CORP.",
+   "city": "San Jose",
+   "state": "CA",
+   "industry": "Manufacturing",
+   "amount": 866985.0,
    "first_raise": true,
-   "quality_pct": 0.667,
-   "p_growth20": 0.0287,
-   "p_exit": 0.0434,
+   "quality_pct": 0.739,
+   "p_growth20": 0.039,
+   "p_exit": 0.0412,
    "cheap_half": true,
    "rule_pick": true,
    "signals": {
     "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 1,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2020104&type=D"
+  },
+  {
+   "filed": "20261119",
+   "cik": "2164770",
+   "name": "Crypto Insights Group Corp.",
+   "city": "SAN FRANCISCO",
+   "state": "CA",
+   "industry": "Other Technology",
+   "amount": 750000.0,
+   "first_raise": true,
+   "quality_pct": 0.7,
+   "p_growth20": 0.0442,
+   "p_exit": 0.0345,
+   "cheap_half": true,
+   "rule_pick": true,
+   "signals": {
+    "vc_director": 1,
     "serial_exec": 1,
     "exec_prior_scaleup": 1,
     "board_pro": 1,
-    "hub": 0,
-    "de_out_of_state": 0,
-    "broker": 1,
+    "hub": 1,
+    "de_out_of_state": 1,
+    "broker": 0,
     "rule506c": 0
    },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2160665&type=D"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164770&type=D"
   },
   {
    "filed": "20261116",
@@ -157,6 +183,32 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2126389&type=D"
   },
   {
+   "filed": "20261119",
+   "cik": "2159762",
+   "name": "Spencer Investco, Inc.",
+   "city": "NEW YORK",
+   "state": "NY",
+   "industry": "Other Health Care",
+   "amount": 9969997.0,
+   "first_raise": true,
+   "quality_pct": 0.958,
+   "p_growth20": 0.3722,
+   "p_exit": 0.0702,
+   "cheap_half": false,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 1,
+    "board_pro": 1,
+    "hub": 1,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2159762&type=D"
+  },
+  {
    "filed": "20261117",
    "cik": "2165474",
    "name": "HoneyHive Inc.",
@@ -183,30 +235,30 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2165474&type=D"
   },
   {
-   "filed": "20261112",
-   "cik": "2090889",
-   "name": "Chronicle Bio, Inc.",
-   "city": "Menlo Park",
-   "state": "CA",
+   "filed": "20261119",
+   "cik": "2051403",
+   "name": "Elligint Health, Inc.",
+   "city": "EDISON",
+   "state": "NJ",
    "industry": "Other Technology",
-   "amount": 250000.0,
+   "amount": 6999992.0,
    "first_raise": false,
-   "quality_pct": 0.914,
-   "p_growth20": 0.0392,
-   "p_exit": 0.0681,
-   "cheap_half": true,
+   "quality_pct": 0.811,
+   "p_growth20": 0.1813,
+   "p_exit": 0.0664,
+   "cheap_half": false,
    "rule_pick": false,
    "signals": {
     "vc_director": 1,
     "serial_exec": 1,
-    "exec_prior_scaleup": 1,
+    "exec_prior_scaleup": 0,
     "board_pro": 1,
-    "hub": 1,
+    "hub": 0,
     "de_out_of_state": 1,
     "broker": 0,
     "rule506c": 0
    },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2090889&type=D"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2051403&type=D"
   },
   {
    "filed": "20261116",
@@ -417,6 +469,32 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1927878&type=D"
   },
   {
+   "filed": "20261119",
+   "cik": "2055022",
+   "name": "KnowRisk, Inc.",
+   "city": "Las Vegas",
+   "state": "NV",
+   "industry": "Other Technology",
+   "amount": 573000.0,
+   "first_raise": false,
+   "quality_pct": 0.532,
+   "p_growth20": 0.0285,
+   "p_exit": 0.0256,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 1,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 1,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2055022&type=D"
+  },
+  {
    "filed": "20261113",
    "cik": "2160820",
    "name": "Kunin Technologies Inc.",
@@ -495,30 +573,30 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2160558&type=D"
   },
   {
-   "filed": "20261112",
-   "cik": "2164322",
-   "name": "Duke & Daisy, Inc.",
-   "city": "FOSTER CITY",
-   "state": "CA",
-   "industry": "Other",
-   "amount": 150000.0,
-   "first_raise": true,
-   "quality_pct": 0.431,
-   "p_growth20": 0.0129,
-   "p_exit": 0.0224,
+   "filed": "20261119",
+   "cik": "2042877",
+   "name": "EndoSure, Inc.",
+   "city": "SPARKS GLENCOE",
+   "state": "MD",
+   "industry": "Other Health Care",
+   "amount": 1310823.0,
+   "first_raise": false,
+   "quality_pct": 0.465,
+   "p_growth20": 0.0595,
+   "p_exit": 0.0229,
    "cheap_half": true,
    "rule_pick": false,
    "signals": {
     "vc_director": 0,
-    "serial_exec": 0,
+    "serial_exec": 1,
     "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 1,
+    "board_pro": 1,
+    "hub": 0,
     "de_out_of_state": 1,
     "broker": 0,
     "rule506c": 0
    },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164322&type=D"
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2042877&type=D"
   },
   {
    "filed": "20261113",
@@ -545,6 +623,32 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2160846&type=D"
+  },
+  {
+   "filed": "20261119",
+   "cik": "2082177",
+   "name": "Baryons Inc.",
+   "city": "JOHNSTOWN",
+   "state": "PA",
+   "industry": "Other Technology",
+   "amount": 792193.0,
+   "first_raise": false,
+   "quality_pct": 0.401,
+   "p_growth20": 0.0267,
+   "p_exit": 0.0295,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 1,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2082177&type=D"
   },
   {
    "filed": "20261113",
@@ -625,6 +729,32 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164340&type=D"
   },
   {
+   "filed": "20261119",
+   "cik": "2165467",
+   "name": "Claimtrax Inc.",
+   "city": "COLUMBUS",
+   "state": "OH",
+   "industry": "Other Technology",
+   "amount": 400000.0,
+   "first_raise": true,
+   "quality_pct": 0.34,
+   "p_growth20": 0.0191,
+   "p_exit": 0.0218,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2165467&type=D"
+  },
+  {
    "filed": "20261117",
    "cik": "2165223",
    "name": "Recipe Intelligence, Inc.",
@@ -703,32 +833,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2050476&type=D"
   },
   {
-   "filed": "20261112",
-   "cik": "2164000",
-   "name": "LEGIO Prime, Inc.",
-   "city": "BURR RIDGE",
-   "state": "IL",
-   "industry": "Other",
-   "amount": 150000.0,
-   "first_raise": true,
-   "quality_pct": 0.317,
-   "p_growth20": 0.0118,
-   "p_exit": 0.017,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 1,
-    "serial_exec": 1,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164000&type=D"
-  },
-  {
    "filed": "20261113",
    "cik": "2160337",
    "name": "EatFuti Inc.",
@@ -753,6 +857,32 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2160337&type=D"
+  },
+  {
+   "filed": "20261119",
+   "cik": "2165963",
+   "name": "Brokermatic AI Corp",
+   "city": "Campbell",
+   "state": "CA",
+   "industry": "Other Technology",
+   "amount": 100000.0,
+   "first_raise": true,
+   "quality_pct": 0.301,
+   "p_growth20": 0.0162,
+   "p_exit": 0.0122,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 1,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2165963&type=D"
   },
   {
    "filed": "20261118",
@@ -781,58 +911,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2116264&type=D"
   },
   {
-   "filed": "20261112",
-   "cik": "2162171",
-   "name": "Lithe Medical, Inc.",
-   "city": "BOSTON",
-   "state": "MA",
-   "industry": "Other Health Care",
-   "amount": 100000.0,
-   "first_raise": true,
-   "quality_pct": 0.267,
-   "p_growth20": 0.0115,
-   "p_exit": 0.0133,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 1,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2162171&type=D"
-  },
-  {
-   "filed": "20261112",
-   "cik": "2164767",
-   "name": "Care Nimble, Inc.",
-   "city": "Dover",
-   "state": "DE",
-   "industry": "Other Health Care",
-   "amount": 275000.0,
-   "first_raise": true,
-   "quality_pct": 0.258,
-   "p_growth20": 0.0166,
-   "p_exit": 0.0122,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 1,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 0,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164767&type=D"
-  },
-  {
    "filed": "20261117",
    "cik": "2165419",
    "name": "Pickup Health, Inc.",
@@ -859,6 +937,32 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2165419&type=D"
   },
   {
+   "filed": "20261119",
+   "cik": "2091915",
+   "name": "Cosmoserve Space Inc.",
+   "city": "MIAMI",
+   "state": "FL",
+   "industry": "Other Technology",
+   "amount": 259972.0,
+   "first_raise": false,
+   "quality_pct": 0.245,
+   "p_growth20": 0.0121,
+   "p_exit": 0.0175,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 1,
+    "serial_exec": 1,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2091915&type=D"
+  },
+  {
    "filed": "20261117",
    "cik": "1942277",
    "name": "Reach Neuro, Inc.",
@@ -883,32 +987,6 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1942277&type=D"
-  },
-  {
-   "filed": "20261112",
-   "cik": "2009632",
-   "name": "Blue Sky Robotics, Inc.",
-   "city": "CHAPEL HILL",
-   "state": "NC",
-   "industry": "Other Technology",
-   "amount": 887502.0,
-   "first_raise": false,
-   "quality_pct": 0.222,
-   "p_growth20": 0.0198,
-   "p_exit": 0.0174,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 1,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 0,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2009632&type=D"
   },
   {
    "filed": "20261113",
@@ -989,6 +1067,32 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2137537&type=D"
   },
   {
+   "filed": "20261119",
+   "cik": "2165861",
+   "name": "Ayatris, Inc.",
+   "city": "FREDERICK",
+   "state": "MD",
+   "industry": "Other Health Care",
+   "amount": 100000.0,
+   "first_raise": true,
+   "quality_pct": 0.179,
+   "p_growth20": 0.008,
+   "p_exit": 0.0091,
+   "cheap_half": true,
+   "rule_pick": false,
+   "signals": {
+    "vc_director": 0,
+    "serial_exec": 0,
+    "exec_prior_scaleup": 0,
+    "board_pro": 0,
+    "hub": 0,
+    "de_out_of_state": 1,
+    "broker": 0,
+    "rule506c": 0
+   },
+   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2165861&type=D"
+  },
+  {
    "filed": "20261117",
    "cik": "2159122",
    "name": "Azotera, Inc.",
@@ -1013,32 +1117,6 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2159122&type=D"
-  },
-  {
-   "filed": "20261112",
-   "cik": "1986601",
-   "name": "Smart Response Technologies, Inc.",
-   "city": "MANASSAS",
-   "state": "VA",
-   "industry": "Other Technology",
-   "amount": 519003.0,
-   "first_raise": false,
-   "quality_pct": 0.113,
-   "p_growth20": 0.0121,
-   "p_exit": 0.0139,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 1,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 0,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1986601&type=D"
   },
   {
    "filed": "20261116",
@@ -1067,32 +1145,6 @@
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2163236&type=D"
   },
   {
-   "filed": "20261112",
-   "cik": "2164745",
-   "name": "Tiger Diagnostics Laboratory, Inc.",
-   "city": "PIEDMONT",
-   "state": "SC",
-   "industry": "Other Health Care",
-   "amount": 100000.0,
-   "first_raise": true,
-   "quality_pct": 0.079,
-   "p_growth20": 0.0025,
-   "p_exit": 0.0035,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 1,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 0,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164745&type=D"
-  },
-  {
    "filed": "20261116",
    "cik": "2075849",
    "name": "Tysons Club Inc.",
@@ -1117,32 +1169,6 @@
     "rule506c": 0
    },
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2075849&type=D"
-  },
-  {
-   "filed": "20261112",
-   "cik": "2164569",
-   "name": "FKTea, Inc.",
-   "city": "NEW ORLEANS",
-   "state": "LA",
-   "industry": "Other",
-   "amount": 300000.0,
-   "first_raise": true,
-   "quality_pct": 0.054,
-   "p_growth20": 0.0062,
-   "p_exit": 0.0121,
-   "cheap_half": true,
-   "rule_pick": false,
-   "signals": {
-    "vc_director": 0,
-    "serial_exec": 0,
-    "exec_prior_scaleup": 0,
-    "board_pro": 0,
-    "hub": 0,
-    "de_out_of_state": 1,
-    "broker": 0,
-    "rule506c": 0
-   },
-   "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=2164569&type=D"
   }
  ]
 }
